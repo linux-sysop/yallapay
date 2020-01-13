@@ -91,6 +91,16 @@ header {
     }
 }
 
+html[dir='rtl'] .countries-cont {
+    .other-countries {
+        .country-flag {
+            border-radius: 4px;
+            margin: 5px auto 0 0;
+        }
+    }
+
+}
+
 .lang {
     font-family: gulf;
     color: $text;
@@ -105,4 +115,10 @@ header {
     @include xs {
         display: none;
     }
+}
+
+html[dir='rtl'] .lang {
+    font-family: os-semibold;
+    margin-left: 0;
+    margin-right: auto;
 }

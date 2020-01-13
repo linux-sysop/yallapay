@@ -14,7 +14,7 @@ body {
     overflow-x: hidden;
 }
 
-#{$rtl} body {
+html[dir='rtl'] body {
     font-family: gulf;
 }
 

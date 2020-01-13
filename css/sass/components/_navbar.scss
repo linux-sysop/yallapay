@@ -49,3 +49,23 @@
         }
     }
 }
+
+html[dir='rtl'] .nav_list {
+    margin-left: 0;
+    margin-right: 178px;
+
+    @include md {
+        margin-left: 0;
+        margin-right: 50px;
+    }
+
+    .nav-item {
+        margin-left: 53px;
+        margin-right: 0;
+
+        .nav-anchor {
+            font-family: gulf;
+            font-size: 16px;
+        }
+    }
+}

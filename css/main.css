@@ -63,7 +63,7 @@ body::-webkit-scrollbar-thumb {
   background-color: #f48d65;
 }
 
-html[dir=rlt] body {
+html[dir=rtl] body {
   font-family: gulf;
 }
 
@@ -160,6 +160,25 @@ html {
   }
 }
 
+html[dir=rtl] .nav_list {
+  margin-left: 0;
+  margin-right: 178px;
+}
+@media (max-width: 1199px) {
+  html[dir=rtl] .nav_list {
+    margin-left: 0;
+    margin-right: 50px;
+  }
+}
+html[dir=rtl] .nav_list .nav-item {
+  margin-left: 53px;
+  margin-right: 0;
+}
+html[dir=rtl] .nav_list .nav-item .nav-anchor {
+  font-family: gulf;
+  font-size: 16px;
+}
+
 @media (max-width: 767px) {
   .header-cont {
     justify-content: space-between;
@@ -180,6 +199,15 @@ html {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
     margin-left: 5px;
+  }
+}
+
+@media (max-width: 767px) {
+  html[dir=rtl] .mo-menu-open img {
+    -webkit-transform: unset;
+    transform: unset;
+    margin-left: 0;
+    margin-right: 5px;
   }
 }
 
@@ -372,6 +400,37 @@ html {
   box-shadow: 0 1px 0 #000000, inset 0 1px 1px #ff996c;
 }
 
+html[dir=rtl] .xs-nav {
+  transform-origin: left;
+}
+html[dir=rtl] .xs-nav.xs-open {
+  transform-origin: right;
+  transform: scaleX(1);
+}
+html[dir=rtl] .xs-nav .nav_list {
+  margin-left: 0;
+  margin-right: 47px;
+}
+html[dir=rtl] .xs-nav .nav_list .nav-item {
+  margin: 10px 0;
+}
+html[dir=rtl] .xs-nav .lang-country .countries-cont .selected-conutry {
+  border-left: 2px solid #f1f4f6;
+  border-right: none;
+}
+html[dir=rtl] .xs-nav .lang-country .countries-cont .other-countries .country-flag {
+  margin: 5px auto 0 0;
+}
+html[dir=rtl] .xs-nav .lang-country .countries-cont .other-countries .country-li {
+  margin-right: 31px;
+  margin-left: 0;
+}
+html[dir=rtl] .xs-nav .lang-country .lang {
+  font-family: os-semibold;
+  border-right: 2px solid #f1f4f6;
+  border-left: none;
+}
+
 header {
   background-color: #f1f4f6;
   padding-top: 35px;
@@ -461,6 +520,11 @@ header .logo {
   visibility: visible;
 }
 
+html[dir=rtl] .countries-cont .other-countries .country-flag {
+  border-radius: 4px;
+  margin: 5px auto 0 0;
+}
+
 .lang {
   font-family: gulf;
   color: #1b0e1c;
@@ -478,6 +542,12 @@ header .logo {
   .lang {
     display: none;
   }
+}
+
+html[dir=rtl] .lang {
+  font-family: os-semibold;
+  margin-left: 0;
+  margin-right: auto;
 }
 
 .main-sec {
@@ -642,6 +712,47 @@ header .logo {
   }
 }
 
+html[dir=rtl] .main-sec .main-head {
+  font-family: g-bold;
+  text-align: right;
+}
+html[dir=rtl] .main-sec .sec-head {
+  text-align: right;
+  font-family: gulf;
+}
+html[dir=rtl] .main-sec .cards .card {
+  margin-right: 0;
+  margin-left: 24px;
+}
+html[dir=rtl] .main-sec .cards .card:nth-of-type(2n) {
+  margin-left: 0;
+  margin-right: 0;
+}
+@media (max-width: 767px) {
+  html[dir=rtl] .main-sec .cards .card {
+    margin-left: 18px;
+    margin-right: 0;
+  }
+}
+html[dir=rtl] .main-sec .img-sec {
+  right: auto;
+  left: -135px;
+}
+@media (max-width: 1199px) {
+  html[dir=rtl] .main-sec .img-sec {
+    right: auto;
+    left: -135px;
+    transform: translateX(-100%);
+  }
+}
+html[dir=rtl] .main-sec .payments {
+  text-align: right;
+}
+html[dir=rtl] .main-sec .payments .payment-head {
+  font-family: gulf;
+  font-weight: unset;
+}
+
 .guaranties-cont {
   background-color: #331d34;
   padding-top: 100px;
@@ -767,6 +878,58 @@ header .logo {
   }
 }
 
+html[dir=rtl] .guaranties-cont {
+  text-align: right;
+}
+html[dir=rtl] .guaranties-cont .guaranties-header {
+  font-family: g-bold;
+  font-weight: unset;
+}
+html[dir=rtl] .guaranties-cont .guaranties {
+  flex-direction: row-reverse;
+}
+@media (max-width: 767px) {
+  html[dir=rtl] .guaranties-cont .guaranties {
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 767px) {
+  html[dir=rtl] .guaranties-cont .guarantie div {
+    margin-right: 17px;
+    margin-left: 0;
+  }
+}
+html[dir=rtl] .guaranties-cont .guarantie .guarantie-head {
+  font-family: g-bold;
+}
+@media (max-width: 767px) {
+  html[dir=rtl] .guaranties-cont .guarantie .guarantie-head {
+    padding-left: 0;
+    padding-right: 41px;
+  }
+}
+html[dir=rtl] .guaranties-cont .guarantie .guarantie-desc {
+  font-family: gulf;
+}
+html[dir=rtl] .guaranties-cont .about-desc-cont {
+  margin-top: 82px;
+}
+html[dir=rtl] .guaranties-cont .about-desc-cont .about-header {
+  font-size: 24px;
+  font-family: g-bold;
+  font-weight: 700;
+}
+html[dir=rtl] .guaranties-cont .about-img {
+  right: auto;
+  left: -55px;
+}
+@media (max-width: 767px) {
+  html[dir=rtl] .guaranties-cont .about-img {
+    left: auto;
+    right: auto;
+  }
+}
+
 footer {
   background-color: #f1f4f6;
 }
@@ -805,6 +968,14 @@ footer .mobilefooter {
     align-items: center;
     justify-content: center;
   }
+}
+
+html[dir=rtl] footer .foot-nav-li {
+  margin-left: 75px;
+  margin-left: 0;
+}
+html[dir=rtl] footer .foot-nav-anchor {
+  font-weight: unset;
 }
 
 /*# sourceMappingURL=main.css.map */

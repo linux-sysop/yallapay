@@ -161,6 +161,59 @@
     }
 }
 
+html[dir='rtl'] .main-sec {
+
+    .main-head {
+        font-family: g-bold;
+        text-align: right;
+    }
+
+    .sec-head {
+        text-align: right;
+        font-family: gulf;
+    }
+
+    .cards {
+
+        .card {
+            margin-right: 0;
+            margin-left: 24px;
+
+            &:nth-of-type(2n) {
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            @include xs {
+                margin-left: 18px;
+                margin-right: 0;
+            }
+        }
+    }
+
+    .img-sec {
+        right: auto;
+        left: -135px;
+
+        @include md {
+            right: auto;
+            left: -135px;
+            transform: translateX(-100%);
+        }
+    }
+
+
+    .payments {
+        text-align: right;
+
+        .payment-head {
+            font-family: gulf;
+            font-weight: unset;
+        }
+    }
+
+}
+
 
 .guaranties-cont {
     background-color: $blue;
@@ -287,6 +340,68 @@
                 width: calc(100% + 30px);
                 max-width: calc(100% + 30px);
             }
+        }
+    }
+}
+
+html[dir='rtl'] .guaranties-cont {
+    text-align: right;
+
+
+    .guaranties-header {
+        font-family: g-bold;
+        font-weight: unset;
+    }
+
+    .guaranties {
+        flex-direction: row-reverse;
+
+        @include xs {
+            flex-direction: column-reverse;
+        }
+    }
+
+    .guarantie {
+
+        @include xs {
+            div {
+                margin-right: 17px;
+                margin-left: 0;
+            }
+        }
+
+        .guarantie-head {
+            font-family: g-bold;
+
+            @include xs {
+                padding-left: 0;
+                padding-right: 41px;
+            }
+        }
+
+        .guarantie-desc {
+            font-family: gulf;
+        }
+    }
+
+    .about-desc-cont {
+        margin-top: 82px;
+
+
+        .about-header {
+            font-size: 24px;
+            font-family: g-bold;
+            font-weight: 700;
+        }
+    }
+
+    .about-img {
+        right: auto;
+        left: -55px;
+
+        @include xs {
+            left: auto;
+            right: auto;
         }
     }
 }
