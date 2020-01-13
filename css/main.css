@@ -222,6 +222,7 @@ html[dir=rtl] .nav_list .nav-item .nav-anchor {
   z-index: 999;
   padding-top: 40px;
   transform-origin: right;
+  -moz-transform-origin: right;
   transform: scaleX(0);
   -moz-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
@@ -230,6 +231,7 @@ html[dir=rtl] .nav_list .nav-item .nav-anchor {
 }
 .xs-nav.xs-open {
   transform-origin: left;
+  -moz-transform-origin: right;
   transform: scaleX(1);
 }
 .xs-nav .xs-head {
@@ -402,9 +404,11 @@ html[dir=rtl] .nav_list .nav-item .nav-anchor {
 
 html[dir=rtl] .xs-nav {
   transform-origin: left;
+  -moz-transform-origin: left;
 }
 html[dir=rtl] .xs-nav.xs-open {
   transform-origin: right;
+  -moz-transform-origin: left;
   transform: scaleX(1);
 }
 html[dir=rtl] .xs-nav .nav_list {

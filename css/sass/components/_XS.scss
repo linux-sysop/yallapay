@@ -44,11 +44,13 @@ html[dir='rtl'] .mo-menu-open {
     z-index: 999;
     padding-top: 40px;
     transform-origin: right;
+    -moz-transform-origin: right;
     transform: scaleX(0);
     @include transition(all 0.5s ease-in-out);
 
     &.xs-open {
         transform-origin: left;
+        -moz-transform-origin: right;
         transform: scaleX(1);
     }
 
@@ -233,9 +235,11 @@ html[dir='rtl'] .mo-menu-open {
 
 html[dir='rtl'] .xs-nav {
     transform-origin: left;
+    -moz-transform-origin: left;
 
     &.xs-open {
         transform-origin: right;
+        -moz-transform-origin: left;
         transform: scaleX(1);
     }
 
