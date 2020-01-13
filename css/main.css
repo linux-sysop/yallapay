@@ -1017,6 +1017,17 @@ html[dir=rtl] .guaranties-cont .about-img {
   line-height: 36px;
 }
 
+html[dir=rtl] .yalla-desc .yalla {
+  font-weight: unset;
+  font-family: g-bold;
+  text-align: right;
+}
+html[dir=rtl] .yalla-desc .yalla-info {
+  font-family: g-med;
+  font-weight: unset;
+  text-align: right;
+}
+
 .about-page-content {
   display: flex;
   align-items: flex-start;
@@ -1038,6 +1049,7 @@ html[dir=rtl] .guaranties-cont .about-img {
 @media (max-width: 767px) {
   .about-page-content ._first-sec {
     width: 100%;
+    padding-right: 0;
   }
 }
 .about-page-content ._sec-sec {
@@ -1073,6 +1085,26 @@ html[dir=rtl] .guaranties-cont .about-img {
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 50%);
+}
+
+html[dir=rtl] .about-page-content {
+  text-align: right;
+}
+html[dir=rtl] .about-page-content ._first-sec {
+  padding-right: 0;
+  padding-left: 30px;
+}
+@media (max-width: 767px) {
+  html[dir=rtl] .about-page-content ._first-sec {
+    width: 100%;
+    padding: 0;
+  }
+}
+html[dir=rtl] .about-page-content .sec-head {
+  font-family: g-bold;
+}
+html[dir=rtl] .about-page-content .sec-desc {
+  font-family: gulf;
 }
 
 .guaranties-cont.about-page {
@@ -1129,6 +1161,12 @@ html[dir=rtl] .guaranties-cont .about-img {
   }
 }
 
+@media (max-width: 767px) {
+  html[dir=rtl] .guaranties-cont.about-page .guaranties-header {
+    text-align: right;
+  }
+}
+
 footer {
   background-color: #f1f4f6;
 }
@@ -1173,6 +1211,7 @@ footer .mobilefooter {
   color: #1b0e1c;
   font-size: 16px;
   font-weight: 400;
+  font-family: os;
 }
 @media (max-width: 767px) {
   footer .mobilefooter {

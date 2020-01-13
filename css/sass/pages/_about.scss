@@ -34,6 +34,22 @@
     }
 }
 
+html[dir='rtl'] .yalla-desc {
+
+    .yalla {
+        font-weight: unset;
+        font-family: g-bold;
+        text-align: right;
+    }
+
+    .yalla-info {
+        font-family: g-med;
+        font-weight: unset;
+        text-align: right;
+
+    }
+}
+
 .about-page-content {
     display: flex;
     align-items: flex-start;
@@ -53,6 +69,7 @@
 
         @include xs {
             width: 100%;
+            padding-right: 0;
         }
     }
 
@@ -91,6 +108,28 @@
         bottom: 0;
         left: 50%;
         transform: translate(-50%, 50%);
+    }
+}
+
+html[dir='rtl'] .about-page-content {
+    text-align: right;
+
+    ._first-sec {
+        padding-right: 0;
+        padding-left: 30px;
+
+        @include xs {
+            width: 100%;
+            padding: 0;
+        }
+    }
+
+    .sec-head {
+        font-family: g-bold;
+    }
+
+    .sec-desc {
+        font-family: gulf;
     }
 }
 
@@ -148,6 +187,18 @@
 
         @include xs {
             margin-bottom: 70px;
+        }
+    }
+}
+
+
+html[dir='rtl'] .guaranties-cont {
+    &.about-page {
+        .guaranties-header {
+
+            @include xs {
+                text-align: right;
+            }
         }
     }
 }
