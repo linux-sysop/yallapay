@@ -716,9 +716,28 @@ html[dir=rtl] .main-sec .main-head {
   font-family: g-bold;
   text-align: right;
 }
+@media (max-width: 767px) {
+  html[dir=rtl] .main-sec .main-head {
+    font-size: 24px;
+    width: 100%;
+    overflow: unset;
+    text-align: center;
+    white-space: unset;
+  }
+}
 html[dir=rtl] .main-sec .sec-head {
   text-align: right;
   font-family: gulf;
+}
+@media (max-width: 767px) {
+  html[dir=rtl] .main-sec .sec-head {
+    font-size: 16px;
+    width: 100%;
+    overflow: unset;
+    text-align: center;
+    white-space: unset;
+    margin-top: 54px;
+  }
 }
 html[dir=rtl] .main-sec .cards .card {
   margin-right: 0;
@@ -743,6 +762,22 @@ html[dir=rtl] .main-sec .img-sec {
     right: auto;
     left: -135px;
     transform: translateX(-100%);
+  }
+}
+@media (max-width: 767px) {
+  html[dir=rtl] .main-sec .img-sec {
+    position: relative;
+    transform: unset;
+    right: auto;
+    left: auto;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(17px);
+  }
+  html[dir=rtl] .main-sec .img-sec img {
+    max-width: calc(100% + 30px);
   }
 }
 html[dir=rtl] .main-sec .payments {
@@ -887,6 +922,7 @@ html[dir=rtl] .guaranties-cont .guaranties-header {
 }
 html[dir=rtl] .guaranties-cont .guaranties {
   flex-direction: row-reverse;
+  align-items: flex-start;
 }
 @media (max-width: 767px) {
   html[dir=rtl] .guaranties-cont .guaranties {

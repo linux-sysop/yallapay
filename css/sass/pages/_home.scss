@@ -166,11 +166,28 @@ html[dir='rtl'] .main-sec {
     .main-head {
         font-family: g-bold;
         text-align: right;
+
+        @include xs {
+            font-size: 24px;
+            width: 100%;
+            overflow: unset;
+            text-align: center;
+            white-space: unset;
+        }
     }
 
     .sec-head {
         text-align: right;
         font-family: gulf;
+
+        @include xs {
+            font-size: 16px;
+            width: 100%;
+            overflow: unset;
+            text-align: center;
+            white-space: unset;
+            margin-top: 54px;
+        }
     }
 
     .cards {
@@ -199,6 +216,22 @@ html[dir='rtl'] .main-sec {
             right: auto;
             left: -135px;
             transform: translateX(-100%);
+        }
+
+        @include xs {
+            position: relative;
+            transform: unset;
+            right: auto;
+            left: auto;
+            z-index: 9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: translateY(17px);
+
+            img {
+                max-width: calc(100% + 30px);
+            }
         }
     }
 
@@ -355,6 +388,7 @@ html[dir='rtl'] .guaranties-cont {
 
     .guaranties {
         flex-direction: row-reverse;
+        align-items: flex-start;
 
         @include xs {
             flex-direction: column-reverse;

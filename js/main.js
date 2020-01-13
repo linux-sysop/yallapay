@@ -8,6 +8,7 @@ $(document).ready(function () {
     }
     if ($(window).width() < 768) {
         $(".img-sec").removeClass('fadeInRightBig')
+        $(".img-sec").removeClass('fadeInLeftBig')
         $(".img-sec").addClass('zoomIn')
 
 
