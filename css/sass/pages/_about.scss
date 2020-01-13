@@ -1,0 +1,153 @@
+.about-main {
+    background-color: $back;
+    padding-top: 77px;
+
+    @include xs {
+        padding-top: 62px;
+    }
+}
+
+.yalla-desc {
+    width: 565px;
+    color: $text;
+
+    @include xs {
+        width: 100%;
+    }
+
+    .yalla {
+        color: #1b0e1c;
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 20px;
+
+        @include xs {
+            margin-bottom: 15px;
+        }
+    }
+
+    .yalla-info {
+        color: #1b0e1c;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 36px;
+    }
+}
+
+.about-page-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 21px;
+
+    @include xs {
+        flex-direction: column;
+        margin-top: 78px;
+    }
+
+    ._first-sec {
+        width: 570px;
+        padding-top: 47px;
+        padding-right: 30px;
+        position: relative;
+
+        @include xs {
+            width: 100%;
+        }
+    }
+
+    ._sec-sec {
+        width: 571px;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 47px 50px 27px;
+
+        @include xs {
+            width: 100%;
+            margin-top: 40px;
+            position: relative;
+            z-index: 9;
+        }
+    }
+
+    .sec-head {
+        color: $blue;
+        font-size: 24px;
+        font-family: os-bold;
+        margin-bottom: 34px;
+    }
+
+    .sec-desc {
+        color: $blue;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 34px;
+        position: relative;
+        z-index: 9;
+    }
+
+    .about-pattern {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+}
+
+.guaranties-cont {
+    &.about-page {
+        padding-top: 0;
+        background-color: $back;
+
+        @include xs {
+            padding-top: 40px;
+        }
+
+        .guaranties-header {
+            color: $blue;
+            position: relative;
+            z-index: 9;
+
+            @include xs {
+                text-align: left;
+                margin-bottom: 35px;
+            }
+        }
+
+        .guaranties {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            @include xs {
+                flex-direction: column;
+            }
+        }
+
+        .guarantie {
+            color: $blue;
+
+            .guarantie-head {
+                color: $blue;
+            }
+
+            .guarantie-desc {
+                color: $blue;
+            }
+
+            @include xs {
+                margin-bottom: 40px;
+            }
+        }
+
+    }
+
+    .about-footer-pattern {
+        display: flex;
+        margin: 74px auto 116px;
+
+        @include xs {
+            margin-bottom: 70px;
+        }
+    }
+}

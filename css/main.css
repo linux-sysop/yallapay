@@ -980,6 +980,155 @@ html[dir=rtl] .guaranties-cont .about-img {
   }
 }
 
+.about-main {
+  background-color: #f1f4f6;
+  padding-top: 77px;
+}
+@media (max-width: 767px) {
+  .about-main {
+    padding-top: 62px;
+  }
+}
+
+.yalla-desc {
+  width: 565px;
+  color: #1b0e1c;
+}
+@media (max-width: 767px) {
+  .yalla-desc {
+    width: 100%;
+  }
+}
+.yalla-desc .yalla {
+  color: #1b0e1c;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .yalla-desc .yalla {
+    margin-bottom: 15px;
+  }
+}
+.yalla-desc .yalla-info {
+  color: #1b0e1c;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+}
+
+.about-page-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 21px;
+}
+@media (max-width: 767px) {
+  .about-page-content {
+    flex-direction: column;
+    margin-top: 78px;
+  }
+}
+.about-page-content ._first-sec {
+  width: 570px;
+  padding-top: 47px;
+  padding-right: 30px;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .about-page-content ._first-sec {
+    width: 100%;
+  }
+}
+.about-page-content ._sec-sec {
+  width: 571px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 47px 50px 27px;
+}
+@media (max-width: 767px) {
+  .about-page-content ._sec-sec {
+    width: 100%;
+    margin-top: 40px;
+    position: relative;
+    z-index: 9;
+  }
+}
+.about-page-content .sec-head {
+  color: #331d34;
+  font-size: 24px;
+  font-family: os-bold;
+  margin-bottom: 34px;
+}
+.about-page-content .sec-desc {
+  color: #331d34;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 34px;
+  position: relative;
+  z-index: 9;
+}
+.about-page-content .about-pattern {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.guaranties-cont.about-page {
+  padding-top: 0;
+  background-color: #f1f4f6;
+}
+@media (max-width: 767px) {
+  .guaranties-cont.about-page {
+    padding-top: 40px;
+  }
+}
+.guaranties-cont.about-page .guaranties-header {
+  color: #331d34;
+  position: relative;
+  z-index: 9;
+}
+@media (max-width: 767px) {
+  .guaranties-cont.about-page .guaranties-header {
+    text-align: left;
+    margin-bottom: 35px;
+  }
+}
+.guaranties-cont.about-page .guaranties {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .guaranties-cont.about-page .guaranties {
+    flex-direction: column;
+  }
+}
+.guaranties-cont.about-page .guarantie {
+  color: #331d34;
+}
+.guaranties-cont.about-page .guarantie .guarantie-head {
+  color: #331d34;
+}
+.guaranties-cont.about-page .guarantie .guarantie-desc {
+  color: #331d34;
+}
+@media (max-width: 767px) {
+  .guaranties-cont.about-page .guarantie {
+    margin-bottom: 40px;
+  }
+}
+.guaranties-cont .about-footer-pattern {
+  display: flex;
+  margin: 74px auto 116px;
+}
+@media (max-width: 767px) {
+  .guaranties-cont .about-footer-pattern {
+    margin-bottom: 70px;
+  }
+}
+
 footer {
   background-color: #f1f4f6;
 }
