@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.2 (81672) - https://sketch.com -->
+    <title>Path</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Desktop-Ar" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Buy-Card-[CreditCard]-Median-Step" transform="translate(-294.000000, -477.000000)" fill="#1B0E1C" fill-rule="nonzero">
+            <g id="payment-method" transform="translate(133.500000, 217.000000)">
+                <g id="back-tochange" transform="translate(109.500000, 260.324291)">
+                    <path d="M68.8205612,8.25607171 L55.6462296,8.25607171 L61.3989424,2.50335889 C61.8597981,2.04250324 61.8597981,1.29530861 61.3989424,0.834452962 C60.9380868,0.373597317 60.1908922,0.373597317 59.7300365,0.834452962 L51.128979,9.43551052 L59.7300365,18.0365681 C60.1908922,18.4974237 60.9380868,18.4974237 61.3989424,18.0365681 C61.8597981,17.5757124 61.8597981,16.8285178 61.3989424,16.3676622 L55.6462296,10.6149493 L68.8205612,10.6149493 C69.4719473,10.6149493 70,10.0868966 70,9.43551052 C70,8.78412445 69.4719473,8.25607171 68.8205612,8.25607171 Z" id="Path" transform="translate(60.564489, 9.435511) scale(-1, 1) translate(-60.564489, -9.435511) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

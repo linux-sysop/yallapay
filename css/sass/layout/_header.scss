@@ -1,0 +1,108 @@
+header {
+    background-color: $back;
+    padding-top: 35px;
+
+    .logo {
+        width: 160px;
+
+        @include xs {
+            width: 135px;
+        }
+    }
+
+    @include xs {
+        padding-top: 30px;
+    }
+}
+
+.header-cont {
+    display: flex;
+    align-items: center;
+}
+
+.countries-cont {
+    position: relative;
+
+    .selected-conutry {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        border-radius: 4px;
+        overflow: hidden;
+        @include transition(all 0.3s ease-in-out);
+
+        .arrow {
+            width: 31px;
+            height: 39px;
+            background-color: #ffffff;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+
+            path {
+                @include transition(all 0.3s ease-in-out);
+            }
+        }
+
+        @include xs {
+            display: none;
+        }
+    }
+
+    .country-flag {
+        width: 65px;
+        height: 39px;
+        background-color: #3d9635;
+    }
+
+    .other-countries {
+        width: 100%;
+        background: #fff;
+        position: absolute;
+        border-radius: 0 0 4px 4px;
+        padding: 5px 0;
+        opacity: 0;
+        visibility: hidden;
+        @include transition(all 0.3s ease-in-out);
+
+
+        .country-flag {
+            border-radius: 4px;
+            margin: 5px 0 0 auto;
+
+        }
+    }
+
+    &:hover {
+        .selected-conutry {
+            .arrow {
+                path {
+                    fill: $orange;
+                }
+            }
+
+            border-radius: 4px 4px 0 0;
+        }
+
+        .other-countries {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+.lang {
+    font-family: gulf;
+    color: $text;
+    font-size: 16px;
+    margin-left: auto;
+    @include transition(all 0.3s ease-in-out);
+
+    &:hover {
+        color: $orange;
+    }
+
+    @include xs {
+        display: none;
+    }
+}

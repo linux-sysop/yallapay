@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="33px" height="43px" viewBox="0 0 33 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.2 (81672) - https://sketch.com -->
+    <title>icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M9,15 L9,8 C9,4.6862915 11.6862915,2 15,2 L19,2 C22.3137085,2 25,4.6862915 25,8 L25,15 L25.44,15 C28.7537085,15 31.44,17.6862915 31.44,21 L31.44,35 C31.44,38.3137085 28.7537085,41 25.44,41 L7.44,41 C4.1262915,41 1.44,38.3137085 1.44,35 L1.44,21 C1.44,17.6862915 4.1262915,15 7.44,15 L9,15 Z" id="path-1"></path>
+    </defs>
+    <g id="Desktop-Ar" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Welcome" transform="translate(-872.000000, -877.000000)">
+            <g id="icon" transform="translate(871.560000, 877.017000)">
+                <path d="M27.52,13.1 L27.52,10.48 C27.52,4.69205582 22.8279442,0 17.04,0 C11.2520558,0 6.56,4.69205582 6.56,10.48 L6.56,13.1 C3.22512446,13.1971603 0.569381993,15.9237226 0.56,19.26 L0.56,35.82 C0.56,37.4590379 1.21110527,39.0309451 2.37008009,40.1899199 C3.52905491,41.3488947 5.10096209,42 6.74,42 L27.26,42 C30.6731198,42 33.44,39.2331198 33.44,35.82 L33.44,19.26 C33.4322268,15.9536362 30.8234459,13.2390939 27.52,13.1 L27.52,13.1 Z M17.04,2.99999989 C21.204227,2.99999989 24.58,6.37577299 24.58,10.54 L24.58,12.9999999 L9.5,12.9999999 L9.5,10.4 C9.57631592,6.29054781 12.9298393,2.99929144 17.04,2.99999989 Z M30.5,35.88 C30.4354238,37.6223724 29.0035683,39.0011963 27.26,39.0000008 L6.82,39.0000008 C5.96069857,39.0000008 5.1365919,38.6586438 4.52897403,38.051026 C3.92135616,37.4434081 3.58,36.6193014 3.58,35.76 L3.58,19.26 C3.58,18.4006986 3.92135616,17.5765919 4.52897403,16.968974 C5.1365919,16.3613562 5.96069857,16.02 6.82,16.02 L27.26,16.02 C29.0494026,16.02 30.5,17.4705974 30.5,19.26 L30.5,35.88 Z" id="Shape" fill="#F37170" fill-rule="nonzero"></path>
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Combined-Shape" fill-rule="nonzero"></g>
+                <path d="M23.0899523,3.81345363 L10.9276741,3.81345363" id="Path-4" stroke="#F37170" fill-rule="nonzero" mask="url(#mask-2)"></path>
+                <path d="M23.9003508,6.81345363 L10.1172755,6.81345363" id="Path-4-Copy" stroke="#F37170" fill-rule="nonzero" mask="url(#mask-2)"></path>
+                <path d="M25,9.81345363 L9.01762635,9.81345363" id="Path-4-Copy-2" stroke="#F37170" fill-rule="nonzero" mask="url(#mask-2)"></path>
+                <path d="M32,18.8134536 L2.01762635,18.8134536" id="Path-4-Copy-5" stroke="#F37170" fill-rule="nonzero" mask="url(#mask-2)"></path>
+                <path d="M32,21.8134536 L2.01762635,21.8134536" id="Path-4-Copy-4" stroke="#F37170" fill-rule="nonzero" mask="url(#mask-2)"></path>
+                <path d="M32,24.8134536 L2.01762635,24.8134536" id="Path-4-Copy-3" stroke="#F37170" fill-rule="nonzero" mask="url(#mask-2)"></path>
+                <path d="M32,27.8134536 L2.01762635,27.8134536" id="Path-4-Copy-8" stroke="#F37170" fill-rule="nonzero" mask="url(#mask-2)"></path>
+                <path d="M32,30.8134536 L2.01762635,30.8134536" id="Path-4-Copy-7" stroke="#F37170" fill-rule="nonzero" mask="url(#mask-2)"></path>
+                <path d="M32,33.8134536 L2.01762635,33.8134536" id="Path-4-Copy-6" stroke="#F37170" fill-rule="nonzero" mask="url(#mask-2)"></path>
+                <path d="M32,36.8134536 L2.01762635,36.8134536" id="Path-4-Copy-9" stroke="#F37170" fill-rule="nonzero" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

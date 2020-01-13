@@ -1,0 +1,39 @@
+footer {
+    background-color: $back;
+
+    .foot-nav {
+        height: 120px;
+        display: flex;
+        align-items: center;
+
+        @include xs {
+            display: none;
+        }
+    }
+
+    .foot-nav-li {
+        margin-right: 75px;
+    }
+
+    .foot-nav-anchor {
+        color: $blue;
+        font-size: 16px;
+        font-weight: 400;
+        @include transition(all 0.3s ease-in-out);
+
+        &:hover {
+            color: $orange;
+        }
+    }
+
+    .mobilefooter {
+        display: none;
+
+        @include xs {
+            display: flex;
+            height: 98px;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
