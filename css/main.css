@@ -662,6 +662,11 @@ html[dir=rtl] .lang {
     margin-bottom: 19px;
   }
 }
+@media (max-width: 767px) {
+  .main-sec .cards {
+    padding: 0 30px;
+  }
+}
 .main-sec .img-sec {
   position: absolute;
   right: -135px;
@@ -755,6 +760,11 @@ html[dir=rtl] .main-sec .cards .card:nth-of-type(2n) {
   html[dir=rtl] .main-sec .cards .card {
     margin-left: 18px;
     margin-right: 0;
+  }
+}
+@media (max-width: 767px) {
+  html[dir=rtl] .main-sec .cards {
+    padding: 0 30px;
   }
 }
 html[dir=rtl] .main-sec .img-sec {
@@ -973,6 +983,18 @@ html[dir=rtl] .guaranties-cont .about-img {
 footer {
   background-color: #f1f4f6;
 }
+footer .footer-cont {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  footer .footer-cont {
+    justify-content: center;
+    height: 98px;
+  }
+}
 footer .foot-nav {
   height: 120px;
   display: flex;
@@ -999,12 +1021,13 @@ footer .foot-nav-anchor:hover {
   color: #f48d65;
 }
 footer .mobilefooter {
-  display: none;
+  color: #1b0e1c;
+  font-size: 16px;
+  font-weight: 400;
 }
 @media (max-width: 767px) {
   footer .mobilefooter {
     display: flex;
-    height: 98px;
     align-items: center;
     justify-content: center;
   }

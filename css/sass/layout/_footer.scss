@@ -1,6 +1,18 @@
 footer {
     background-color: $back;
 
+    .footer-cont {
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include xs {
+            justify-content: center;
+            height: 98px;
+        }
+    }
+
     .foot-nav {
         height: 120px;
         display: flex;
@@ -27,11 +39,13 @@ footer {
     }
 
     .mobilefooter {
-        display: none;
+        color: #1b0e1c;
+        font-size: 16px;
+        font-weight: 400;
 
         @include xs {
             display: flex;
-            height: 98px;
+
             align-items: center;
             justify-content: center;
         }

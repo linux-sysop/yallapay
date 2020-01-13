@@ -104,6 +104,10 @@
                 margin-bottom: 19px;
             }
         }
+
+        @include xs {
+            padding: 0 30px;
+        }
     }
 
     .img-sec {
@@ -205,6 +209,10 @@ html[dir='rtl'] .main-sec {
                 margin-left: 18px;
                 margin-right: 0;
             }
+        }
+
+        @include xs {
+            padding: 0 30px;
         }
     }
 
