@@ -345,6 +345,27 @@ html {
   margin-top: 25px;
 }
 
+.hint {
+  width: 600px;
+  min-height: 49px;
+  border-radius: 5px;
+  background-color: #fcdf9f;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+  color: #331d34;
+  font-size: 16px;
+}
+@media (max-width: 767px) {
+  .hint {
+    width: 100%;
+    text-align: center;
+    padding: 7px 0;
+  }
+}
+
 html[dir=rtl] .form .form-input {
   text-align: right;
 }
@@ -372,6 +393,9 @@ html[dir=rtl] .form .countries-cont {
 html[dir=rtl] .form .countries-cont .country-name {
   margin-right: 14px;
   margin-left: 0;
+}
+html[dir=rtl] .form .note-forget {
+  text-align: right;
 }
 
 .nav_list {

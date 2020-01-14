@@ -248,6 +248,28 @@
         line-height: 24px;
         margin-top: 25px;
     }
+
+
+}
+
+.hint {
+    width: 600px;
+    min-height: 49px;
+    border-radius: 5px;
+    background-color: #fcdf9f;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
+    color: #331d34;
+    font-size: 16px;
+
+    @include xs {
+        width: 100%;
+        text-align: center;
+        padding: 7px 0;
+    }
 }
 
 html[dir='rtl'] .form {
@@ -292,4 +314,7 @@ html[dir='rtl'] .form {
 
     }
 
+    .note-forget {
+        text-align: right;
+    }
 }
