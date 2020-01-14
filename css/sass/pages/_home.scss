@@ -86,11 +86,11 @@
             width: 100%;
         }
 
-        .card-back {
+        .card {
             width: calc(50% - 12px);
             margin-right: 24px;
             margin-bottom: 24px;
-
+            background-color: transparent;
             @include transition(all 0.3s ease-in-out);
             backface-visibility: hidden;
 
@@ -101,6 +101,7 @@
             &:hover {
                 transform: translateY(-3px);
             }
+
 
             @include xs {
                 margin-right: 18px;
@@ -199,7 +200,7 @@ html[dir='rtl'] .main-sec {
 
     .cards {
 
-        .card-back {
+        .card {
             margin-right: 0;
             margin-left: 24px;
 

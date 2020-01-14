@@ -1081,24 +1081,25 @@ html[dir=rtl] .form-name {
     width: 100%;
   }
 }
-.main-sec .cards .card-back {
+.main-sec .cards .card {
   width: calc(50% - 12px);
   margin-right: 24px;
   margin-bottom: 24px;
+  background-color: transparent;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   backface-visibility: hidden;
 }
-.main-sec .cards .card-back:nth-of-type(2n) {
+.main-sec .cards .card:nth-of-type(2n) {
   margin-right: 0;
 }
-.main-sec .cards .card-back:hover {
+.main-sec .cards .card:hover {
   transform: translateY(-3px);
 }
 @media (max-width: 767px) {
-  .main-sec .cards .card-back {
+  .main-sec .cards .card {
     margin-right: 18px;
     width: calc(50% - 9px);
     margin-bottom: 19px;
@@ -1189,16 +1190,16 @@ html[dir=rtl] .main-sec .sec-head {
     white-space: unset;
   }
 }
-html[dir=rtl] .main-sec .cards .card-back {
+html[dir=rtl] .main-sec .cards .card {
   margin-right: 0;
   margin-left: 24px;
 }
-html[dir=rtl] .main-sec .cards .card-back:nth-of-type(2n) {
+html[dir=rtl] .main-sec .cards .card:nth-of-type(2n) {
   margin-left: 0;
   margin-right: 0;
 }
 @media (max-width: 767px) {
-  html[dir=rtl] .main-sec .cards .card-back {
+  html[dir=rtl] .main-sec .cards .card {
     margin-left: 18px;
     margin-right: 0;
   }
