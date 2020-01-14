@@ -1414,6 +1414,15 @@ html[dir=rtl] .guaranties-cont .about-img {
   }
 }
 
+@media (max-width: 767px) {
+  div.guarantie-img {
+    margin: 0 !important;
+    width: 33px;
+    min-width: 33px;
+    max-width: 33px;
+  }
+}
+
 .about-main {
   background-color: #f1f4f6;
   padding-top: 77px;

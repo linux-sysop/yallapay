@@ -457,3 +457,12 @@ html[dir='rtl'] .guaranties-cont {
         }
     }
 }
+
+div.guarantie-img {
+    @include xs {
+        margin: 0 !important;
+        width: 33px;
+        min-width: 33px;
+        max-width: 33px;
+    }
+}
