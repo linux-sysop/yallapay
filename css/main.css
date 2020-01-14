@@ -1503,9 +1503,10 @@ html[dir=rtl] .yalla-desc .yalla-info {
 @media (max-width: 767px) {
   .about-page-content ._sec-sec {
     width: 100%;
-    margin-top: 40px;
+    margin-top: 16px;
     position: relative;
     z-index: 9;
+    padding: 32px;
   }
 }
 .about-page-content .sec-head {
@@ -1584,6 +1585,7 @@ html[dir=rtl] .about-page-content .sec-desc {
 }
 .guaranties-cont.about-page .guarantie .guarantie-head {
   color: #331d34;
+  margin-top: 25px;
 }
 .guaranties-cont.about-page .guarantie .guarantie-desc {
   color: #331d34;
@@ -1591,21 +1593,46 @@ html[dir=rtl] .about-page-content .sec-desc {
 @media (max-width: 767px) {
   .guaranties-cont.about-page .guarantie {
     margin-bottom: 40px;
+    flex-direction: column;
+  }
+  .guaranties-cont.about-page .guarantie .guarantie-info {
+    margin: 0;
   }
 }
 .guaranties-cont .about-footer-pattern {
   display: flex;
-  margin: 74px auto 116px;
+  align-items: center;
+  justify-content: center;
+  margin: 74px 0 116px;
+  overflow: hidden;
 }
 @media (max-width: 767px) {
   .guaranties-cont .about-footer-pattern {
-    margin-bottom: 70px;
+    margin: 30px 30px 70px;
   }
 }
 
 @media (max-width: 767px) {
   html[dir=rtl] .guaranties-cont.about-page .guaranties-header {
     text-align: right;
+  }
+}
+html[dir=rtl] .guaranties-cont.about-page .guarantie {
+  color: #331d34;
+}
+html[dir=rtl] .guaranties-cont.about-page .guarantie .guarantie-head {
+  color: #331d34;
+}
+html[dir=rtl] .guaranties-cont.about-page .guarantie .guarantie-desc {
+  color: #331d34;
+}
+@media (max-width: 767px) {
+  html[dir=rtl] .guaranties-cont.about-page .guarantie {
+    margin-bottom: 40px;
+    flex-direction: column;
+  }
+  html[dir=rtl] .guaranties-cont.about-page .guarantie .guarantie-desc {
+    margin: 0;
   }
 }
 

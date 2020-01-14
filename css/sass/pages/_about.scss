@@ -86,9 +86,10 @@ html[dir='rtl'] .yalla-desc {
 
         @include xs {
             width: 100%;
-            margin-top: 40px;
+            margin-top: 16px;
             position: relative;
             z-index: 9;
+            padding: 32px;
         }
     }
 
@@ -173,6 +174,7 @@ html[dir='rtl'] .about-page-content {
 
             .guarantie-head {
                 color: $blue;
+                margin-top: 25px;
             }
 
             .guarantie-desc {
@@ -181,6 +183,11 @@ html[dir='rtl'] .about-page-content {
 
             @include xs {
                 margin-bottom: 40px;
+                flex-direction: column;
+
+                .guarantie-info {
+                    margin: 0;
+                }
             }
         }
 
@@ -188,10 +195,13 @@ html[dir='rtl'] .about-page-content {
 
     .about-footer-pattern {
         display: flex;
-        margin: 74px auto 116px;
+        align-items: center;
+        justify-content: center;
+        margin: 74px 0 116px;
+        overflow: hidden;
 
         @include xs {
-            margin-bottom: 70px;
+            margin: 30px 30px 70px;
         }
     }
 }
@@ -203,6 +213,27 @@ html[dir='rtl'] .guaranties-cont {
 
             @include xs {
                 text-align: right;
+            }
+        }
+
+        .guarantie {
+            color: $blue;
+
+            .guarantie-head {
+                color: $blue;
+            }
+
+            .guarantie-desc {
+                color: $blue;
+            }
+
+            @include xs {
+                margin-bottom: 40px;
+                flex-direction: column;
+
+                .guarantie-desc {
+                    margin: 0;
+                }
             }
         }
     }
