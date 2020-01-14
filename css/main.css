@@ -1890,6 +1890,7 @@ html[dir=rtl] .guaranties-cont.about-page .guarantie .guarantie-desc {
   border: 1px solid #817682;
 }
 .radio-cont.radio-disabled .not-available {
+  white-space: nowrap;
   display: flex;
   height: 35px;
   padding: 0 13.5px;
@@ -2116,6 +2117,34 @@ html[dir=rtl] .guaranties-cont.about-page .guarantie .guarantie-desc {
   }
 }
 
+.card-info {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  bottom: -21px;
+  color: #ffffff;
+  font-size: 12px;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.card-info svg {
+  margin-right: 7px;
+}
+.card-info svg path {
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.card-info:hover {
+  color: #f48d65;
+}
+.card-info:hover svg path {
+  fill: #f48d65;
+}
+
 html[dir=rtl] .info-card-cont .form-input {
   text-align: right;
 }
@@ -2200,6 +2229,13 @@ html[dir=rtl] .other-amount.form-input {
 html[dir=rtl] .preview-data .preview-content .amount-pre {
   font-family: Arial;
   font-weight: 500;
+}
+html[dir=rtl] .card-info {
+  direction: rtl;
+}
+html[dir=rtl] .card-info svg {
+  margin-left: 7px;
+  margin-right: 0;
 }
 
 footer {
