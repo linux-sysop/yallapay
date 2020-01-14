@@ -42,7 +42,7 @@ html[dir='rtl'] .mo-menu-open {
     background-color: rgba(51, 29, 52, 0.95);
     display: flex;
     z-index: 999;
-    padding-top: 40px;
+    padding-top: 30px;
     transform-origin: right;
     -moz-transform-origin: right;
     transform: scaleX(0);
@@ -63,7 +63,6 @@ html[dir='rtl'] .mo-menu-open {
     .logo {
         max-width: 135px;
         display: inline-flex;
-        margin: 0 19px;
     }
 
     .nav-cont {

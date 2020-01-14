@@ -251,7 +251,9 @@
         margin-top: 35px;
     }
 
-
+    .reg-img {
+        max-width: calc(100% + 80px);
+    }
 }
 
 .hint {

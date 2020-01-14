@@ -106,5 +106,9 @@ footer {
         .mobilefooter {
             color: #fff;
         }
+
+        @include xs {
+            display: none;
+        }
     }
 }

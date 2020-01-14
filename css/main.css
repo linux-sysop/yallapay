@@ -346,6 +346,9 @@ html {
   line-height: 24px;
   margin-top: 35px;
 }
+.form .reg-img {
+  max-width: calc(100% + 80px);
+}
 
 .hint {
   width: 529px;
@@ -525,7 +528,7 @@ html[dir=rtl] .nav_list .nav-item .nav-anchor {
   background-color: rgba(51, 29, 52, 0.95);
   display: flex;
   z-index: 999;
-  padding-top: 40px;
+  padding-top: 30px;
   transform-origin: right;
   -moz-transform-origin: right;
   transform: scaleX(0);
@@ -547,7 +550,6 @@ html[dir=rtl] .nav_list .nav-item .nav-anchor {
 .xs-nav .logo {
   max-width: 135px;
   display: inline-flex;
-  margin: 0 19px;
 }
 .xs-nav .nav-cont {
   width: 100%;
@@ -1039,7 +1041,7 @@ html[dir=rtl] .form-name {
     overflow: unset;
     text-align: center;
     white-space: unset;
-    margin-top: 54px;
+    margin-top: 0;
   }
 }
 .main-sec .openStyle {
@@ -1169,7 +1171,6 @@ html[dir=rtl] .main-sec .sec-head {
     overflow: unset;
     text-align: center;
     white-space: unset;
-    margin-top: 54px;
   }
 }
 html[dir=rtl] .main-sec .cards .card-back {
@@ -1279,7 +1280,7 @@ html[dir=rtl] .main-sec .Payments .Payment-head {
     width: 100%;
     flex-direction: row;
     margin-top: 0;
-    margin-bottom: 100px;
+    margin-bottom: 74px;
   }
   .guaranties-cont .guarantie div {
     margin-left: 17px;
@@ -1295,7 +1296,6 @@ html[dir=rtl] .main-sec .Payments .Payment-head {
 @media (max-width: 767px) {
   .guaranties-cont .guarantie .guarantie-head {
     margin: 5px 0;
-    padding-left: 41px;
   }
 }
 .guaranties-cont .guarantie .guarantie-desc {
@@ -1303,11 +1303,21 @@ html[dir=rtl] .main-sec .Payments .Payment-head {
   font-size: 16px;
   font-family: os-light;
 }
+@media (max-width: 767px) {
+  .guaranties-cont .guarantie .guarantie-desc {
+    margin-top: 30px;
+  }
+}
 .guaranties-cont .about {
   position: relative;
 }
 .guaranties-cont .about-desc-cont {
   margin-top: 82px;
+}
+@media (max-width: 767px) {
+  .guaranties-cont .about-desc-cont {
+    margin-top: 0;
+  }
 }
 .guaranties-cont .about-desc-cont .about-header {
   color: #ffffff;
@@ -1328,6 +1338,7 @@ html[dir=rtl] .main-sec .Payments .Payment-head {
 @media (max-width: 767px) {
   .guaranties-cont .about-desc-cont .about-desc {
     width: 100%;
+    text-align: center;
   }
 }
 .guaranties-cont .about-img {
@@ -1376,12 +1387,6 @@ html[dir=rtl] .guaranties-cont .guaranties {
 html[dir=rtl] .guaranties-cont .guarantie .guarantie-head {
   font-family: g-bold;
 }
-@media (max-width: 767px) {
-  html[dir=rtl] .guaranties-cont .guarantie .guarantie-head {
-    padding-left: 0;
-    padding-right: 41px;
-  }
-}
 html[dir=rtl] .guaranties-cont .guarantie .guarantie-desc {
   font-family: gulf;
 }
@@ -1392,6 +1397,11 @@ html[dir=rtl] .guaranties-cont .about-desc-cont .about-header {
   font-size: 24px;
   font-family: g-bold;
   font-weight: 700;
+}
+@media (max-width: 767px) {
+  html[dir=rtl] .guaranties-cont .about-desc-cont {
+    margin-top: 0;
+  }
 }
 html[dir=rtl] .guaranties-cont .about-img {
   right: auto;
@@ -1693,6 +1703,11 @@ footer.black-page .foot-nav-anchor {
 }
 footer.black-page .mobilefooter {
   color: #fff;
+}
+@media (max-width: 767px) {
+  footer.black-page {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
