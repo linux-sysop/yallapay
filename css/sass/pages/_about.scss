@@ -35,6 +35,11 @@
 }
 
 html[dir='rtl'] .yalla-desc {
+    width: 569px;
+
+    @include xs {
+        width: 100%;
+    }
 
     .yalla {
         font-weight: unset;

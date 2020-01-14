@@ -1441,6 +1441,14 @@ html[dir=rtl] .guaranties-cont .about-img {
   line-height: 36px;
 }
 
+html[dir=rtl] .yalla-desc {
+  width: 569px;
+}
+@media (max-width: 767px) {
+  html[dir=rtl] .yalla-desc {
+    width: 100%;
+  }
+}
 html[dir=rtl] .yalla-desc .yalla {
   font-weight: unset;
   font-family: g-bold;
