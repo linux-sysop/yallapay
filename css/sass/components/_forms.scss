@@ -46,6 +46,10 @@
         &:first-of-type {
             margin-top: 40px;
         }
+
+        &.log-in-pass {
+            margin-top: 40px;
+        }
     }
 
     .form-input {
@@ -96,6 +100,11 @@
         font-size: 13px;
         display: block;
         margin-top: 10px;
+
+        &.errornote {
+            color: #f37170;
+            display: none;
+        }
     }
 
     .show_hide {
@@ -241,6 +250,15 @@
                 color: $orange;
                 text-decoration: none;
             }
+
+            &.sign-in-forget {
+                text-decoration: none;
+            }
+        }
+
+        @include xs {
+            font-size: 15px;
+            text-align: center;
         }
     }
 
@@ -313,6 +331,7 @@ html[dir='rtl'] .form {
     .note {
         font-family: gulf;
         text-align: right;
+
     }
 
     .show_hide {

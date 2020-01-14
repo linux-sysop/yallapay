@@ -157,6 +157,9 @@ html {
 .form .input-label:first-of-type {
   margin-top: 40px;
 }
+.form .input-label.log-in-pass {
+  margin-top: 40px;
+}
 .form .form-input {
   width: 100%;
   height: 100%;
@@ -200,6 +203,10 @@ html {
   font-size: 13px;
   display: block;
   margin-top: 10px;
+}
+.form .note.errornote {
+  color: #f37170;
+  display: none;
 }
 .form .show_hide {
   position: absolute;
@@ -339,6 +346,15 @@ html {
 .form .forgetpass .forget-link:hover {
   color: #f48d65;
   text-decoration: none;
+}
+.form .forgetpass .forget-link.sign-in-forget {
+  text-decoration: none;
+}
+@media (max-width: 767px) {
+  .form .forgetpass {
+    font-size: 15px;
+    text-align: center;
+  }
 }
 .form .note-forget {
   color: #331d34;
