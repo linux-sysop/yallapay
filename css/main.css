@@ -130,7 +130,6 @@ html {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  overflow: hidden;
 }
 @media (max-width: 767px) {
   .form {
@@ -162,7 +161,7 @@ html {
   width: 100%;
   height: 100%;
   background-color: transparent;
-  border-bottom: 2px solid #1b0e1c;
+  border-bottom: 1px solid #1b0e1c;
   color: #1b0e1c;
   font-size: 16px;
   padding: 0 15px;
@@ -171,7 +170,7 @@ html {
   text-align: left;
 }
 .form .form-input:focus {
-  border-bottom: 2px solid #f48d65;
+  border-bottom: 1px solid #f48d65;
 }
 .form .form-input::-webkit-inner-spin-button,
 .form .form-input::-webkit-outer-spin-button {
@@ -276,6 +275,7 @@ html {
 .form .countries-cont .other-countries .country-li {
   margin-bottom: 5px;
   cursor: pointer;
+  display: flex;
 }
 .form .countries-cont .other-countries .country-li:hover .country-name {
   color: #f48d65;
@@ -330,6 +330,7 @@ html {
 .form .forgetpass .forget-link {
   color: #1b0e1c;
   font-size: 16px;
+  text-decoration: underline;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -337,19 +338,20 @@ html {
 }
 .form .forgetpass .forget-link:hover {
   color: #f48d65;
+  text-decoration: none;
 }
 .form .note-forget {
   color: #331d34;
   font-size: 16px;
   line-height: 24px;
-  margin-top: 25px;
+  margin-top: 35px;
 }
 
 .hint {
-  width: 600px;
+  width: 529px;
   min-height: 49px;
-  border-radius: 5px;
-  background-color: #fcdf9f;
+  border-radius: 10px;
+  background-color: #ffde96;
   margin: auto;
   display: flex;
   align-items: center;
@@ -369,6 +371,18 @@ html {
 html[dir=rtl] .form .form-input {
   text-align: right;
 }
+html[dir=rtl] .form .countries-cont {
+  width: 265px;
+}
+@media (max-width: 767px) {
+  html[dir=rtl] .form .countries-cont .country-name {
+    font-size: 18px;
+  }
+}
+html[dir=rtl] .form .countries-head {
+  font-family: g-bold;
+  text-align: right;
+}
 html[dir=rtl] .form .floating-label {
   right: 0;
   left: auto;
@@ -380,6 +394,7 @@ html[dir=rtl] .form .label-active {
 }
 html[dir=rtl] .form .note {
   font-family: gulf;
+  text-align: right;
 }
 html[dir=rtl] .form .show_hide {
   font-family: gulf;
@@ -787,7 +802,7 @@ header .logo {
   background-color: #3d9635;
 }
 .countries-cont .other-countries {
-  width: 100%;
+  width: 65;
   background: #fff;
   position: absolute;
   border-radius: 0 0 4px 4px;
@@ -798,10 +813,17 @@ header .logo {
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  right: 0;
+  z-index: 9;
 }
 .countries-cont .other-countries .country-flag {
   border-radius: 4px;
   margin: 5px 0 0 auto;
+  background-color: transparent;
+}
+.countries-cont .other-countries .country-anchor {
+  display: flex;
+  margin-bottom: 5px;
 }
 .countries-cont:hover .selected-conutry {
   border-radius: 4px 4px 0 0;
@@ -814,6 +836,10 @@ header .logo {
   visibility: visible;
 }
 
+html[dir=rtl] .countries-cont .other-countries {
+  left: 0;
+  right: auto;
+}
 html[dir=rtl] .countries-cont .other-countries .country-flag {
   border-radius: 4px;
   margin: 5px auto 0 0;
@@ -981,7 +1007,9 @@ html[dir=rtl] .form-name {
   white-space: nowrap;
   pointer-events: none;
   transition: all 1.5s linear;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
+  letter-spacing: -1px;
+  padding: 1px 0;
 }
 @media (max-width: 767px) {
   .main-sec .main-head {
@@ -1002,6 +1030,7 @@ html[dir=rtl] .form-name {
   white-space: nowrap;
   pointer-events: none;
   transition: all 1s linear;
+  padding: 1px 0;
 }
 @media (max-width: 767px) {
   .main-sec .sec-head {
@@ -1034,25 +1063,24 @@ html[dir=rtl] .form-name {
     width: 100%;
   }
 }
-.main-sec .cards .card {
+.main-sec .cards .card-back {
   width: calc(50% - 12px);
   margin-right: 24px;
   margin-bottom: 24px;
-  box-shadow: 0 2px 4px rgba(209, 216, 221, 0.88);
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   backface-visibility: hidden;
 }
-.main-sec .cards .card:nth-of-type(2n) {
+.main-sec .cards .card-back:nth-of-type(2n) {
   margin-right: 0;
 }
-.main-sec .cards .card:hover {
+.main-sec .cards .card-back:hover {
   transform: translateY(-3px);
 }
 @media (max-width: 767px) {
-  .main-sec .cards .card {
+  .main-sec .cards .card-back {
     margin-right: 18px;
     width: calc(50% - 9px);
     margin-bottom: 19px;
@@ -1090,25 +1118,25 @@ html[dir=rtl] .form-name {
     max-width: calc(100% + 30px);
   }
 }
-.main-sec .payments {
+.main-sec .Payments {
   margin-top: 9px;
 }
-.main-sec .payments .payment-head {
+.main-sec .Payments .Payment-head {
   color: #1b0e1c;
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 15px;
 }
 @media (max-width: 767px) {
-  .main-sec .payments .payment-head {
+  .main-sec .Payments .Payment-head {
     text-align: center;
   }
 }
 @media (max-width: 767px) {
-  .main-sec .payments {
+  .main-sec .Payments {
     margin-top: 0;
   }
-  .main-sec .payments .payment-methods {
+  .main-sec .Payments .Payment-methods {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1144,16 +1172,16 @@ html[dir=rtl] .main-sec .sec-head {
     margin-top: 54px;
   }
 }
-html[dir=rtl] .main-sec .cards .card {
+html[dir=rtl] .main-sec .cards .card-back {
   margin-right: 0;
   margin-left: 24px;
 }
-html[dir=rtl] .main-sec .cards .card:nth-of-type(2n) {
+html[dir=rtl] .main-sec .cards .card-back:nth-of-type(2n) {
   margin-left: 0;
   margin-right: 0;
 }
 @media (max-width: 767px) {
-  html[dir=rtl] .main-sec .cards .card {
+  html[dir=rtl] .main-sec .cards .card-back {
     margin-left: 18px;
     margin-right: 0;
   }
@@ -1190,10 +1218,10 @@ html[dir=rtl] .main-sec .img-sec {
     max-width: calc(100% + 30px);
   }
 }
-html[dir=rtl] .main-sec .payments {
+html[dir=rtl] .main-sec .Payments {
   text-align: right;
 }
-html[dir=rtl] .main-sec .payments .payment-head {
+html[dir=rtl] .main-sec .Payments .Payment-head {
   font-family: gulf;
   font-weight: unset;
 }
@@ -1608,6 +1636,7 @@ footer .mobilefooter {
   font-size: 16px;
   font-weight: 400;
   font-family: os;
+  direction: ltr;
 }
 @media (max-width: 767px) {
   footer .mobilefooter {
@@ -1619,10 +1648,33 @@ footer .mobilefooter {
 
 html[dir=rtl] footer .foot-nav-li {
   margin-left: 75px;
-  margin-left: 0;
+  margin-right: 0;
 }
 html[dir=rtl] footer .foot-nav-anchor {
   font-weight: unset;
+}
+html[dir=rtl] footer .mobilefooter {
+  color: #1b0e1c;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: os;
+  direction: ltr;
+}
+@media (max-width: 767px) {
+  html[dir=rtl] footer .mobilefooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+html[dir=rtl] footer.black-page {
+  background-color: #331d34;
+}
+html[dir=rtl] footer.black-page .foot-nav-anchor {
+  color: #fff;
+}
+html[dir=rtl] footer.black-page .mobilefooter {
+  color: #fff;
 }
 
 footer.black-page {

@@ -13,8 +13,6 @@ header {
     @include xs {
         padding-top: 30px;
     }
-
-
 }
 
 .header-cont {
@@ -58,7 +56,7 @@ header {
     }
 
     .other-countries {
-        width: 100%;
+        width: 65;
         background: #fff;
         position: absolute;
         border-radius: 0 0 4px 4px;
@@ -66,13 +64,21 @@ header {
         opacity: 0;
         visibility: hidden;
         @include transition(all 0.3s ease-in-out);
+        right: 0;
+        z-index: 9;
 
 
         .country-flag {
             border-radius: 4px;
             margin: 5px 0 0 auto;
-
+            background-color: transparent;
         }
+
+        .country-anchor {
+            display: flex;
+            margin-bottom: 5px;
+        }
+
     }
 
     &:hover {
@@ -95,6 +101,9 @@ header {
 
 html[dir='rtl'] .countries-cont {
     .other-countries {
+        left: 0;
+        right: auto;
+
         .country-flag {
             border-radius: 4px;
             margin: 5px auto 0 0;

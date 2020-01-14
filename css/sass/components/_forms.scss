@@ -19,7 +19,6 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    overflow: hidden;
 
     @include xs {
         width: 100%;
@@ -53,7 +52,7 @@
         width: 100%;
         height: 100%;
         background-color: transparent;
-        border-bottom: 2px solid #1b0e1c;
+        border-bottom: 1px solid #1b0e1c;
         color: $text;
         font-size: 16px;
         padding: 0 15px;
@@ -63,7 +62,7 @@
     }
 
     .form-input:focus {
-        border-bottom: 2px solid $orange;
+        border-bottom: 1px solid $orange;
     }
 
     .form-input::-webkit-inner-spin-button,
@@ -166,6 +165,7 @@
             .country-li {
                 margin-bottom: 5px;
                 cursor: pointer;
+                display: flex;
 
                 &:hover {
                     .country-name {
@@ -234,10 +234,12 @@
         .forget-link {
             color: #1b0e1c;
             font-size: 16px;
+            text-decoration: underline;
             @include transition(all 0.3s ease-in-out);
 
             &:hover {
                 color: $orange;
+                text-decoration: none;
             }
         }
     }
@@ -246,17 +248,17 @@
         color: #331d34;
         font-size: 16px;
         line-height: 24px;
-        margin-top: 25px;
+        margin-top: 35px;
     }
 
 
 }
 
 .hint {
-    width: 600px;
+    width: 529px;
     min-height: 49px;
-    border-radius: 5px;
-    background-color: #fcdf9f;
+    border-radius: 10px;
+    background-color: #ffde96;
     margin: auto;
     display: flex;
     align-items: center;
@@ -278,8 +280,22 @@ html[dir='rtl'] .form {
         text-align: right;
     }
 
+    .countries-cont {
+        width: 265px;
+
+        .country-name {
 
 
+            @include xs {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .countries-head {
+        font-family: g-bold;
+        text-align: right;
+    }
 
     .floating-label {
         right: 0;
@@ -294,6 +310,7 @@ html[dir='rtl'] .form {
 
     .note {
         font-family: gulf;
+        text-align: right;
     }
 
     .show_hide {

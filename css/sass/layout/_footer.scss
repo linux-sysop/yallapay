@@ -43,6 +43,7 @@ footer {
         font-size: 16px;
         font-weight: 400;
         font-family: os;
+        direction: ltr;
 
         @include xs {
             display: flex;
@@ -58,11 +59,38 @@ html[dir='rtl'] footer {
 
     .foot-nav-li {
         margin-left: 75px;
-        margin-left: 0;
+        margin-right: 0;
     }
 
     .foot-nav-anchor {
         font-weight: unset;
+    }
+
+    .mobilefooter {
+        color: #1b0e1c;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: os;
+        direction: ltr;
+
+        @include xs {
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &.black-page {
+        background-color: $blue;
+
+        .foot-nav-anchor {
+            color: #fff;
+        }
+
+        .mobilefooter {
+            color: #fff;
+        }
     }
 }
 

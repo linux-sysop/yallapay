@@ -30,7 +30,9 @@
         white-space: nowrap;
         pointer-events: none;
         transition: all 1.5s linear;
-        margin-bottom: 8px;
+        margin-bottom: 16px;
+        letter-spacing: -1px;
+        padding: 1px 0;
 
         @include xs {
             font-size: 24px;
@@ -51,6 +53,7 @@
         white-space: nowrap;
         pointer-events: none;
         transition: all 1s linear;
+        padding: 1px 0;
 
         @include xs {
             font-size: 16px;
@@ -83,11 +86,11 @@
             width: 100%;
         }
 
-        .card {
+        .card-back {
             width: calc(50% - 12px);
             margin-right: 24px;
             margin-bottom: 24px;
-            box-shadow: 0 2px 4px rgba(209, 216, 221, 0.88);
+
             @include transition(all 0.3s ease-in-out);
             backface-visibility: hidden;
 
@@ -138,10 +141,10 @@
         }
     }
 
-    .payments {
+    .Payments {
         margin-top: 9px;
 
-        .payment-head {
+        .Payment-head {
             color: $text;
             font-size: 16px;
             font-weight: 400;
@@ -155,7 +158,7 @@
         @include xs {
             margin-top: 0;
 
-            .payment-methods {
+            .Payment-methods {
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -197,7 +200,7 @@ html[dir='rtl'] .main-sec {
 
     .cards {
 
-        .card {
+        .card-back {
             margin-right: 0;
             margin-left: 24px;
 
@@ -245,10 +248,10 @@ html[dir='rtl'] .main-sec {
     }
 
 
-    .payments {
+    .Payments {
         text-align: right;
 
-        .payment-head {
+        .Payment-head {
             font-family: gulf;
             font-weight: unset;
         }
