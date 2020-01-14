@@ -140,16 +140,17 @@
                     @include transition(all 0.3s ease-in-out);
                 }
             }
-
-            @include xs {
-                display: none;
-            }
         }
 
         .country-name {
             color: #1b0e1c;
             font-size: 18px;
             margin-left: 14px;
+            @include transition(all 0.3s ease-in-out);
+
+            @include xs {
+                font-size: 16px;
+            }
         }
 
         .other-countries {
@@ -164,6 +165,13 @@
 
             .country-li {
                 margin-bottom: 5px;
+                cursor: pointer;
+
+                &:hover {
+                    .country-name {
+                        color: $orange;
+                    }
+                }
             }
         }
 
@@ -215,6 +223,22 @@
             background-color: $text;
             border: 1px solid #665e71;
             box-shadow: none;
+        }
+    }
+
+    .forgetpass {
+        color: #1b0e1c;
+        font-size: 16px;
+        margin-bottom: 51px;
+
+        .forget-link {
+            color: #1b0e1c;
+            font-size: 16px;
+            @include transition(all 0.3s ease-in-out);
+
+            &:hover {
+                color: $orange;
+            }
         }
     }
 }

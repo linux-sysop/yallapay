@@ -246,15 +246,19 @@ html {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-@media (max-width: 767px) {
-  .form .countries-cont .selected-conutry {
-    display: none;
-  }
-}
 .form .countries-cont .country-name {
   color: #1b0e1c;
   font-size: 18px;
   margin-left: 14px;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 767px) {
+  .form .countries-cont .country-name {
+    font-size: 16px;
+  }
 }
 .form .countries-cont .other-countries {
   width: 100%;
@@ -271,6 +275,10 @@ html {
 }
 .form .countries-cont .other-countries .country-li {
   margin-bottom: 5px;
+  cursor: pointer;
+}
+.form .countries-cont .other-countries .country-li:hover .country-name {
+  color: #f48d65;
 }
 .form .countries-cont:hover .selected-conutry {
   border-radius: 4px 4px 0 0;
@@ -313,6 +321,22 @@ html {
   background-color: #1b0e1c;
   border: 1px solid #665e71;
   box-shadow: none;
+}
+.form .forgetpass {
+  color: #1b0e1c;
+  font-size: 16px;
+  margin-bottom: 51px;
+}
+.form .forgetpass .forget-link {
+  color: #1b0e1c;
+  font-size: 16px;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.form .forgetpass .forget-link:hover {
+  color: #f48d65;
 }
 
 html[dir=rtl] .form .form-input {
