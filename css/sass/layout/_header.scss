@@ -13,6 +13,8 @@ header {
     @include xs {
         padding-top: 30px;
     }
+
+
 }
 
 .header-cont {
@@ -121,4 +123,34 @@ html[dir='rtl'] .lang {
     font-family: os-semibold;
     margin-left: 0;
     margin-right: auto;
+}
+
+// form Pages
+header {
+    &.register-page {
+        background-color: $blue;
+
+        .log-anchor {
+            color: $text;
+            font-size: 16px;
+            width: 160px;
+            height: 57px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $blue;
+            border-radius: 5px;
+            background-color: transparent;
+            color: #fdfcfc;
+            border: 1px solid #665e71;
+            @include transition(all 0.3s ease-in-out);
+
+            &:hover {
+                color: #fff;
+                background-color: $orange;
+                border: 1px solid #ff996c;
+            }
+
+        }
+    }
 }

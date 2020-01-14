@@ -554,6 +554,33 @@ html[dir=rtl] .lang {
   margin-right: auto;
 }
 
+header.register-page {
+  background-color: #331d34;
+}
+header.register-page .log-anchor {
+  color: #1b0e1c;
+  font-size: 16px;
+  width: 160px;
+  height: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #331d34;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #fdfcfc;
+  border: 1px solid #665e71;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+header.register-page .log-anchor:hover {
+  color: #fff;
+  background-color: #f48d65;
+  border: 1px solid #ff996c;
+}
+
 .main-sec {
   background-color: #f1f4f6;
   padding-top: 90px;
@@ -586,6 +613,7 @@ html[dir=rtl] .lang {
   white-space: nowrap;
   pointer-events: none;
   transition: all 1.5s linear;
+  margin-bottom: 8px;
 }
 @media (max-width: 767px) {
   .main-sec .main-head {

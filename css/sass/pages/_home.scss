@@ -30,6 +30,7 @@
         white-space: nowrap;
         pointer-events: none;
         transition: all 1.5s linear;
+        margin-bottom: 8px;
 
         @include xs {
             font-size: 24px;
