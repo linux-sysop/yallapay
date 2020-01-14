@@ -65,3 +65,18 @@ html[dir='rtl'] footer {
         font-weight: unset;
     }
 }
+
+
+footer {
+    &.black-page {
+        background-color: $blue;
+
+        .foot-nav-anchor {
+            color: #fff;
+        }
+
+        .mobilefooter {
+            color: #fff;
+        }
+    }
+}

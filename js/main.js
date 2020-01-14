@@ -22,6 +22,27 @@ $(document).ready(function () {
         });
     }
 
+    $('.form-input').focus(function () {
+        $(this).parent().find(".floating-label").addClass('label-active');
+    });
+
+    $(".form-input").focusout(function () {
+        if ($(this).val() == '') {
+            $(this).parent().find(".floating-label").removeClass('label-active');
+        };
+    });
+    $('.show_hide').click(function () {
+        if ($('.pass-input').attr('type') == 'password') {
+            $('.pass-input').attr("type", "text");
+            $(".show").hide();
+            $(".hide").show();
+
+        } else {
+            $('.pass-input').attr("type", "password");
+            $(".show").show();
+            $(".hide").hide();
+        }
+    });
     new WOW().init();
 });
 

@@ -127,8 +127,23 @@ html[dir='rtl'] .lang {
 
 // form Pages
 header {
-    &.register-page {
+    &.black-page {
         background-color: $blue;
+
+        .header-cont {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav-cont {
+            display: flex;
+            align-items: center;
+
+            @include xs {
+                display: none;
+            }
+        }
 
         .log-anchor {
             color: $text;
@@ -152,5 +167,82 @@ header {
             }
 
         }
+
+        .has-account {
+            color: #ffffff;
+            font-size: 13px;
+            margin-right: 28px;
+            font-family: os-light;
+        }
+
+        .mo-menu-open {
+            display: none;
+
+            @include xs {
+                color: #fff;
+                font-size: 14px;
+                display: flex;
+
+                svg {
+                    -webkit-transform: scaleX(-1);
+                    transform: scaleX(-1);
+                    margin-left: 5px;
+
+                    path {
+                        fill: #fff;
+                    }
+                }
+            }
+        }
     }
+}
+
+html[dir='rtl'] header {
+    &.black-page {
+
+        .has-account {
+            font-size: 12px;
+            margin-left: 28px;
+            margin-right: 0;
+            font-family: gulf;
+        }
+
+        .mo-menu-open {
+
+            @include xs {
+                svg {
+                    -webkit-transform: none;
+                    transform: none;
+                    margin-left: 0;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}
+
+.form-name {
+    -webkit-text-fill-color: white;
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #979797;
+    color: #ffffff;
+    font-size: 24px;
+    font-family: os-bold;
+    position: absolute;
+    top: 46px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+
+    @include xs {
+        top: 109px;
+        width: 100%;
+    }
+}
+
+html[dir='rtl'] .form-name {
+
+    font-family: g-bold;
+
 }
