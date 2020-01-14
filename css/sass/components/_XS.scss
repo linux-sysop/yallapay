@@ -34,19 +34,23 @@ html[dir='rtl'] .mo-menu-open {
 }
 
 .xs-nav {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background-color: rgba(51, 29, 52, 0.95);
-    display: flex;
     z-index: 999;
     padding-top: 30px;
     transform-origin: right;
     -moz-transform-origin: right;
     transform: scaleX(0);
     @include transition(all 0.5s ease-in-out);
+
+    @include xs {
+        display: flex;
+    }
 
     &.xs-open {
         transform-origin: left;

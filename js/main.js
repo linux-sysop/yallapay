@@ -10,6 +10,7 @@ $(document).ready(function () {
         $(".img-sec").removeClass('fadeInRightBig')
         $(".img-sec").removeClass('fadeInLeftBig')
         $(".img-sec").addClass('zoomIn')
+        $(".other-amount").removeAttr("placeholder")
 
 
         $('.mo-menu-open').click(function () {
@@ -44,6 +45,25 @@ $(document).ready(function () {
         }
     });
     new WOW().init();
+
+
+    $('.info-card-cont .country-li .country-anchor').click(function () {
+        var flag = $('.info-card-cont .flag').html()
+        $('.info-card-cont .flag').html($(this).html())
+        $('.slected-country-pre').html($(this).html())
+        $(this).html(flag)
+    });
+
+    $('input[type=radio]').change(function () {
+        $('.amount-pre .price').text(this.value)
+    });
+    $('#email-pre').on('change paste keyup', function () {
+        if ($('#email-pre').val() == '') {
+            $('.email-pre').text('AlaaAlmahmadi@payers.net')
+        } else {
+            $('.email-pre').text($('#email-pre').val())
+        }
+    });
 });
 
 
