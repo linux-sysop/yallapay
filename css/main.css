@@ -338,6 +338,12 @@ html {
 .form .forgetpass .forget-link:hover {
   color: #f48d65;
 }
+.form .note-forget {
+  color: #331d34;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 25px;
+}
 
 html[dir=rtl] .form .form-input {
   text-align: right;
