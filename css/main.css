@@ -560,7 +560,7 @@ html[dir=rtl] .nav_list .nav-item .nav-anchor {
   }
 }
 .xs-nav.xs-open {
-  transform-origin: left;
+  transform-origin: right;
   -moz-transform-origin: right;
   transform: scaleX(1);
 }
@@ -736,7 +736,7 @@ html[dir=rtl] .xs-nav {
   -moz-transform-origin: left;
 }
 html[dir=rtl] .xs-nav.xs-open {
-  transform-origin: right;
+  transform-origin: left;
   -moz-transform-origin: left;
   transform: scaleX(1);
 }
