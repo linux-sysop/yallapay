@@ -2150,6 +2150,229 @@ html[dir=rtl] .guaranties-cont.about-page .guarantie .guarantie-desc {
   }
 }
 
+.goback {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 20px;
+  display: inline-flex;
+}
+.goback svg {
+  transform: rotate(180deg);
+  margin-right: 8px;
+}
+.goback svg path {
+  fill: #fff;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.goback:hover {
+  color: #f48d65;
+}
+.goback:hover svg path {
+  fill: #f48d65;
+}
+@media (max-width: 767px) {
+  .goback {
+    font-size: 14px;
+  }
+}
+
+.pay-card-cont {
+  background-color: #331d34;
+  padding-top: 98px;
+  padding-bottom: 200px;
+}
+@media (max-width: 767px) {
+  .pay-card-cont {
+    padding-top: 59px;
+    padding-bottom: 100px;
+  }
+}
+
+.pay-card-preview {
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .pay-card-preview {
+    margin-bottom: 19px;
+  }
+}
+@media (max-width: 767px) {
+  .pay-card-preview .preview-content {
+    padding: 35px 23px 15px;
+  }
+  .pay-card-preview .preview-content ._left-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .pay-card-preview .preview-content .amount-pre {
+    font-size: 75px;
+    margin-top: 0;
+    line-height: 50px;
+  }
+  .pay-card-preview .preview-content .email-pre {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+}
+
+.pay-methods-cont {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-head {
+  border-radius: 10px 10px 0 0;
+  background-color: #f1f4f6;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+.card-head.pay-card-head {
+  justify-content: center;
+}
+.card-head.paypal-card-head {
+  padding: 0 70px;
+}
+@media (max-width: 767px) {
+  .card-head.paypal-card-head {
+    padding: 0;
+    justify-content: center;
+  }
+}
+.card-head.paypal-card-head .pay-methods-head {
+  margin-left: 18px;
+  margin-right: 26px;
+}
+.card-head.paypal-card-head .change-method {
+  width: 81px;
+  height: 36px;
+  border-radius: 5px;
+  border: 1px solid #817682;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1b0e1c;
+  font-size: 14px;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.card-head.paypal-card-head .change-method:hover {
+  background-color: #331d34;
+  color: #f1f4f6;
+}
+@media (max-width: 767px) {
+  .card-head {
+    height: 67px;
+  }
+}
+
+.pay-methods-head {
+  color: #1b0e1c;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.pay-methods {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pay-method {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 50%;
+  height: 132px;
+  color: #331d34;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 16px;
+  background-color: #fff;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.pay-method img {
+  margin-bottom: 13px;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.pay-method:hover {
+  background-color: #fff;
+  box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);
+  z-index: 99;
+  color: #f48d65;
+}
+@media (max-width: 767px) {
+  .pay-method {
+    height: 130px;
+  }
+}
+
+.paypal-method {
+  padding: 5px 70px 10px;
+  background-color: #fff;
+}
+@media (max-width: 767px) {
+  .paypal-method {
+    padding: 10px 23px 5px;
+  }
+}
+.paypal-method .method-info-desc {
+  margin: 15px 0 20px;
+  color: #1b0e1c;
+  font-size: 16px;
+}
+.paypal-method .method-info-desc.method-info-note {
+  font-family: os-light;
+  font-size: 13px;
+}
+.paypal-method .goto-payoal {
+  width: 100%;
+  height: 58px;
+  box-shadow: 0 1px 0 #000000, inset 0 1px 1px #ff996c;
+  border-radius: 5px;
+  background-color: #f27036;
+  border: 1px solid #f27036;
+  color: #fdfcfc;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.paypal-method .goto-payoal:hover, .paypal-method .goto-payoal:focus {
+  background-color: #331d34;
+  border: 1px solid #665e71;
+  box-shadow: none;
+  color: #fff;
+}
+
 html[dir=rtl] .info-card-cont .form-input {
   text-align: right;
 }
@@ -2251,149 +2474,28 @@ html[dir=rtl] .pay-card .preview-content {
 html[dir=rtl] .div {
   text-align: left;
 }
-
-.goback {
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 400;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  margin-bottom: 20px;
-  display: inline-flex;
+html[dir=rtl] .pay-methods-head {
+  font-weight: unset;
+  font-family: g-med;
 }
-.goback svg {
-  transform: rotate(180deg);
-  margin-right: 8px;
-}
-.goback svg path {
-  fill: #fff;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-.goback:hover {
-  color: #f48d65;
-}
-.goback:hover svg path {
-  fill: #f48d65;
-}
-@media (max-width: 767px) {
-  .goback {
-    font-size: 14px;
-  }
-}
-
 html[dir=rtl] .goback svg {
   transform: none;
   margin-left: 8px;
   margin-right: 0;
 }
-
-.pay-card-cont {
-  background-color: #331d34;
-  padding-top: 98px;
-  padding-bottom: 200px;
+html[dir=rtl] .card-head.paypal-card-head .pay-methods-head {
+  margin-left: 26px;
+  margin-right: 18px;
+  direction: ltr;
 }
 @media (max-width: 767px) {
-  .pay-card-cont {
-    padding-top: 59px;
-    padding-bottom: 100px;
+  html[dir=rtl] .card-head.paypal-card-head .pay-methods-head {
+    margin: 0 10px;
   }
 }
-
-.pay-card-preview {
-  width: 100%;
-}
-@media (max-width: 767px) {
-  .pay-card-preview {
-    margin-bottom: 19px;
-  }
-}
-@media (max-width: 767px) {
-  .pay-card-preview .preview-content {
-    padding: 35px 23px 15px;
-  }
-  .pay-card-preview .preview-content ._left-sec {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .pay-card-preview .preview-content .amount-pre {
-    font-size: 75px;
-    margin-top: 0;
-    line-height: 50px;
-  }
-  .pay-card-preview .preview-content .email-pre {
-    font-size: 12px;
-    margin-bottom: 0;
-  }
-}
-
-.pay-methods-cont {
-  border-radius: 10px;
-  background-color: #f1f4f6;
-  padding-top: 23px;
-  overflow: hidden;
-}
-
-.pay-methods-head {
-  color: #1b0e1c;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  text-align: center;
-  margin-bottom: 23px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.pay-methods {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.pay-method {
-  display: block;
-  position: relative;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 50%;
-  height: 132px;
-  color: #331d34;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  font-size: 16px;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-.pay-method img {
-  margin-bottom: 13px;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-.pay-method:hover {
-  background-color: #fff;
-  box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);
-  z-index: 99;
-  color: #f48d65;
-}
-@media (max-width: 767px) {
-  .pay-method {
-    height: 130px;
-  }
+html[dir=rtl] .paypal-method .method-info-desc.method-info-note {
+  font-family: gulf;
+  font-size: 12px;
 }
 
 footer {
