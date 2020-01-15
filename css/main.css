@@ -1075,10 +1075,17 @@ html[dir=rtl] .form-name {
   -webkit-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
 }
+.user .user-img {
+  max-width: 50px;
+}
 .user .user-info {
   display: flex;
   flex-direction: column;
   margin: 0 9px;
+}
+.user .user-Since {
+  font-size: 12px;
+  text-align: center;
 }
 .user .drop-arrow {
   margin-left: 25px;
@@ -3377,6 +3384,453 @@ html[dir=rtl] .suecss-card-preview ._left-sec .amount-pre {
     width: 84px;
   }
 }
+.user-setting-cont {
+  background-color: #f1f4f6;
+  padding-top: 60px;
+  padding-bottom: 32px;
+}
+@media (max-width: 767px) {
+  .user-setting-cont {
+    padding-top: 40px;
+  }
+}
+
+.user-big-info {
+  width: 475px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+@media (max-width: 767px) {
+  .user-big-info {
+    width: 100%;
+  }
+}
+.user-big-info .user-big-name {
+  color: #1b0e1c;
+  font-size: 24px;
+  font-family: os-bold;
+  margin-top: 16px;
+  margin-bottom: 7px;
+}
+.user-big-info .user-big-since {
+  color: #1b0e1c;
+  font-family: os-light;
+  font-size: 13px;
+}
+.user-big-info .user-big-desc {
+  color: #1b0e1c;
+  font-size: 16px;
+  margin-top: 14px;
+}
+
+.user-setting {
+  margin-top: 45px;
+}
+
+.setting-main-view {
+  margin-top: 46px;
+}
+.setting-main-view.personal-info {
+  padding-top: 30px;
+  margin-top: 0;
+}
+.setting-main-view.personal-info .main-view-head:after {
+  background-color: #f48d65;
+}
+.setting-main-view.personal-info .main-view-body {
+  padding: 31px 40px 31px 47px;
+}
+@media (max-width: 767px) {
+  .setting-main-view.personal-info .main-view-body {
+    padding: 30px;
+  }
+}
+.setting-main-view.Owned-Cards .main-view-head:after {
+  background-color: #9ec6cd;
+}
+.setting-main-view.Credit-Cards .main-view-head:after {
+  background-color: #fcdf9f;
+}
+.setting-main-view.Credit-Cards .main-view-body {
+  padding: 32px;
+}
+
+.main-view-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 30px;
+  height: 83px;
+  border-radius: 10px 10px 0 0;
+  background-color: #331d34;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .main-view-head {
+    padding: 0 23px;
+    height: 73px;
+  }
+}
+.main-view-head:after {
+  content: "";
+  height: 7px;
+  border-radius: 3px;
+  width: 248px;
+  display: block;
+  position: absolute;
+  right: 45px;
+  bottom: 0;
+  transform: translate(0, 50%);
+}
+.main-view-head .main-view-title {
+  color: #ffffff;
+  font-size: 20px;
+  font-family: os-bold;
+}
+@media (max-width: 767px) {
+  .main-view-head .main-view-title {
+    font-size: 17px;
+  }
+}
+.main-view-head .goto {
+  color: #ffffff;
+  font-size: 16px;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 767px) {
+  .main-view-head .goto {
+    font-size: 14px;
+  }
+}
+.main-view-head .goto svg {
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin-left: 10px;
+}
+.main-view-head .goto svg path {
+  fill: #fff;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.main-view-head .goto:hover {
+  color: #f48d65;
+}
+.main-view-head .goto:hover svg {
+  transform: translateX(5px);
+}
+.main-view-head .goto:hover svg path {
+  fill: #f48d65;
+}
+
+.main-view-body {
+  border-radius: 0 0 10px 10px;
+  background-color: #ffffff;
+}
+.main-view-body .view-body-title {
+  color: #817682;
+  font-size: 18px;
+  line-height: 27px;
+}
+@media (max-width: 767px) {
+  .main-view-body .view-body-title {
+    font-size: 14px;
+  }
+}
+.main-view-body .personal-info {
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+}
+.main-view-body .info-img {
+  width: 31px;
+  height: 33px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.main-view-body .info-desc {
+  margin: 0 16px;
+  color: #1b0e1c;
+  font-size: 16px;
+}
+.main-view-body .own-card {
+  display: flex;
+  padding: 30px 42px 34px;
+  border-bottom: 1px solid #eaebf0;
+}
+.main-view-body .own-card:last-of-type {
+  border: none;
+}
+@media (max-width: 767px) {
+  .main-view-body .own-card {
+    padding: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .main-view-body .own-card .own-card-img {
+    min-width: 50px;
+  }
+}
+.main-view-body .own-card-info {
+  margin: 8px 32px 0;
+}
+@media (max-width: 767px) {
+  .main-view-body .own-card-info {
+    margin: 10px;
+  }
+}
+.main-view-body .own-card-name {
+  color: #1b0e1c;
+  font-size: 20px;
+  font-family: os-bold;
+  text-transform: uppercase;
+}
+@media (max-width: 767px) {
+  .main-view-body .own-card-name {
+    font-size: 16px;
+  }
+}
+.main-view-body .sec-row {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+@media (max-width: 767px) {
+  .main-view-body .sec-row {
+    margin: 10px 0;
+  }
+}
+.main-view-body .own-card-price {
+  margin-right: 52px;
+  color: #1b0e1c;
+  font-size: 15px;
+  font-family: os-bold;
+}
+@media (max-width: 767px) {
+  .main-view-body .own-card-price {
+    margin-right: 20px;
+  }
+}
+.main-view-body .own-card-mail {
+  color: #817682;
+  font-size: 15px;
+}
+@media (max-width: 767px) {
+  .main-view-body .own-card-mail {
+    font-size: 12px;
+  }
+}
+.main-view-body .own-card-method {
+  color: #817682;
+  font-size: 15px;
+  margin-bottom: 20px;
+  display: flex;
+}
+@media (max-width: 767px) {
+  .main-view-body .own-card-method {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+}
+.main-view-body .own-card-date {
+  color: #817682;
+  font-size: 15px;
+  display: flex;
+}
+.main-view-body .update-cridet {
+  color: #817682;
+  font-size: 18px;
+  font-family: os-light;
+}
+
+.palyer-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 38px;
+  flex-direction: column;
+}
+.palyer-badge .badge-name {
+  color: #331d34;
+  font-size: 20px;
+  font-family: os-bold;
+  transform: translateY(-15px);
+}
+.palyer-badge .badge-desc {
+  color: #817682;
+  width: 470px;
+  font-size: 16px;
+  line-height: 24px;
+  margin: auto;
+  margin-top: 5px;
+}
+@media (max-width: 767px) {
+  .palyer-badge .badge-desc {
+    width: 100%;
+  }
+}
+
+.cards-numbers {
+  margin: auto;
+  margin-top: 40px;
+  width: 470px;
+}
+.cards-numbers .total-num {
+  color: #817682;
+  font-size: 12px;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 27px;
+}
+@media (max-width: 767px) {
+  .cards-numbers {
+    width: 100%;
+  }
+}
+
+.card-number {
+  margin: auto;
+  width: 100%;
+  height: 53px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 0 23px;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+}
+.card-number .loader {
+  height: 7px;
+  border-radius: 3px;
+  margin-right: 11px;
+  margin-left: 32px;
+  width: 0%;
+  -moz-transition: all 1.5s ease-in-out;
+  -o-transition: all 1.5s ease-in-out;
+  -webkit-transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
+}
+@media (max-width: 767px) {
+  .card-number .loader {
+    margin-left: 10px;
+  }
+}
+.card-number .card-photo {
+  width: 51px;
+}
+@media (max-width: 767px) {
+  .card-number .card-photo {
+    width: 30px;
+  }
+}
+.card-number .cards-num {
+  color: #817682;
+  font-size: 13px;
+  font-family: os-light;
+}
+.card-number.ps .loader {
+  background-color: #1370b5;
+  max-width: 62.5%;
+}
+.card-number.xbox .loader {
+  max-width: 52.5%;
+  background-color: #107d0f;
+}
+.card-number.payers .loader {
+  background-color: #001247;
+  max-width: 13%;
+}
+.card-number.amazon .loader {
+  background-color: #080607;
+  max-width: 30%;
+}
+
+html[dir=rtl] .user-big-info .user-big-name {
+  font-family: g-bold;
+}
+html[dir=rtl] .user-big-info .user-big-since {
+  font-family: gulf;
+  font-size: 12px;
+}
+html[dir=rtl] .setting-main-view.personal-info .main-view-body {
+  padding: 31px 44px 31px 44px;
+}
+@media (max-width: 767px) {
+  html[dir=rtl] .setting-main-view.personal-info .main-view-body {
+    padding: 30px;
+  }
+}
+html[dir=rtl] .main-view-head .main-view-title {
+  font-family: g-bold;
+}
+html[dir=rtl] .main-view-head .goto svg {
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  transform: rotate(180deg);
+  margin-left: 0;
+  margin-right: 10px;
+}
+html[dir=rtl] .main-view-head .goto:hover svg {
+  transform: translateX(-5px) rotate(180deg);
+}
+html[dir=rtl] .main-view-body {
+  text-align: right;
+}
+html[dir=rtl] .main-view-body .info-desc {
+  font-family: os;
+}
+html[dir=rtl] .main-view-body .info-desc:last-of-type {
+  font-family: gulf;
+}
+html[dir=rtl] .main-view-body .own-card-price {
+  margin-right: 0;
+  margin-left: 52px;
+  font-family: os-bold;
+}
+@media (max-width: 767px) {
+  html[dir=rtl] .main-view-body .own-card-price {
+    margin-right: 0;
+    margin-left: 20px;
+  }
+}
+html[dir=rtl] .main-view-body .own-card-mail {
+  font-family: os;
+}
+html[dir=rtl] .main-view-body .update-cridet {
+  font-family: gulf;
+}
+html[dir=rtl] .palyer-badge .badge-name {
+  font-family: g-bold;
+}
+html[dir=rtl] .card-number .loader {
+  margin-right: 32px;
+  margin-left: 11px;
+}
+@media (max-width: 767px) {
+  html[dir=rtl] .card-number .loader {
+    margin-right: 10px;
+  }
+}
+html[dir=rtl] .card-number .cards-num {
+  font-size: 12px;
+  font-family: gulf;
+}
+
 footer {
   background-color: #f1f4f6;
 }
