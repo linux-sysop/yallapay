@@ -53,6 +53,11 @@ $(document).ready(function () {
         $('.slected-country-pre').html($(this).html())
         $(this).html(flag)
     });
+    $('.bank-li').click(function () {
+        var bank = $('.selected-info').html()
+        $('.selected-info').html($(this).html())
+        $(this).html(bank)
+    });
 
     $('.radios input[type=radio]').change(function () {
         $('.amount-pre .price').text(this.value)
