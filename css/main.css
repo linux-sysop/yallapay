@@ -2081,6 +2081,22 @@ html[dir=rtl] .guaranties-cont.about-page .guarantie .guarantie-desc {
   font-size: 12px;
   line-height: 24px;
 }
+@media (max-width: 767px) {
+  .preview-data .preview-content .card-img {
+    width: 105px;
+  }
+  .preview-data .preview-content .card-img img {
+    max-width: 100%;
+    height: auto;
+  }
+  .preview-data .preview-content .slected-country-pre {
+    width: 44px;
+  }
+  .preview-data .preview-content .slected-country-pre img {
+    max-width: 100%;
+    height: auto;
+  }
+}
 .preview-data ._right-sec {
   display: flex;
   flex-direction: column;
@@ -2254,7 +2270,7 @@ html[dir=rtl] .guaranties-cont.about-page .guarantie .guarantie-desc {
   margin-right: 26px;
 }
 .card-head.paypal-card-head .change-method {
-  width: 81px;
+  padding: 0 16px;
   height: 36px;
   border-radius: 5px;
   border: 1px solid #817682;
@@ -2307,6 +2323,7 @@ html[dir=rtl] .guaranties-cont.about-page .guarantie .guarantie-desc {
   flex-direction: column;
   font-size: 16px;
   background-color: #fff;
+  text-align: center;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -2371,6 +2388,30 @@ html[dir=rtl] .guaranties-cont.about-page .guarantie .guarantie-desc {
   border: 1px solid #665e71;
   box-shadow: none;
   color: #fff;
+}
+
+.credit-methods .back-method {
+  flex-direction: row;
+}
+.credit-methods .back-method svg {
+  margin-right: 4px;
+  transform: rotate(180deg);
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.credit-methods .back-method svg path {
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.credit-methods .back-method:hover svg {
+  transform: translateX(-8px) rotate(180deg);
+}
+.credit-methods .back-method:hover svg path {
+  fill: #f48d65;
 }
 
 html[dir=rtl] .info-card-cont .form-input {
@@ -2496,6 +2537,14 @@ html[dir=rtl] .card-head.paypal-card-head .pay-methods-head {
 html[dir=rtl] .paypal-method .method-info-desc.method-info-note {
   font-family: gulf;
   font-size: 12px;
+}
+html[dir=rtl] .credit-methods .back-method svg {
+  margin-right: 0;
+  margin-left: 4px;
+  transform: none;
+}
+html[dir=rtl] .credit-methods .back-method:hover svg {
+  transform: translateX(-8px);
 }
 
 footer {

@@ -437,6 +437,26 @@
             font-size: 12px;
             line-height: 24px;
         }
+
+        @include xs {
+            .card-img {
+                width: 105px;
+
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+
+            .slected-country-pre {
+                width: 44px;
+
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+        }
     }
 
     ._right-sec {
@@ -616,7 +636,7 @@
         }
 
         .change-method {
-            width: 81px;
+            padding: 0 16px;
             height: 36px;
             border-radius: 5px;
             border: 1px solid #817682;
@@ -671,6 +691,7 @@
     flex-direction: column;
     font-size: 16px;
     background-color: #fff;
+    text-align: center;
     @include transition(all 0.3s ease-in-out);
 
     img {
@@ -729,6 +750,32 @@
             border: 1px solid #665e71;
             box-shadow: none;
             color: #fff;
+        }
+    }
+}
+
+.credit-methods {
+    .back-method {
+        flex-direction: row;
+
+        svg {
+            margin-right: 4px;
+            transform: rotate(180deg);
+            @include transition(all 0.3s ease-in-out);
+
+            path {
+                @include transition(all 0.3s ease-in-out);
+            }
+        }
+
+        &:hover {
+            svg {
+                transform: translateX(-8px) rotate(180deg);
+
+                path {
+                    fill: $orange
+                }
+            }
         }
     }
 }
@@ -838,6 +885,7 @@ html[dir='rtl'] {
                 font-family: Arial;
                 font-weight: 500;
             }
+
         }
     }
 
@@ -907,4 +955,22 @@ html[dir='rtl'] {
         }
 
     }
+
+    .credit-methods {
+        .back-method {
+            svg {
+                margin-right: 0;
+                margin-left: 4px;
+                transform: none;
+            }
+
+            &:hover {
+                svg {
+                    transform: translateX(-8px);
+
+                }
+            }
+        }
+    }
+
 }
