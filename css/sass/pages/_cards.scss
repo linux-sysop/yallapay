@@ -503,6 +503,10 @@
             }
         }
     }
+
+    @include xs {
+        display: none;
+    }
 }
 
 html[dir='rtl'] {
@@ -635,7 +639,6 @@ html[dir='rtl'] {
     }
 }
 
-//
 .goback {
     color: #ffffff;
     font-size: 16px;

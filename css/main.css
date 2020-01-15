@@ -2144,6 +2144,11 @@ html[dir=rtl] .guaranties-cont.about-page .guarantie .guarantie-desc {
 .card-info:hover svg path {
   fill: #f48d65;
 }
+@media (max-width: 767px) {
+  .card-info {
+    display: none;
+  }
+}
 
 html[dir=rtl] .info-card-cont .form-input {
   text-align: right;
