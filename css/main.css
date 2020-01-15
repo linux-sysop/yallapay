@@ -999,6 +999,19 @@ html[dir=rtl] .form-name {
   font-family: g-bold;
 }
 
+.success-img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #331d34;
+}
+@media (max-width: 767px) {
+  .success-img img {
+    max-width: 33.33%;
+  }
+}
+
 .main-sec {
   background-color: #f1f4f6;
   padding-top: 90px;
@@ -3061,6 +3074,114 @@ html[dir=rtl] .wire-method .wire-trans-head {
   font-size: 16px;
 }
 
+.sucess-main {
+  background-color: #331d34;
+  padding-bottom: 139px;
+}
+
+.sucess-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 22px;
+  padding-bottom: 44px;
+}
+
+.sucess-msg {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 11px;
+}
+
+.sucess-info {
+  color: #ffffff;
+  font-size: 16px;
+}
+.sucess-info .email {
+  letter-spacing: 1px;
+}
+
+.card-number {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+.suecss-card-preview {
+  width: 550px;
+  margin: auto;
+}
+.suecss-card-preview .preview-content {
+  padding: 94px 27px 46px 36px;
+}
+@media (max-width: 767px) {
+  .suecss-card-preview .preview-content {
+    padding: 35px 23px 15px;
+  }
+}
+@media (max-width: 767px) {
+  .suecss-card-preview {
+    width: 100%;
+  }
+}
+.suecss-card-preview .card-name-pre {
+  color: #1b0e1c;
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+@media (max-width: 767px) {
+  .suecss-card-preview .card-name-pre {
+    font-size: 20px;
+  }
+}
+.suecss-card-preview ._left-sec {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
+.suecss-card-preview ._left-sec .amount-pre {
+  color: #331d34;
+  font-size: 33px;
+  font-weight: 400;
+  line-height: 40px;
+}
+@media (max-width: 767px) {
+  .suecss-card-preview ._left-sec .amount-pre {
+    font-size: 18px;
+  }
+}
+
+html[dir=rtl] .sucess-msg {
+  font-family: g-bold;
+  font-weight: unset;
+}
+html[dir=rtl] .suecss-card-preview .card-name-pre {
+  font-weight: unset;
+  font-family: g-bold;
+}
+html[dir=rtl] .suecss-card-preview ._left-sec .amount-pre {
+  font-weight: unset;
+}
+
+@media (max-width: 767px) {
+  .preview-data .preview-content .email-pre {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+
+  .preview-data .preview-content .card-img {
+    width: 84px;
+  }
+}
 footer {
   background-color: #f1f4f6;
 }

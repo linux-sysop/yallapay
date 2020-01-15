@@ -255,3 +255,18 @@ html[dir='rtl'] .form-name {
     font-family: g-bold;
 
 }
+
+.success-img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $blue;
+
+
+    img {
+        @include xs {
+            max-width: 33.33%;
+        }
+    }
+}
