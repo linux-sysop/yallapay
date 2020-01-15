@@ -53,6 +53,7 @@
 body {
   font-family: os;
   overflow-x: hidden;
+  overflow-x: hidden;
 }
 body::-webkit-scrollbar {
   background-color: rgba(51, 29, 52, 0.5);
