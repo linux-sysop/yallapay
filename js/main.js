@@ -58,6 +58,10 @@ $(document).ready(function () {
         $('.selected-info').html($(this).html())
         $(this).html(bank)
     });
+    $('.user').click(function () {
+        $('.user-nav-cont').slideToggle(500)
+        $('.user').toggleClass("useropen")
+    });
 
     $('.radios input[type=radio]').change(function () {
         $('.amount-pre .price').text(this.value)
