@@ -23,11 +23,11 @@ $(document).ready(function () {
         });
     }
 
-    $('.form-input').focus(function () {
+    $('.form-input, .new-credit-input').focus(function () {
         $(this).parent().find(".floating-label").addClass('label-active');
     });
 
-    $(".form-input").focusout(function () {
+    $(".form-input, .new-credit-input").focusout(function () {
         if ($(this).val() == '') {
             $(this).parent().find(".floating-label").removeClass('label-active');
         };
@@ -63,6 +63,12 @@ $(document).ready(function () {
         } else {
             $('.email-pre').text($('#email-pre').val())
         }
+    });
+    $('.new-credit-input-label .dateinput').datepicker({
+        format: "mm/yyyy",
+        startView: 1,
+        minViewMode: 1,
+        maxViewMode: 2
     });
 });
 
