@@ -54,7 +54,7 @@ $(document).ready(function () {
         $(this).html(flag)
     });
 
-    $('input[type=radio]').change(function () {
+    $('.radios input[type=radio]').change(function () {
         $('.amount-pre .price').text(this.value)
     });
     $('#email-pre').on('change paste keyup', function () {
