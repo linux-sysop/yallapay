@@ -2257,20 +2257,20 @@ html[dir=rtl] .guaranties-cont.about-page .guarantie .guarantie-desc {
 .card-head.pay-card-head {
   justify-content: center;
 }
-.card-head.paypal-card-head {
+.card-head.method-card-head {
   padding: 0 70px;
 }
 @media (max-width: 767px) {
-  .card-head.paypal-card-head {
+  .card-head.method-card-head {
     padding: 0;
     justify-content: center;
   }
 }
-.card-head.paypal-card-head .pay-methods-head {
+.card-head.method-card-head .pay-methods-head {
   margin-left: 18px;
   margin-right: 26px;
 }
-.card-head.paypal-card-head .change-method {
+.card-head.method-card-head .change-method {
   padding: 0 16px;
   height: 36px;
   border-radius: 5px;
@@ -2285,7 +2285,7 @@ html[dir=rtl] .guaranties-cont.about-page .guarantie .guarantie-desc {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-.card-head.paypal-card-head .change-method:hover {
+.card-head.method-card-head .change-method:hover {
   background-color: #331d34;
   color: #f1f4f6;
 }
@@ -2525,13 +2525,13 @@ html[dir=rtl] .goback svg {
   margin-left: 8px;
   margin-right: 0;
 }
-html[dir=rtl] .card-head.paypal-card-head .pay-methods-head {
+html[dir=rtl] .card-head.method-card-head .pay-methods-head {
   margin-left: 26px;
   margin-right: 18px;
   direction: ltr;
 }
 @media (max-width: 767px) {
-  html[dir=rtl] .card-head.paypal-card-head .pay-methods-head {
+  html[dir=rtl] .card-head.method-card-head .pay-methods-head {
     margin: 0 10px;
   }
 }
@@ -2545,7 +2545,7 @@ html[dir=rtl] .credit-methods .back-method svg {
   transform: none;
 }
 html[dir=rtl] .credit-methods .back-method:hover svg {
-  transform: translateX(-8px);
+  transform: translateX(8px);
 }
 
 footer {
