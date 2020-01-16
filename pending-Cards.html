@@ -55,7 +55,7 @@
                                 <a href="pending-Cards.html" class="user-anchor fixall">Pending Payment</a>
                                 <div class="noti-num">2</div>
                             </li>
-                            <li class="user-li "><a href="owned-Cards.html" class="user-anchor fixall">Owned Cards</a>
+                            <li class="user-li "><a href="holded-Cards.html" class="user-anchor fixall">holded Cards</a>
                             </li>
                             <li class="user-li anchors-head"><a href="index.html" class="user-anchor fixall">Logout</a>
                             </li>
@@ -101,7 +101,7 @@
                             <a href="pending-Cards.html" class="user-anchor fixall">Pending Payment</a>
                             <div class="noti-num">2</div>
                         </li>
-                        <li class="user-li "><a href="owned-Cards.html" class="user-anchor fixall">Owned Cards</a>
+                        <li class="user-li "><a href="holded-Cards.html" class="user-anchor fixall">holded Cards</a>
                         </li>
                         <li class="user-li anchors-head"><a href="index.html" class="user-anchor fixall">Logout</a>
                         </li>
@@ -147,6 +147,159 @@
         </div>
     </div>
     <!-- End Xs-Nav -->
+
+    <!-- Start Main Content -->
+    <div class="hold-cards-content-cont">
+        <div class="container">
+            <div class="hold-cards-content">
+                <div class="row">
+                    <div class="col-lg-8 col-12">
+                        <div class="navigatback">
+                            <a href="User-Settings.html" class="formback goto">
+                                <img src="images/Path.svg" class="svg">
+                            </a>
+                        </div>
+                        <div class="loged-page-head">Cards Pending Payment
+                            <select class="fixall" id="inputGroupSelect01">
+                                <option selected hidden>Cards Filters</option>
+                                <option value="1">Card 1</option>
+                                <option value="2">Card 2</option>
+                                <option value="3">Card 3</option>
+                            </select></div>
+                        <div class="hold-cards wow zoomIn" data-wow-duration="1s">
+                            <div class="hold-card">
+                                <div class="hold-card-img">
+                                    <img src="images/ps-small-card.svg" class="img-fluid">
+                                </div>
+                                <div class="hold-card-info">
+                                    <div class="card-top-head">
+                                        <h3 class="hold-card-name fixall">
+                                            MNS6-W1T9-INTER
+                                            <img src="images/hide-rectangle.svg">
+                                        </h3>
+                                    </div>
+                                    <div class="sec-row">
+                                        <span class="hold-card-price">15$</span>
+                                        <span class="hold-card-mail">alaaalmahmadi@payers.net</span>
+                                        <span class="hold-card-date">20 March 2019</span>
+                                        <div class="tools">
+                                            <a href="#!" class="delete-card fixall">Delete</a>
+                                            <a href="#!" class="confirm-card fixall">Confirm Pay</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="hold-card">
+                                <div class="hold-card-img">
+                                    <img src="images/xbox-small-card.svg" class="img-fluid">
+                                </div>
+                                <div class="hold-card-info">
+                                    <div class="card-top-head">
+                                        <h3 class="hold-card-name fixall">
+                                            MNS6-W1T9-INTER
+                                            <img src="images/hide-rectangle.svg">
+                                        </h3>
+                                        <div class="card-hint">
+                                            We received your payment information it's in review Now
+                                        </div>
+                                    </div>
+                                    <div class="sec-row">
+                                        <span class="hold-card-price">15$</span>
+                                        <span class="hold-card-mail">alaaalmahmadi@payers.net</span>
+                                        <span class="hold-card-date">20 March 2019</span>
+                                        <div class="tools">
+                                            <a href="#!" class="confirm-card update-card fixall">Update Payment
+                                                Infos.</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="hold-card">
+                                <div class="hold-card-img">
+                                    <img src="images/amazon-small-card.svg" class="img-fluid">
+                                </div>
+                                <div class="hold-card-info">
+                                    <div class="card-top-head">
+                                        <h3 class="hold-card-name fixall">
+                                            MNS6-W1T9-INTER
+                                            <img src="images/hide-rectangle.svg">
+                                        </h3>
+                                    </div>
+                                    <div class="sec-row">
+                                        <span class="hold-card-price">15$</span>
+                                        <span class="hold-card-mail">alaaalmahmadi@payers.net</span>
+                                        <span class="hold-card-date">20 March 2019</span>
+                                        <div class="tools">
+                                            <a href="#!" class="delete-card fixall">Delete</a>
+                                            <a href="#!" class="confirm-card dark-confirm fixall">Confirm</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <form class="confrim-depo">
+                            <h3 class="form-title fixall">Confirm Bank Deposite to buy this card</h3>
+                            <div class="depo-input-label wow fadeInDown" data-wow-duration="1s">
+                                <input class="depo-input fixall" type="text">
+                                <span class="floating-label">Your Name</span>
+                                <span class="note">Name written on deposit receipt, in Arabic or English</span>
+                            </div>
+                            <div class="depo-input-label log-in-pass wow fadeInDown" data-wow-duration="1s"
+                                data-wow-delay="0.2s">
+                                <input class="depo-input fixall" type="numer">
+                                <span class="floating-label">Deposite number</span>
+                                <div class="note">Receipt Number, whether in numbers or letters</div>
+                            </div>
+                            <div class="upload-btn-wrapper wow fadeInDown" data-wow-duration="0.6s"
+                                data-wow-delay="0.4s">
+                                <button class="upload-btn">
+                                    <input type="file" name="myfile" class="inputfile" />
+                                    <img src="images/upload.svg" alt="">
+                                    Upload a clear copy of the deposit receipt
+                                </button>
+
+                            </div>
+                            <button type="submit" class="fixall submit-form wow fadeInDown" data-wow-duration="1s"
+                                data-wow-delay="0.6s">Send Payment Informations</button>
+                        </form>
+                    </div>
+                    <div class="col-lg-4 col-12 d-none d-sm-block">
+                        <div class="bank-acc-info">
+                            <h3 class="bank-acc-head fixall">Bank Account Informations</h3>
+                            <p class="bank-acc-desc fixall">Deposit your local currency to our Saudi National Bank
+                                account according to the following data:</p>
+                            <div class="bank-acc-info-desc wow zoomIn" data-wow-duration="1s">
+                                <div class="_desc">
+                                    <span class="_desc-head">Bank Name</span>
+                                    <div class="_desc-body">
+                                        <img src="images/bank-logo.svg">
+                                        Ahlia Saudi Bank
+                                    </div>
+                                </div>
+                                <div class="_desc">
+                                    <span class="_desc-head">Account Number</span>
+                                    <div class="_desc-body  _desc-code">
+                                        2214795386
+                                    </div>
+                                </div>
+                                <div class="_desc">
+                                    <span class="_desc-head">Swift Code</span>
+                                    <div class="_desc-body _desc-code">
+                                        BJHISARI
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Main Content -->
+
 
     <!-- Start Footer -->
     <footer>

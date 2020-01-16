@@ -4084,10 +4084,6 @@ html[dir=rtl] .card-number-info .cards-num {
   background-repeat: no-repeat;
   padding-right: 22px;
 }
-.owned-main-cont .loged-page-head #inputGroupSelect01:after {
-  content: url("../images/drop.svg");
-  display: block;
-}
 .owned-main-cont .navigatback {
   width: 970px;
   margin: auto;
@@ -4236,6 +4232,11 @@ html[dir=rtl] .card-number-info .cards-num {
   }
 }
 
+html[dir=rtl] .owned-main-cont .loged-page-head #inputGroupSelect01 {
+  background-position: 2% center;
+  padding-right: 0;
+  padding-left: 22px;
+}
 html[dir=rtl] .owned-main-cont .own-card-name {
   text-align: right;
 }
@@ -4262,6 +4263,507 @@ html[dir=rtl] .owned-main-cont .own-card-date {
     right: auto;
     top: auto;
   }
+}
+
+.hold-cards-content-cont {
+  background-color: #f1f4f6;
+  padding-top: 77px;
+}
+.hold-cards-content-cont .navigatback {
+  width: 100%;
+}
+.hold-cards-content-cont .loged-page-head {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hold-cards-content-cont .loged-page-head #inputGroupSelect01 {
+  font-size: 18px;
+  color: #1b0e1c;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  background-image: url("../images/drop.svg");
+  background-position: 98% center;
+  background-repeat: no-repeat;
+  padding-right: 22px;
+}
+.hold-cards-content-cont .loged-page-head #inputGroupSelect01:after {
+  content: url("../images/drop.svg");
+  display: block;
+}
+
+.hold-cards {
+  border-radius: 10px 10px 0 0;
+  background-color: #ffffff;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 5px;
+}
+@media (max-width: 767px) {
+  .hold-cards {
+    padding-top: 20px;
+  }
+}
+.hold-cards .hold-card {
+  display: flex;
+  padding: 38px 35px 27px;
+  border-bottom: 1px solid #eaebf0;
+  align-items: center;
+  position: relative;
+  background-color: #fff;
+}
+.hold-cards .hold-card:last-of-type {
+  border: none;
+}
+@media (max-width: 767px) {
+  .hold-cards .hold-card {
+    padding: 20px;
+    align-items: flex-start;
+  }
+}
+.hold-cards .hold-card .hold-card-img {
+  min-width: 68px;
+  width: 68px;
+}
+@media (max-width: 767px) {
+  .hold-cards .hold-card .hold-card-img {
+    min-width: 50px;
+    width: 50px;
+  }
+}
+.hold-cards .hold-card-info {
+  margin-left: 27px;
+  width: calc(100% - 95px);
+}
+@media (max-width: 767px) {
+  .hold-cards .hold-card-info {
+    margin: 10px;
+    width: calc(100% - 90px);
+  }
+}
+.hold-cards .card-top-head {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .hold-cards .card-top-head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.hold-cards .card-hint {
+  background-color: #ffde96;
+  color: #1b0e1c;
+  width: 284px;
+  height: 30px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+}
+@media (max-width: 767px) {
+  .hold-cards .card-hint {
+    margin-top: 20px;
+    margin-left: -60px;
+  }
+}
+.hold-cards .hold-card-name {
+  color: #1b0e1c;
+  font-size: 20px;
+  font-family: os-bold;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-flex;
+}
+.hold-cards .hold-card-name img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+}
+@media (max-width: 767px) {
+  .hold-cards .hold-card-name {
+    font-size: 16px;
+  }
+}
+.hold-cards .sec-row {
+  display: flex;
+  align-items: center;
+  margin: 28px 0 0;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .hold-cards .sec-row {
+    margin: 15px 0;
+    flex-wrap: wrap;
+  }
+}
+.hold-cards .hold-card-price {
+  color: #1b0e1c;
+  font-size: 15px;
+  font-family: os-bold;
+}
+@media (max-width: 767px) {
+  .hold-cards .hold-card-price {
+    width: 40%;
+  }
+}
+.hold-cards .hold-card-mail {
+  color: #817682;
+  font-size: 15px;
+}
+@media (max-width: 767px) {
+  .hold-cards .hold-card-mail {
+    font-size: 12px;
+    width: 60%;
+  }
+}
+.hold-cards .hold-card-date {
+  color: #817682;
+  font-size: 12px;
+}
+@media (max-width: 767px) {
+  .hold-cards .hold-card-date {
+    margin: 20px 0;
+    width: 100%;
+  }
+}
+.hold-cards .tools {
+  display: flex;
+  align-items: center;
+}
+.hold-cards .tools .delete-card {
+  color: #f37170;
+  font-size: 12px;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin-right: 19px;
+}
+.hold-cards .tools .delete-card:hover {
+  color: #fb100e;
+}
+.hold-cards .tools .confirm-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 17px;
+  height: 34px;
+  border-radius: 4px;
+  border: 1px solid #665e71;
+  color: #665e71;
+  font-size: 12px;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.hold-cards .tools .confirm-card:hover {
+  background-color: #331d34;
+  border-color: #331d34;
+  color: #fff;
+}
+.hold-cards .tools .dark-confirm {
+  background-color: #331d34;
+  border-color: #331d34;
+  color: #fff;
+}
+.hold-cards .tools .dark-confirm:hover {
+  background-color: transparent;
+  border-color: #665e71;
+  color: #665e71;
+}
+
+.confrim-depo {
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+  padding: 45px 110px;
+  background-color: #331d34;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .confrim-depo {
+    padding: 50px 30px;
+  }
+}
+.confrim-depo:before {
+  top: 0;
+  left: 110px;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  border-top-color: #fff;
+  border-width: 8px;
+}
+.confrim-depo .form-title {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: os-bold;
+}
+@media (max-width: 767px) {
+  .confrim-depo .form-title {
+    text-align: center;
+  }
+}
+.confrim-depo .depo-input-label {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  margin-top: 70px;
+}
+.confrim-depo .depo-input-label:first-of-type {
+  margin-top: 40px;
+}
+@media (max-width: 767px) {
+  .confrim-depo .depo-input-label {
+    margin-top: 110px;
+  }
+}
+.confrim-depo .depo-input {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font-size: 16px;
+  padding: 0 15px;
+  -moz-appearance: textfield;
+  transition: 0.2s ease all;
+  text-align: left;
+}
+.confrim-depo .depo-input:focus {
+  border-bottom: 1px solid #f48d65;
+}
+.confrim-depo .depo-input::-webkit-inner-spin-button, .confrim-depo .depo-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+.confrim-depo .floating-label {
+  position: absolute;
+  pointer-events: none;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-family: os-bold;
+  font-size: 16px;
+  transition: 0.2s ease all;
+}
+.confrim-depo .label-active {
+  top: 0;
+  left: 0;
+  font-size: 13px;
+  color: #fff;
+}
+.confrim-depo .note {
+  color: #fff;
+  font-family: os-light;
+  font-size: 13px;
+  display: block;
+  margin-top: 10px;
+}
+.confrim-depo .submit-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 58px;
+  box-shadow: 0 1px 0 #000000, inset 0 1px 1px #ff996c;
+  border-radius: 5px;
+  background-color: #f27036;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  font-size: 16px;
+  color: #fff;
+  margin-top: 38px;
+  margin-bottom: 46px;
+}
+.confrim-depo .submit-form:focus, .confrim-depo .submit-form:hover {
+  background-color: transparent;
+  border: 1px solid #665e71;
+  box-shadow: none;
+}
+.confrim-depo .upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  width: 100%;
+  margin-top: 70px;
+}
+.confrim-depo .upload-btn-wrapper:hover .upload-btn {
+  border-color: #f48d65;
+}
+.confrim-depo .upload-btn-wrapper .upload-btn {
+  width: 100%;
+  height: 57px;
+  border-radius: 4px;
+  border: 1px dashed #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: os-bold;
+  cursor: pointer;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.confrim-depo .upload-btn-wrapper .upload-btn img {
+  margin-right: 12px;
+}
+.confrim-depo .upload-btn-wrapper input[type=file] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  cursor: pointer;
+  width: 100%;
+}
+
+.bank-acc-info {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 100px;
+  width: 100%;
+}
+.bank-acc-info .bank-acc-head {
+  color: #1b0e1c;
+  font-family: os-semibold;
+  font-size: 24px;
+}
+.bank-acc-info .bank-acc-desc {
+  color: #817682;
+  font-size: 15px;
+  margin-top: 35px;
+  margin-bottom: 27px;
+}
+.bank-acc-info ._desc {
+  margin-bottom: 24px;
+}
+.bank-acc-info .bank-acc-info-desc {
+  border-radius: 10px;
+  border: 1px solid #f0f2f6;
+  background-color: #ffffff;
+  padding: 28px 34px;
+  width: 100%;
+}
+.bank-acc-info ._desc-head {
+  color: #817682;
+  font-size: 13px;
+  font-family: os-light;
+  margin-bottom: 10px;
+}
+.bank-acc-info ._desc-body {
+  color: #1b0e1c;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+.bank-acc-info ._desc-body._desc-code {
+  font-family: os-semibold;
+}
+.bank-acc-info ._desc-body img {
+  margin-right: 12px;
+}
+
+html[dir=rtl] .hold-cards-content-cont .loged-page-head {
+  text-align: right;
+}
+html[dir=rtl] .hold-cards-content-cont .loged-page-head #inputGroupSelect01 {
+  padding-left: 22px;
+  padding-right: 0;
+  background-position: 2% center;
+}
+html[dir=rtl] .confrim-depo .form-title {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: g-bold;
+  text-align: right;
+}
+@media (max-width: 767px) {
+  html[dir=rtl] .confrim-depo .form-title {
+    text-align: center;
+  }
+}
+html[dir=rtl] .confrim-depo .depo-form-input {
+  text-align: right;
+}
+html[dir=rtl] .confrim-depo .floating-label {
+  right: 0;
+  left: auto;
+  font-family: g-bold;
+}
+html[dir=rtl] .confrim-depo .label-active {
+  right: 0;
+  left: auto;
+}
+html[dir=rtl] .confrim-depo .note {
+  font-family: gulf;
+  text-align: right;
+}
+html[dir=rtl] .confrim-depo .upload-btn-wrapper .upload-btn {
+  font-family: g-bold;
+}
+html[dir=rtl] .confrim-depo .upload-btn-wrapper .upload-btn img {
+  margin-left: 12px;
+  margin-right: 0;
+}
+html[dir=rtl] .hold-cards .hold-card-info {
+  margin-left: 0;
+  margin-right: 27px;
+}
+@media (max-width: 767px) {
+  html[dir=rtl] .hold-cards .hold-card-info {
+    margin: 10px;
+  }
+}
+@media (max-width: 767px) {
+  html[dir=rtl] .hold-cards .card-hint {
+    margin-left: 0;
+    margin-right: -60px;
+  }
+}
+html[dir=rtl] .hold-cards .hold-card-name {
+  font-family: os-bold;
+}
+html[dir=rtl] .hold-cards .tools .delete-card {
+  margin-right: 0;
+  margin-left: 19px;
+}
+html[dir=rtl] .bank-acc-info ._desc {
+  text-align: right;
+}
+html[dir=rtl] .bank-acc-info ._desc-head {
+  color: #817682;
+  font-size: 12px;
+  font-family: gulf;
+}
+html[dir=rtl] .bank-acc-info .bank-acc-head {
+  text-align: right;
+  font-family: g-bold;
+}
+html[dir=rtl] .bank-acc-info .bank-acc-desc {
+  text-align: right;
+}
+html[dir=rtl] .bank-acc-info ._desc-body img {
+  margin-left: 12px;
+  margin-right: 0;
 }
 
 footer {

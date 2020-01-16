@@ -23,11 +23,11 @@ $(document).ready(function () {
         });
     }
 
-    $('.form-input, .new-credit-input').focus(function () {
+    $('.form-input, .new-credit-input,.depo-input').focus(function () {
         $(this).parent().find(".floating-label").addClass('label-active');
     });
 
-    $(".form-input, .new-credit-input").focusout(function () {
+    $(".form-input, .new-credit-input,.depo-input").focusout(function () {
         if ($(this).val() == '') {
             $(this).parent().find(".floating-label").removeClass('label-active');
         };
@@ -106,6 +106,14 @@ $(document).ready(function () {
         minViewMode: 1,
         maxViewMode: 2
     });
+
+    $(".inputfile").change(function () {
+        var file = $('.inputfile')[0].files[0]
+        if (file) {
+            $(".upload-btn").html(file.name)
+        }
+    });
+
 });
 
 

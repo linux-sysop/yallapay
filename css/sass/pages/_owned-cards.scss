@@ -22,11 +22,6 @@
             background-position: 98% center;
             background-repeat: no-repeat;
             padding-right: 22px;
-
-            &:after {
-                content: url('../images/drop.svg');
-                display: block;
-            }
         }
     }
 
@@ -186,6 +181,14 @@
 
 
 html[dir="rtl"] .owned-main-cont {
+    .loged-page-head {
+
+        #inputGroupSelect01 {
+            background-position: 2% center;
+            padding-right: 0;
+            padding-left: 22px;
+        }
+    }
 
     .own-card-name {
         text-align: right;
