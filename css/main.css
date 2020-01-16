@@ -4724,6 +4724,9 @@ html[dir=rtl] .confrim-depo .upload-btn-wrapper .upload-btn img {
   margin-left: 12px;
   margin-right: 0;
 }
+html[dir=rtl] .hold-cards {
+  text-align: right;
+}
 html[dir=rtl] .hold-cards .hold-card-info {
   margin-left: 0;
   margin-right: 27px;
