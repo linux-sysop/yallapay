@@ -1498,6 +1498,27 @@ html[dir=rtl] .user-nav-cont .anchors-head .user-anchor:hover {
   color: #665e71;
 }
 
+._2stepsli {
+  position: relative;
+}
+._2stepsli::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #3d9635;
+  border-radius: 50%;
+  position: absolute;
+  left: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+html[dir=rtl] ._2stepsli::before {
+  right: -8px;
+  left: auto;
+}
+
 .main-sec {
   background-color: #f1f4f6;
   padding-top: 90px;
