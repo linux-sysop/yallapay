@@ -52,9 +52,14 @@
 
 body {
   font-family: os;
+  min-height: 100vh;
   overflow-x: hidden;
   overflow: hidden;
+  background-color: #f1f4f6;
   overflow-x: hidden;
+}
+body.dark-page {
+  background-color: #331d34;
 }
 body::-webkit-scrollbar {
   background-color: rgba(51, 29, 52, 0.5);

@@ -1,7 +1,13 @@
 body {
     font-family: os;
+    min-height: 100vh;
     overflow-x: hidden;
     overflow: hidden;
+    background-color: $back;
+
+    &.dark-page {
+        background-color: $blue;
+    }
 
     &::-webkit-scrollbar {
         background-color: rgba(#331d34, 0.5);
