@@ -53,6 +53,10 @@
         padding-top: 30px;
         margin-top: 0;
 
+        @include xs {
+            margin-bottom: 40px;
+        }
+
         .main-view-head {
             &:after {
                 background-color: #f48d65;
@@ -498,8 +502,6 @@ html[dir="rtl"] {
     }
 
     .card-number {
-
-
         .loader {
             margin-right: 32px;
             margin-left: 11px;

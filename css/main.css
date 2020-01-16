@@ -141,7 +141,7 @@ html {
   content: "";
   height: 6px;
   border-radius: 3px;
-  background-color: #f27036;
+  background-color: #f48d65;
   width: 248px;
   display: block;
   position: absolute;
@@ -431,6 +431,117 @@ html[dir=rtl] .form .countries-cont .country-name {
 }
 html[dir=rtl] .form .note-forget {
   text-align: right;
+}
+
+.edit-form-cont {
+  background-color: #f1f4f6;
+}
+@media (max-width: 767px) {
+  .edit-form-cont {
+    padding-bottom: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .edit-form-cont .edit-form {
+    padding: 1px 33px 0;
+  }
+  .edit-form-cont .edit-form:before {
+    content: "";
+    left: 31px;
+    top: 0;
+    transform: translateY(-50%);
+  }
+}
+.edit-form-cont .edit-form .countries-head {
+  margin-top: 72px;
+}
+.edit-form-cont .edit-form .note {
+  margin-top: 16px;
+}
+.edit-form-cont .edit-form .submit-form.disable {
+  background-color: #817682;
+  pointer-events: none;
+  color: #a9a1aa;
+  box-shadow: none;
+}
+.edit-form-cont .edit-form .change-pass {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: 30px;
+}
+.edit-form-cont .edit-form .change-pass a {
+  color: #1b0e1c;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: os-bold;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.edit-form-cont .edit-form .change-pass a:hover {
+  color: #f48d65;
+}
+
+.form-head {
+  color: #1b0e1c;
+  font-size: 24px;
+  width: 529px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: auto;
+  margin-bottom: 34px;
+  font-family: "os-semibold";
+}
+@media (max-width: 767px) {
+  .form-head {
+    width: 100%;
+  }
+}
+
+.navigatback {
+  width: 529px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: auto;
+}
+@media (max-width: 767px) {
+  .navigatback {
+    width: 100%;
+    display: none;
+  }
+}
+.navigatback .formback svg {
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 20px;
+  transform: rotate(180deg);
+}
+.navigatback .formback svg path {
+  fill: #1b0e1c;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.navigatback .formback:hover svg path {
+  fill: #f48d65;
+}
+
+html[dir=rtl] .edit-form-cont .edit-form .change-pass a {
+  font-family: g-bold;
+}
+html[dir=rtl] .form-head {
+  font-family: g-bold;
+}
+html[dir=rtl] .navigatback .formback svg {
+  transform: none;
 }
 
 .nav_list {
@@ -3437,6 +3548,11 @@ html[dir=rtl] .suecss-card-preview ._left-sec .amount-pre {
 .setting-main-view.personal-info {
   padding-top: 30px;
   margin-top: 0;
+}
+@media (max-width: 767px) {
+  .setting-main-view.personal-info {
+    margin-bottom: 40px;
+  }
 }
 .setting-main-view.personal-info .main-view-head:after {
   background-color: #f48d65;

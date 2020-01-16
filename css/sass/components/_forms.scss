@@ -6,6 +6,8 @@
     @include xs {
         padding-top: 135px;
     }
+
+
 }
 
 .form {
@@ -28,7 +30,7 @@
         content: "";
         height: 6px;
         border-radius: 3px;
-        background-color: #f27036;
+        background-color: #f48d65;
         width: 248px;
         display: block;
         position: absolute;
@@ -354,5 +356,138 @@ html[dir='rtl'] .form {
 
     .note-forget {
         text-align: right;
+    }
+}
+
+.edit-form-cont {
+    background-color: $back;
+
+    @include xs {
+        padding-bottom: 100px;
+    }
+
+    .edit-form {
+        @include xs {
+            padding: 1px 33px 0;
+
+            &:before {
+                content: "";
+                left: 31px;
+                top: 0;
+                transform: translateY(-50%);
+            }
+        }
+
+        .countries-head {
+            margin-top: 72px;
+        }
+
+        .note {
+            margin-top: 16px;
+        }
+
+        .submit-form.disable {
+            background-color: #817682;
+            pointer-events: none;
+            color: #a9a1aa;
+            box-shadow: none;
+        }
+
+        .change-pass {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: 100%;
+            margin-top: 30px;
+
+            a {
+                color: #1b0e1c;
+                font-size: 16px;
+                line-height: 24px;
+                font-family: os-bold;
+                @include transition(all 0.3s ease-in-out);
+
+                &:hover {
+                    color: $orange;
+                }
+            }
+        }
+    }
+}
+
+.form-head {
+    color: #1b0e1c;
+    font-size: 24px;
+    width: 529px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: auto;
+    margin-bottom: 34px;
+    font-family: 'os-semibold';
+
+    @include xs {
+        width: 100%;
+    }
+}
+
+.navigatback {
+    width: 529px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: auto;
+
+    @include xs {
+        width: 100%;
+        display: none;
+    }
+
+    .formback {
+        svg {
+            @include transition(all 0.3s ease-in-out);
+            margin-bottom: 20px;
+            transform: rotate(180deg);
+
+            path {
+                fill: #1b0e1c;
+                @include transition(all 0.3s ease-in-out);
+            }
+        }
+
+        &:hover {
+            svg {
+                path {
+                    fill: #f48d65;
+                }
+            }
+        }
+    }
+}
+
+html[dir="rtl"] {
+    .edit-form-cont {
+        .edit-form {
+            .change-pass {
+                a {
+                    font-family: g-bold;
+                }
+            }
+        }
+    }
+
+    .form-head {
+        font-family: g-bold;
+    }
+
+    .navigatback {
+
+
+        .formback {
+            svg {
+                transform: none;
+            }
+
+        }
     }
 }
