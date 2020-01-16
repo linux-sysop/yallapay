@@ -1590,6 +1590,25 @@ html[dir='rtl'] {
     .email {
         letter-spacing: 1px;
     }
+
+    a {
+        font-family: os-bold;
+        color: #ffffff;
+        font-size: 16px;
+        text-decoration: underline;
+        @include transition(all 0.3s ease-in-out);
+
+        &:hover {
+            color: $orange;
+        }
+    }
+}
+
+html[dir="rtl"] .sucess-info {
+
+    a {
+        font-family: g-bold;
+    }
 }
 
 .card-number {
@@ -1621,7 +1640,7 @@ html[dir='rtl'] {
     .card-name-pre {
         color: #1b0e1c;
         font-size: 35px;
-        font-weight: 700;
+        font-family: os-semibold;
         text-transform: uppercase;
         margin-bottom: 10px;
 
@@ -1658,7 +1677,6 @@ html[dir='rtl'] {
 
         .card-name-pre {
             font-weight: unset;
-            font-family: g-bold;
         }
 
         ._left-sec {
@@ -1680,5 +1698,26 @@ html[dir='rtl'] {
 
     .preview-data .preview-content .card-img {
         width: 84px;
+    }
+}
+
+.owned-cards-anchor {
+    width: 192px;
+    height: 58px;
+    border-radius: 5px;
+    border: 1px solid #665e71;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    color: #fdfcfc;
+    font-size: 16px;
+    margin-top: 30px;
+    @include transition(all 0.3s ease-in-out);
+
+    &:hover {
+        background-color: $orange;
+        border-color: $orange;
+        color: #fdfcfc;
     }
 }

@@ -303,11 +303,13 @@ html[dir='rtl'] .form-name {
         display: flex;
         flex-direction: column;
         margin: 0 9px;
+        color: #1b0e1c;
     }
 
     .user-Since {
         font-size: 12px;
         text-align: center;
+        color: #665e71;
     }
 
     .drop-arrow {
@@ -473,6 +475,26 @@ html[dir="rtl"] {
                     transform: translateX(-5px);
                 }
             }
+        }
+    }
+}
+
+.black-page {
+    .user-info {
+        color: #fff;
+    }
+
+    .user-Since {
+        color: #fff;
+    }
+
+    .useropen {
+        .user-info {
+            color: #1b0e1c;
+        }
+
+        .user-Since {
+            color: #665e71;
         }
     }
 }
