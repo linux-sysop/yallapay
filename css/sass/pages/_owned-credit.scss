@@ -1,0 +1,157 @@
+.owned-credit-cont {
+    .owned-credits {
+        &:before {
+            background-color: #fcdf9f;
+        }
+    }
+
+    .own-credit {
+        @include xs {
+            align-items: flex-start;
+            padding-right: 5px;
+
+            .own-credit-img {
+                max-width: 50px;
+            }
+        }
+    }
+
+    .own-credit-name {
+        color: #1b0e1c;
+        font-family: os-bold;
+        font-size: 16px;
+    }
+
+    .own-card-info {
+        margin: 0 35px;
+        width: calc(100% - 95px);
+
+        @include xs {
+            margin: 10px;
+            margin-right: 0;
+            width: auto;
+        }
+    }
+
+    .sec-row {
+        margin: 20px 0 0;
+        justify-content: space-between;
+
+        @include xs {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    ._info {
+        display: flex;
+
+        @include xs {
+            flex-direction: column;
+        }
+    }
+
+    .own-credit-desc {
+        color: #817682;
+        font-size: 12px;
+    }
+
+    .own-credit-added {
+        margin: 0 60px;
+        color: #817682;
+        font-size: 12px;
+
+        @include xs {
+            margin: 10px 0;
+        }
+    }
+
+    .card-type {
+        font-size: 12px;
+
+        &.default {
+            color: #3d9635;
+
+
+        }
+
+        &.make-default {
+            color: #331d34;
+            font-size: 12px;
+            @include transition(all 0.3s ease-in-out);
+
+            &:hover {
+                color: #3d9635;
+            }
+        }
+
+        &.delete-card {
+            color: #f37170;
+            margin-left: 50px;
+            @include transition(all 0.3s ease-in-out);
+
+            &:hover {
+                color: #fb100e;
+            }
+        }
+    }
+
+    .addcart-modal {
+        width: 192px;
+        height: 58px;
+        box-shadow: 0 1px 0 #000000;
+        border-radius: 5px;
+        background-color: #211026;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fdfcfc;
+        font-size: 16px;
+        @include transition(all 0.3s ease-in-out);
+
+        &:focus,
+        &:hover {
+            background-color: $orange;
+        }
+
+        @include xs {
+            width: 130px;
+            font-size: 14px;
+            height: 40px;
+        }
+    }
+}
+
+html[dir="rtl"] {
+    .owned-credit-cont {
+        text-align: right;
+
+
+        .own-credit {
+            @include xs {
+                padding: 20px;
+                padding-left: 5px;
+            }
+        }
+
+        .own-credit-name {
+            font-family: g-bold;
+        }
+
+        .own-card-info {
+
+            @include xs {
+                margin: 10px;
+                margin-left: 0;
+            }
+        }
+
+
+        .card-type {
+            &.delete-card {
+                margin-left: 0;
+                margin-right: 50px;
+            }
+        }
+    }
+}

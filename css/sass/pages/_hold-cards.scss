@@ -66,6 +66,14 @@
         align-items: center;
         position: relative;
         background-color: #fff;
+        overflow-x: hidden;
+        @include transition(all 0.3s ease-in-out);
+        cursor: default;
+
+        &:hover {
+            box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);
+            z-index: 9999;
+        }
 
         &:last-of-type {
             border: none;

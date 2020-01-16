@@ -87,6 +87,14 @@
         border-bottom: 1px solid #eaebf0;
         align-items: center;
         position: relative;
+        @include transition(all 0.3s ease-in-out);
+        cursor: default;
+
+        &:hover {
+            box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);
+            z-index: 9999;
+        }
+
 
         @include xs {
             padding: 20px;

@@ -205,6 +205,13 @@
         display: flex;
         padding: 30px 42px 34px;
         border-bottom: 1px solid #eaebf0;
+        @include transition(all 0.3s ease-in-out);
+        cursor: default;
+
+        &:hover {
+            box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);
+            z-index: 9999;
+        }
 
         &:last-of-type {
             border: none;

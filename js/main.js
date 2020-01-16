@@ -22,7 +22,19 @@ $(document).ready(function () {
             $("body").toggleClass("overflow");
         });
     }
-
+    $('.addcart-modal').click(function () {
+        $(".modal-cont").fadeIn(400)
+        $(".add-modal").addClass("show-modal");
+        $("body").addClass("overflow");
+    });
+    $('.close-add-modal, .modal-cont').click(function () {
+        $(".modal-cont").fadeOut(500)
+        $(".add-modal").removeClass("show-modal");
+        $("body").removeClass("overflow");
+    });
+    $('.add-modal').click(function (e) {
+        e.stopPropagation();
+    });
     $('.form-input, .new-credit-input,.depo-input').focus(function () {
         $(this).parent().find(".floating-label").addClass('label-active');
     });
@@ -58,6 +70,7 @@ $(document).ready(function () {
         $('.selected-info').html($(this).html())
         $(this).html(bank)
     });
+
     $('.user').click(function () {
         $('.user-nav-cont').slideToggle(500)
         $('.user').toggleClass("useropen")

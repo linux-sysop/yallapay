@@ -892,6 +892,86 @@ html[dir=rtl] .xs-nav .lang-country .lang {
   margin-left: 20px;
 }
 
+.modal-cont {
+  background-color: rgba(51, 29, 52, 0.95);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: none;
+}
+.modal-cont .container {
+  height: 100%;
+}
+.modal-cont .add-modal-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.modal-cont .close-add-modal {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50px;
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  .modal-cont .close-add-modal {
+    top: 25px;
+  }
+}
+.modal-cont .close-add-modal path {
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.modal-cont .close-add-modal:hover path {
+  fill: #f48d65;
+}
+.modal-cont .add-modal {
+  width: 529px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  transform: translateY(-127%);
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.modal-cont .add-modal.show-modal {
+  transform: translateY(0);
+}
+@media (max-width: 767px) {
+  .modal-cont .add-modal {
+    width: 100%;
+  }
+}
+.modal-cont .add-modal .new-credit-card-method {
+  padding: 0 40px 30px;
+  border-radius: 0 0 10px 10px;
+}
+.modal-cont .add-modal .add-modal-head {
+  height: 70px;
+  border-radius: 10px 10px 0 0;
+  background-color: #f1f4f6;
+  display: flex;
+  align-items: center;
+  padding: 0 45px;
+  color: #1b0e1c;
+  font-family: os-bold;
+  font-size: 16px;
+  justify-content: center;
+  text-align: center;
+}
+
+html[dir=rtl] .modal-cont .add-modal .add-modal-head {
+  font-family: g-bold;
+}
+
 .pagination {
   justify-content: center;
   margin-top: 50px;
@@ -3797,6 +3877,15 @@ html[dir=rtl] .suecss-card-preview ._left-sec .amount-pre {
   display: flex;
   padding: 30px 42px 34px;
   border-bottom: 1px solid #eaebf0;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: default;
+}
+.main-view-body .own-card:hover {
+  box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);
+  z-index: 9999;
 }
 .main-view-body .own-card:last-of-type {
   border: none;
@@ -4144,6 +4233,15 @@ html[dir=rtl] .card-number-info .cards-num {
   border-bottom: 1px solid #eaebf0;
   align-items: center;
   position: relative;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: default;
+}
+.owned-main-cont .own-card:hover {
+  box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);
+  z-index: 9999;
 }
 @media (max-width: 767px) {
   .owned-main-cont .own-card {
@@ -4265,6 +4363,144 @@ html[dir=rtl] .owned-main-cont .own-card-date {
   }
 }
 
+.owned-credit-cont .owned-credits:before {
+  background-color: #fcdf9f;
+}
+@media (max-width: 767px) {
+  .owned-credit-cont .own-credit {
+    align-items: flex-start;
+    padding-right: 5px;
+  }
+  .owned-credit-cont .own-credit .own-credit-img {
+    max-width: 50px;
+  }
+}
+.owned-credit-cont .own-credit-name {
+  color: #1b0e1c;
+  font-family: os-bold;
+  font-size: 16px;
+}
+.owned-credit-cont .own-card-info {
+  margin: 0 35px;
+  width: calc(100% - 95px);
+}
+@media (max-width: 767px) {
+  .owned-credit-cont .own-card-info {
+    margin: 10px;
+    margin-right: 0;
+    width: auto;
+  }
+}
+.owned-credit-cont .sec-row {
+  margin: 20px 0 0;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .owned-credit-cont .sec-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.owned-credit-cont ._info {
+  display: flex;
+}
+@media (max-width: 767px) {
+  .owned-credit-cont ._info {
+    flex-direction: column;
+  }
+}
+.owned-credit-cont .own-credit-desc {
+  color: #817682;
+  font-size: 12px;
+}
+.owned-credit-cont .own-credit-added {
+  margin: 0 60px;
+  color: #817682;
+  font-size: 12px;
+}
+@media (max-width: 767px) {
+  .owned-credit-cont .own-credit-added {
+    margin: 10px 0;
+  }
+}
+.owned-credit-cont .card-type {
+  font-size: 12px;
+}
+.owned-credit-cont .card-type.default {
+  color: #3d9635;
+}
+.owned-credit-cont .card-type.make-default {
+  color: #331d34;
+  font-size: 12px;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.owned-credit-cont .card-type.make-default:hover {
+  color: #3d9635;
+}
+.owned-credit-cont .card-type.delete-card {
+  color: #f37170;
+  margin-left: 50px;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.owned-credit-cont .card-type.delete-card:hover {
+  color: #fb100e;
+}
+.owned-credit-cont .addcart-modal {
+  width: 192px;
+  height: 58px;
+  box-shadow: 0 1px 0 #000000;
+  border-radius: 5px;
+  background-color: #211026;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fdfcfc;
+  font-size: 16px;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.owned-credit-cont .addcart-modal:focus, .owned-credit-cont .addcart-modal:hover {
+  background-color: #f48d65;
+}
+@media (max-width: 767px) {
+  .owned-credit-cont .addcart-modal {
+    width: 130px;
+    font-size: 14px;
+    height: 40px;
+  }
+}
+
+html[dir=rtl] .owned-credit-cont {
+  text-align: right;
+}
+@media (max-width: 767px) {
+  html[dir=rtl] .owned-credit-cont .own-credit {
+    padding: 20px;
+    padding-left: 5px;
+  }
+}
+html[dir=rtl] .owned-credit-cont .own-credit-name {
+  font-family: g-bold;
+}
+@media (max-width: 767px) {
+  html[dir=rtl] .owned-credit-cont .own-card-info {
+    margin: 10px;
+    margin-left: 0;
+  }
+}
+html[dir=rtl] .owned-credit-cont .card-type.delete-card {
+  margin-left: 0;
+  margin-right: 50px;
+}
+
 .hold-cards-content-cont {
   background-color: #f1f4f6;
   padding-top: 77px;
@@ -4328,6 +4564,16 @@ html[dir=rtl] .owned-main-cont .own-card-date {
   align-items: center;
   position: relative;
   background-color: #fff;
+  overflow-x: hidden;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: default;
+}
+.hold-cards .hold-card:hover {
+  box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);
+  z-index: 9999;
 }
 .hold-cards .hold-card:last-of-type {
   border: none;
