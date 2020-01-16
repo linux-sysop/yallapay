@@ -15,6 +15,9 @@ $(window).on("load", function () {
     new WOW().init()
 });
 $(document).ready(function () {
+    $('select').selectpicker({
+        dropupAuto: false
+    });
     if ($(window).width() > 768) {
         $('.main-head').addClass('openStyle');
         setTimeout(() => {
