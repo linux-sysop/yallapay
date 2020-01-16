@@ -53,6 +53,7 @@
 body {
   font-family: os;
   overflow-x: hidden;
+  overflow: hidden;
   overflow-x: hidden;
 }
 body::-webkit-scrollbar {
@@ -651,7 +652,7 @@ html[dir=rtl] .nav_list .nav-item .nav-anchor {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(51, 29, 52, 0.95);
+  background-color: rgba(51, 29, 52, 0.98);
   z-index: 999;
   padding-top: 30px;
   transform-origin: right;
@@ -902,6 +903,7 @@ html[dir=rtl] .xs-nav .lang-country .lang {
   bottom: 0;
   right: 0;
   left: 0;
+  z-index: 99;
   display: none;
 }
 .modal-cont .container {
@@ -920,6 +922,7 @@ html[dir=rtl] .xs-nav .lang-country .lang {
   transform: translateX(-50%);
   top: 50px;
   cursor: pointer;
+  z-index: 99;
 }
 @media (max-width: 767px) {
   .modal-cont .close-add-modal {
@@ -944,6 +947,7 @@ html[dir=rtl] .xs-nav .lang-country .lang {
   -o-transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  z-index: 99;
 }
 .modal-cont .add-modal.show-modal {
   transform: translateY(0);
@@ -951,7 +955,7 @@ html[dir=rtl] .xs-nav .lang-country .lang {
 @media (max-width: 767px) {
   .modal-cont .add-modal {
     width: 100%;
-    margin-top: 50px;
+    margin-top: 150px;
   }
 }
 .modal-cont .add-modal .new-credit-card-method {
@@ -1031,6 +1035,39 @@ html[dir=rtl] .modal-cont .add-modal .add-modal-head {
 }
 .pagination .last-page {
   width: 115px;
+}
+
+.loader {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 99999;
+}
+
+@-webkit-keyframes flash {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+@keyframes flash {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+.pulse {
+  animation: flash 5s infinite;
 }
 
 header {
@@ -1550,9 +1587,9 @@ html[dir=rtl] .user-nav-cont .anchors-head .user-anchor:hover {
   }
 }
 .main-sec .cards .card {
-  width: calc(50% - 12px);
-  margin-right: 24px;
-  margin-bottom: 24px;
+  width: calc(50% - 7px);
+  margin-right: 14px;
+  margin-bottom: 14px;
   background-color: transparent;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -1568,10 +1605,14 @@ html[dir=rtl] .user-nav-cont .anchors-head .user-anchor:hover {
 }
 @media (max-width: 767px) {
   .main-sec .cards .card {
-    margin-right: 18px;
-    width: calc(50% - 9px);
+    margin-right: 8px;
+    width: calc(50% - 4px);
     margin-bottom: 19px;
   }
+}
+.main-sec .cards .card img {
+  max-width: 100%;
+  height: auto;
 }
 @media (max-width: 767px) {
   .main-sec .cards {
@@ -1660,7 +1701,7 @@ html[dir=rtl] .main-sec .sec-head {
 }
 html[dir=rtl] .main-sec .cards .card {
   margin-right: 0;
-  margin-left: 24px;
+  margin-left: 14px;
 }
 html[dir=rtl] .main-sec .cards .card:nth-of-type(2n) {
   margin-left: 0;
@@ -1668,7 +1709,7 @@ html[dir=rtl] .main-sec .cards .card:nth-of-type(2n) {
 }
 @media (max-width: 767px) {
   html[dir=rtl] .main-sec .cards .card {
-    margin-left: 18px;
+    margin-left: 8px;
     margin-right: 0;
   }
 }
@@ -2173,7 +2214,7 @@ html[dir=rtl] .guaranties-cont.about-page .guarantie .guarantie-desc {
   width: 100%;
   height: 100%;
   background-color: transparent;
-  border-bottom: 2px solid #fff;
+  border-bottom: 1px solid #fff;
   color: #fff;
   font-size: 16px;
   padding: 0 15px;
@@ -2182,7 +2223,7 @@ html[dir=rtl] .guaranties-cont.about-page .guarantie .guarantie-desc {
   text-align: left;
 }
 .info-card-cont .form-input:focus {
-  border-bottom: 2px solid #f48d65;
+  border-bottom: 1px solid #f48d65;
 }
 .info-card-cont .form-input::-webkit-inner-spin-button,
 .info-card-cont .form-input::-webkit-outer-spin-button {
@@ -2367,6 +2408,11 @@ html[dir=rtl] .guaranties-cont.about-page .guarantie .guarantie-desc {
 .radio-cont.radio-disabled {
   overflow: unset;
   cursor: not-allowed;
+  background-color: #817682;
+  border: 1px solid #817682;
+}
+.radio-cont.radio-disabled .checkmark {
+  color: #331d34;
 }
 .radio-cont.radio-disabled:hover input ~ .checkmark {
   color: #331d34;
@@ -2717,6 +2763,7 @@ html[dir=rtl] .guaranties-cont.about-page .guarantie .guarantie-desc {
     font-size: 75px;
     margin-top: 0;
     line-height: 50px;
+    margin-top: 15px;
   }
   .pay-card-preview .preview-content .email-pre {
     font-size: 12px;
@@ -2834,6 +2881,15 @@ html[dir=rtl] .guaranties-cont.about-page .guarantie .guarantie-desc {
 @media (max-width: 767px) {
   .pay-method {
     height: 130px;
+  }
+  .pay-method .card-img-wrap {
+    height: 42px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 13px;
+  }
+  .pay-method .card-img-wrap img {
+    margin-bottom: 0;
   }
 }
 
@@ -3019,11 +3075,20 @@ html[dir=rtl] .guaranties-cont.about-page .guarantie .guarantie-desc {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-.add-new-card img {
+.add-new-card svg {
   margin-right: 6px;
+}
+.add-new-card svg path {
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .add-new-card:hover {
   color: #f48d65;
+}
+.add-new-card:hover svg path {
+  fill: #f48d65;
 }
 
 .pay-step {
@@ -3700,6 +3765,10 @@ html[dir=rtl] .suecss-card-preview ._left-sec .amount-pre {
   background-color: #f48d65;
   border-color: #f48d65;
   color: #fdfcfc;
+}
+
+html[dir=rtl] .wire-method .secure-pay {
+  text-align: right;
 }
 
 .user-setting-cont {

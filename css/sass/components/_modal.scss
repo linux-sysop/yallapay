@@ -5,7 +5,7 @@
     bottom: 0;
     right: 0;
     left: 0;
-
+    z-index: 99;
     display: none;
 
     .container {
@@ -26,6 +26,7 @@
         transform: translateX(-50%);
         top: 50px;
         cursor: pointer;
+        z-index: 99;
 
         @include xs {
             top: 25px
@@ -48,6 +49,8 @@
         background-color: #ffffff;
         transform: translateY(-127%);
         @include transition(all 0.5s ease-in-out);
+        z-index: 99;
+
 
         &.show-modal {
             transform: translateY(0);
@@ -55,7 +58,7 @@
 
         @include xs {
             width: 100%;
-            margin-top: 50px;
+            margin-top: 150px;
         }
 
         .new-credit-card-method {

@@ -1,4 +1,19 @@
-$(window).on("load", function () { });
+$(window).on("load", function () {
+    $(".loader").fadeOut(1000, function () {
+        $('body').css("overflow-y", "visible");
+        $('body').animate({
+            scrollTop: 0
+        }, 1);
+        if ($(window).width() > 768) {
+            $('.main-head').addClass('openStyle');
+            setTimeout(() => {
+                $('.sec-head').addClass('openStyle');
+            }, 1500);
+        };
+    });
+
+    new WOW().init()
+});
 $(document).ready(function () {
     if ($(window).width() > 768) {
         $('.main-head').addClass('openStyle');
@@ -7,6 +22,9 @@ $(document).ready(function () {
         }, 1500);
     }
     if ($(window).width() < 768) {
+
+        $(".pay-method img").wrap("<div class='card-img-wrap'></div>");
+
         $(".img-sec").removeClass('fadeInRightBig')
         $(".img-sec").removeClass('fadeInLeftBig')
         $(".img-sec").addClass('zoomIn')
@@ -56,7 +74,6 @@ $(document).ready(function () {
             $(".hide").hide();
         }
     });
-    new WOW().init();
 
 
     $('.info-card-cont .country-li .country-anchor').click(function () {
