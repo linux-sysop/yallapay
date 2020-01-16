@@ -3153,6 +3153,11 @@ html[dir=rtl] .guaranties-cont.about-page .guarantie .guarantie-desc {
   margin-top: 0;
   margin-right: 13px;
 }
+@media (max-width: 767px) {
+  .new-credit-card-method .input-row .new-credit-input-label {
+    margin-right: 0;
+  }
+}
 .new-credit-card-method .input-row .new-credit-input-label:nth-of-type(1) {
   width: calc(50% - 9px);
 }
@@ -3532,6 +3537,12 @@ html[dir=rtl] .new-credit-card-method .note {
 html[dir=rtl] .new-credit-card-method .input-row .new-credit-input-label {
   margin-right: 0;
   margin-left: 13px;
+}
+@media (max-width: 767px) {
+  html[dir=rtl] .new-credit-card-method .input-row .new-credit-input-label {
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 html[dir=rtl] .new-credit-card-method .input-row .new-credit-input-label:nth-of-type(3) {
   margin-right: 0;
