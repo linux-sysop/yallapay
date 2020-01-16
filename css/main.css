@@ -5231,12 +5231,13 @@ footer.black-page .mobilefooter {
 }
 
 .dropdown.bootstrap-select {
-  width: 150px !important;
+  width: 120px !important;
   color: #1b0e1c !important;
 }
 
 .btn-light.dropdown-toggle {
   color: #1b0e1c !important;
+  padding: 0;
 }
 
 .btn-light.dropdown-toggle:focus {
@@ -5244,10 +5245,11 @@ footer.black-page .mobilefooter {
   outline: none !important;
   background-color: transparent !important;
   z-index: 9999;
+  padding: 0;
 }
 
 .bootstrap-select .dropdown-menu {
-  width: 150px !important;
+  width: 120px !important;
   z-index: 9999;
   border-color: #eee;
 }
