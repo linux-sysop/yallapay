@@ -368,7 +368,8 @@ html {
 }
 
 .hint {
-  width: 529px;
+  max-width: 655px;
+  padding: 0 30px;
   min-height: 49px;
   border-radius: 10px;
   background-color: #ffde96;
@@ -376,6 +377,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   margin-bottom: 32px;
   color: #331d34;
   font-size: 16px;
@@ -385,6 +387,7 @@ html {
     width: 100%;
     text-align: center;
     padding: 7px 0;
+    font-size: 13px;
   }
 }
 
@@ -4550,23 +4553,33 @@ html[dir=rtl] .owned-credit-cont .card-type.delete-card {
   width: 100%;
   padding-top: 30px;
   padding-bottom: 5px;
+  position: relative;
 }
 @media (max-width: 767px) {
   .hold-cards {
     padding-top: 20px;
     position: relative;
   }
-  .hold-cards:after {
-    content: "";
-    height: 7px;
-    border-radius: 3px;
-    background-color: #9ec6cd;
-    width: 248px;
-    display: block;
-    position: absolute;
-    right: 45px;
-    bottom: 0;
-    transform: translate(0, 50%);
+}
+.hold-cards:before {
+  content: "";
+  height: 6px;
+  border-radius: 3px;
+  background-color: #9ec6cd;
+  width: 248px;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 767px) {
+  .hold-cards {
+    width: 100%;
+  }
+  .hold-cards::before {
+    left: 31px;
+    transform: translateY(-50%);
   }
 }
 .hold-cards .hold-card {
@@ -4637,6 +4650,7 @@ html[dir=rtl] .owned-credit-cont .card-type.delete-card {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   font-size: 10px;
 }
 @media (max-width: 767px) {
