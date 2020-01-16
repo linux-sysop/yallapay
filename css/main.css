@@ -948,6 +948,7 @@ html[dir=rtl] .xs-nav .lang-country .lang {
 @media (max-width: 767px) {
   .modal-cont .add-modal {
     width: 100%;
+    margin-top: 50px;
   }
 }
 .modal-cont .add-modal .new-credit-card-method {
