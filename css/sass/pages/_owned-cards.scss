@@ -1,0 +1,221 @@
+.owned-main-cont {
+    background-color: $back;
+    padding: 77px 0;
+
+    @include xs {
+        padding: 50px 0;
+    }
+
+    .loged-page-head {
+        justify-content: space-between;
+
+        #inputGroupSelect01 {
+            font-size: 18px;
+            color: #1b0e1c;
+            background-color: transparent;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            -o-appearance: none;
+            appearance: none;
+
+            background-image: url('../images/drop.svg');
+            background-position: 98% center;
+            background-repeat: no-repeat;
+            padding-right: 22px;
+
+            &:after {
+                content: url('../images/drop.svg');
+                display: block;
+            }
+        }
+    }
+
+    .navigatback {
+        width: 970px;
+        margin: auto;
+
+        @include xs {
+            width: 100%;
+        }
+    }
+
+    .loged-page-head {
+        width: 970px;
+        margin: auto;
+
+        @include xs {
+            width: 100%;
+        }
+    }
+
+    .owned-cards {
+        width: 970px;
+        margin: auto;
+        margin-top: 32px;
+        border-radius: 15px;
+        background-color: #ffffff;
+        padding-top: 30px;
+        padding-bottom: 48px;
+        position: relative;
+
+        @include xs {
+            padding-bottom: 30px;
+        }
+
+        &:before {
+            content: "";
+            height: 6px;
+            border-radius: 3px;
+            background-color: #9ec6cd;
+            width: 248px;
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translate(-50%, -50%);
+        }
+
+        @include xs {
+            width: 100%;
+
+            &::before {
+                left: 31px;
+                transform: translateY(-50%);
+            }
+        }
+
+    }
+
+    .own-card {
+        display: flex;
+        padding: 38px 42px 30px;
+        border-bottom: 1px solid #eaebf0;
+        align-items: center;
+        position: relative;
+
+        @include xs {
+            padding: 20px;
+        }
+
+        .own-card-img {
+            @include xs {
+                min-width: 50px;
+            }
+        }
+    }
+
+
+
+    .own-card-info {
+        margin: 0 35px 0;
+
+        @include xs {
+            margin: 10px;
+        }
+    }
+
+    .own-card-name {
+        color: #1b0e1c;
+        font-size: 20px;
+        font-family: os-bold;
+        text-transform: uppercase;
+
+        @include xs {
+            font-size: 16px;
+        }
+    }
+
+    .sec-row {
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+
+        @include xs {
+            margin: 10px 0;
+        }
+    }
+
+    .own-card-price {
+        margin-right: 52px;
+        color: #1b0e1c;
+        font-size: 15px;
+        font-family: os-bold;
+
+        @include xs {
+            margin-right: 20px;
+        }
+    }
+
+    .own-card-mail {
+        color: #817682;
+        font-size: 15px;
+
+        @include xs {
+            font-size: 12px;
+        }
+
+    }
+
+    .own-card-method {
+        color: #817682;
+        font-size: 15px;
+        display: flex;
+
+        @include xs {
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .own-card-date {
+        color: #817682;
+        font-size: 15px;
+        display: flex;
+        position: absolute;
+        left: 55%;
+        top: 75px;
+
+        @include xs {
+            position: relative;
+            left: auto;
+            top: auto;
+            font-size: 12px;
+        }
+    }
+}
+
+
+html[dir="rtl"] .owned-main-cont {
+
+    .own-card-name {
+        text-align: right;
+    }
+
+    .own-card-price {
+        margin-right: 0;
+        margin-left: 52px;
+        font-family: os-bold;
+
+        @include xs {
+            margin-right: 0;
+            margin-left: 20px;
+        }
+    }
+
+    .own-card-mail {
+        font-family: os;
+
+    }
+
+    .own-card-date {
+        left: auto;
+        right: 55%;
+
+
+        @include xs {
+            right: auto;
+            top: auto;
+        }
+    }
+
+}

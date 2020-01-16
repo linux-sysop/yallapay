@@ -467,3 +467,23 @@ div.guarantie-img {
         max-width: 33px;
     }
 }
+
+.loged-page-head {
+    color: #1b0e1c;
+    font-size: 24px;
+    width: 529px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: auto;
+    margin-bottom: 34px;
+    font-family: 'os-semibold';
+
+    @include xs {
+        width: 100%;
+    }
+}
+
+html[dir='rtl'] .loged-page-head {
+    font-family: g-bold;
+}

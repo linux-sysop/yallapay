@@ -415,21 +415,6 @@ html[dir='rtl'] .form {
     }
 }
 
-.form-head {
-    color: #1b0e1c;
-    font-size: 24px;
-    width: 529px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin: auto;
-    margin-bottom: 34px;
-    font-family: 'os-semibold';
-
-    @include xs {
-        width: 100%;
-    }
-}
 
 .navigatback {
     width: 529px;
@@ -476,9 +461,6 @@ html[dir="rtl"] {
         }
     }
 
-    .form-head {
-        font-family: g-bold;
-    }
 
     .navigatback {
 
