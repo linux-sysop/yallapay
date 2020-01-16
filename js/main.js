@@ -1,5 +1,6 @@
 $(window).on("load", function () {
-    $(".loader").fadeOut(1000, function () {
+    $(".loader .pulse").fadeOut(1000, function () {
+        $(".loader").hide()
         $('body').css("overflow-y", "visible");
         $('body').animate({
             scrollTop: 0
