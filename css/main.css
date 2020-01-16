@@ -4306,6 +4306,19 @@ html[dir=rtl] .owned-main-cont .own-card-date {
 @media (max-width: 767px) {
   .hold-cards {
     padding-top: 20px;
+    position: relative;
+  }
+  .hold-cards:after {
+    content: "";
+    height: 7px;
+    border-radius: 3px;
+    background-color: #9ec6cd;
+    width: 248px;
+    display: block;
+    position: absolute;
+    right: 45px;
+    bottom: 0;
+    transform: translate(0, 50%);
   }
 }
 .hold-cards .hold-card {
