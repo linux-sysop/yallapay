@@ -24,6 +24,7 @@ $(document).ready(function () {
         setTimeout(() => {
             $('.sec-head').addClass('openStyle');
         }, 1500);
+
     }
     if ($(window).width() < 768) {
 
