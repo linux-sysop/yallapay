@@ -5714,6 +5714,7 @@ html[dir=rtl] .goto svg {
   font-size: 24px;
   line-height: 36px;
   margin-top: 20px;
+  display: flex;
   margin-bottom: 47px;
 }
 @media (max-width: 767px) {
@@ -5906,6 +5907,302 @@ html[dir=rtl] .country-select .countries-head {
 html[dir=rtl] .country-select .other-countries {
   left: auto;
   right: 0;
+}
+
+.contact-main-cont {
+  background-color: #f1f4f6;
+  padding-top: 38px;
+  padding-bottom: 160px;
+}
+@media (max-width: 767px) {
+  .contact-main-cont {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+}
+.contact-main-cont .contact-page-head {
+  color: #1b0e1c;
+  font-size: 32px;
+  font-family: os-bold;
+}
+.contact-main-cont .contact-page-desc {
+  color: #1b0e1c;
+  font-family: os-semibold;
+  font-size: 24px;
+  line-height: 36px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  display: flex;
+}
+@media (max-width: 767px) {
+  .contact-main-cont .contact-page-desc {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+html[dir=rtl] {
+  text-align: right;
+}
+html[dir=rtl] .contact-main-cont {
+  text-align: right;
+}
+html[dir=rtl] .contact-main-cont .contact-page-head {
+  font-family: g-bold;
+  text-align: right;
+}
+html[dir=rtl] .contact-main-cont .contact-page-desc {
+  font-family: g-med;
+  text-align: right;
+}
+
+.contact-form {
+  width: 100%;
+  margin: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.contact-form .input-label {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  margin-top: 50px;
+}
+.contact-form .input-label:first-of-type {
+  margin-top: 0;
+}
+.contact-form .input-label.text-label {
+  height: 170px;
+}
+.contact-form .input-label.text-label .floating-label {
+  top: 20px;
+}
+.contact-form .input-label.text-label .label-active {
+  top: 0;
+}
+.contact-form .input-label.text-label .form-input {
+  padding: 15px;
+}
+.contact-form .form-input {
+  resize: none;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border-bottom: 1px solid #1b0e1c;
+  color: #1b0e1c;
+  font-size: 16px;
+  padding: 0 15px;
+  -moz-appearance: textfield;
+  transition: 0.2s ease all;
+  text-align: left;
+}
+.contact-form .form-input:focus {
+  border-bottom: 1px solid #f48d65;
+}
+.contact-form .form-input::-webkit-inner-spin-button,
+.contact-form .form-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+.contact-form .floating-label {
+  position: absolute;
+  pointer-events: none;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #1b0e1c;
+  font-family: os-bold;
+  font-size: 16px;
+  transition: 0.2s ease all;
+}
+.contact-form .label-active {
+  top: 0;
+  left: 0;
+  font-size: 13px;
+  color: #fff;
+  color: #331d34;
+}
+.contact-form .note {
+  color: #817682;
+  font-family: os-light;
+  font-size: 13px;
+  display: block;
+  margin-top: 10px;
+}
+.contact-form p.note {
+  margin-top: 30px;
+  line-height: 20px;
+}
+.contact-form .submit-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 58px;
+  box-shadow: 0 1px 0 #000000, inset 0 1px 1px #ff996c;
+  border-radius: 5px;
+  background-color: #f27036;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  font-size: 16px;
+  color: #fff;
+  margin-top: 30px;
+}
+.contact-form .submit-form:focus, .contact-form .submit-form:hover {
+  background-color: #1b0e1c;
+  border: 1px solid #665e71;
+  box-shadow: none;
+}
+@media (max-width: 767px) {
+  .contact-form .submit-form {
+    margin-bottom: 30px;
+  }
+}
+
+html[dir=rtl] .form .form-input {
+  text-align: right;
+}
+html[dir=rtl] .form .countries-cont {
+  width: 265px;
+}
+@media (max-width: 767px) {
+  html[dir=rtl] .form .countries-cont .country-name {
+    font-size: 18px;
+  }
+}
+html[dir=rtl] .form .countries-head {
+  font-family: g-bold;
+  text-align: right;
+}
+html[dir=rtl] .form .floating-label {
+  right: 0;
+  left: auto;
+  font-family: g-bold;
+}
+html[dir=rtl] .form .label-active {
+  right: 0;
+  left: auto;
+}
+html[dir=rtl] .form .note {
+  font-family: gulf;
+  text-align: right;
+}
+html[dir=rtl] .form .show_hide {
+  font-family: gulf;
+  right: auto;
+  left: 2px;
+}
+html[dir=rtl] .form .countries-cont {
+  margin-right: 0;
+  margin-left: auto;
+}
+html[dir=rtl] .form .countries-cont .country-name {
+  margin-right: 14px;
+  margin-left: 0;
+}
+html[dir=rtl] .form .note-forget {
+  text-align: right;
+}
+
+.conntact-info-sec {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+._1st-div {
+  padding: 38px 38px 35px;
+}
+@media (max-width: 767px) {
+  ._1st-div {
+    padding: 20px 10px;
+  }
+}
+
+.contact-info-head {
+  color: #331d34;
+  font-family: os-bold;
+  font-size: 24px;
+  margin-bottom: 14px;
+}
+
+.contact-info-text {
+  color: #817682;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.contact-info {
+  margin-top: 30px;
+}
+
+.contact-way {
+  color: #331d34;
+  font-size: 16px;
+  font-family: os;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  margin-bottom: 27px;
+  line-height: 24px;
+}
+.contact-way svg {
+  min-width: 25px;
+  width: 25px;
+  margin: 0 12px;
+}
+.contact-way svg path {
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 767px) {
+  .contact-way svg {
+    margin: 0 10px;
+  }
+}
+.contact-way:hover {
+  color: #f48d65;
+}
+.contact-way:hover svg path {
+  fill: #331d34;
+}
+
+._2nd-div {
+  height: 275px;
+  width: 100%;
+}
+
+html[dir=rtl] .contact-form .form-input {
+  text-align: right;
+}
+html[dir=rtl] .contact-form .floating-label {
+  right: 0;
+  left: auto;
+  font-family: g-bold;
+}
+html[dir=rtl] .contact-form .label-active {
+  right: 0;
+  left: auto;
+}
+html[dir=rtl] .contact-form .note {
+  font-family: gulf;
+  text-align: right;
+}
+html[dir=rtl] .contact-info-head {
+  font-family: g-bold;
+}
+html[dir=rtl] .map-contact {
+  font-family: gulf;
 }
 
 footer {
