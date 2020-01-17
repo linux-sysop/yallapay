@@ -1,0 +1,213 @@
+.available-cont {
+    background-color: $back;
+    padding-top: 77px;
+    padding-bottom: 130px;
+
+    @include xs {
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+
+    .available-page-head {
+        color: #1b0e1c;
+        font-size: 32px;
+        font-family: os-bold;
+
+    }
+
+    .available-page-desc {
+        color: #1b0e1c;
+        font-family: os-semibold;
+        font-size: 24px;
+        line-height: 36px;
+        margin-top: 20px;
+        margin-bottom: 47px;
+
+        @include xs {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+
+    .country-select {
+
+
+        .countries-head {
+            color: #1b0e1c;
+            font-family: os-bold;
+            font-size: 16px;
+            display: flex;
+            margin-bottom: 17px;
+        }
+
+        .countries-cont {
+            max-width: 275px;
+            @include transition(all 0.3s ease-in-out);
+            padding-top: 5px;
+
+            &:hover {
+                background-color: #fff;
+                border-radius: 4px;
+            }
+
+
+        }
+
+        .country-li,
+        .selected-conutry {
+            padding: 0 5px;
+
+            .arrow {
+                width: auto;
+                height: auto;
+                background-color: transparent;
+            }
+
+            img {
+                width: 31px;
+                height: 31px;
+            }
+
+            .country-name {
+                margin: 0 15px;
+            }
+        }
+
+        .other-countries {
+            left: 0;
+
+            .country-li {
+                margin-bottom: 7px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .available-text {
+        color: #817682;
+        font-size: 12px;
+        width: 442px;
+        margin-top: 17px;
+
+        @include xs {
+            width: 100%;
+        }
+    }
+
+}
+
+.available-cards-content {
+    margin-top: 40px;
+
+    @include xs {
+        position: relative;
+        padding-top: 110px;
+        z-index: 9;
+        margin-top: 230px;
+        border-radius: 8px;
+        background-image: linear-gradient(to top, #f1f4f6 85%, rgba(241, 244, 246, 0) 100%);
+    }
+}
+
+.gift-card-content {
+    width: 470px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 17px 29px;
+    display: flex;
+    align-items: center;
+    @include transition(all 0.3s ease-in-out);
+    margin-bottom: 25px;
+
+    &:hover {
+
+        box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);
+    }
+
+    @include xs {
+        width: 100%;
+        padding: 21px 0 27px;
+        padding-right: 0;
+        padding-left: 23px;
+    }
+
+}
+
+.gift-card-img {
+    min-width: 171px;
+
+    img {
+        width: 100%;
+    }
+
+    @include xs {
+        min-width: 120px;
+        max-width: 120px;
+    }
+}
+
+.gift-card-desc {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+}
+
+.gift-card-name {
+    color: #1b0e1c;
+    font-family: os-bold;
+    font-size: 16px;
+    margin-bottom: 7px;
+}
+
+.gift-card-info {
+    color: #817682;
+    font-size: 14px;
+    line-height: 21px;
+
+    @include xs {
+        font-size: 12px;
+    }
+}
+
+.available-cards-img {
+    @include xs {
+        position: absolute;
+        top: 503px;
+        padding-right: 15px;
+        padding-left: 15px;
+        background-image: linear-gradient(0deg, rgba(241, 244, 246, 1) 0%, rgba(241, 244, 246, 0) 100%);
+    }
+}
+
+html[dir="rtl"] {
+    text-align: right;
+
+    .available-cont {
+        .available-page-head {
+            font-family: os-gulf;
+        }
+
+        .available-page-desc {
+            font-family: g-med;
+        }
+
+    }
+
+    .gift-card-content {
+        @include xs {
+            padding-right: 23px;
+            padding-left: 0;
+        }
+
+    }
+
+
+    .gift-card-desc {
+        margin-right: 25px;
+        margin-left: 0;
+    }
+
+    .gift-card-name {
+        font-family: g-bold;
+    }
+}

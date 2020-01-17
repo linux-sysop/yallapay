@@ -30,9 +30,10 @@ $(document).ready(function () {
 
         $(".pay-method img").wrap("<div class='card-img-wrap'></div>");
 
-        $(".img-sec").removeClass('fadeInRightBig')
-        $(".img-sec").removeClass('fadeInLeftBig')
-        $(".img-sec").addClass('zoomIn')
+        $(".img-sec, .available-cards-img").removeClass('fadeInRightBig')
+        $(".img-sec, .available-cards-img").removeClass('fadeInLeftBig')
+        $(".img-sec, .available-cards-img").addClass('zoomIn')
+        $(".available-cards-img").unwrap()
         $(".other-amount").removeAttr("placeholder")
 
 
@@ -108,7 +109,12 @@ $(document).ready(function () {
             $('.email-pre').text($('#email-pre').val())
         }
     });
+    $('.countries-cont .country-li').click(function () {
+        var flag = $('.countries-cont .conutry').html()
+        $('.countries-cont .conutry').html($(this).html())
+        $(this).html(flag)
 
+    });
 
 
 

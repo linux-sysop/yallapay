@@ -2059,6 +2059,10 @@ html[dir=rtl] .loged-page-head {
   font-family: g-bold;
 }
 
+.conutry {
+  display: flex;
+}
+
 .about-main {
   background-color: #f1f4f6;
   padding-top: 77px;
@@ -5686,6 +5690,202 @@ html[dir=rtl] ._2step-cont .active-date {
 
 html[dir=rtl] .goto svg {
   transform: none;
+}
+
+.available-cont {
+  background-color: #f1f4f6;
+  padding-top: 77px;
+  padding-bottom: 130px;
+}
+@media (max-width: 767px) {
+  .available-cont {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+}
+.available-cont .available-page-head {
+  color: #1b0e1c;
+  font-size: 32px;
+  font-family: os-bold;
+}
+.available-cont .available-page-desc {
+  color: #1b0e1c;
+  font-family: os-semibold;
+  font-size: 24px;
+  line-height: 36px;
+  margin-top: 20px;
+  margin-bottom: 47px;
+}
+@media (max-width: 767px) {
+  .available-cont .available-page-desc {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.available-cont .country-select .countries-head {
+  color: #1b0e1c;
+  font-family: os-bold;
+  font-size: 16px;
+  display: flex;
+  margin-bottom: 17px;
+}
+.available-cont .country-select .countries-cont {
+  max-width: 275px;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  padding-top: 5px;
+}
+.available-cont .country-select .countries-cont:hover {
+  background-color: #fff;
+  border-radius: 4px;
+}
+.available-cont .country-select .country-li,
+.available-cont .country-select .selected-conutry {
+  padding: 0 5px;
+}
+.available-cont .country-select .country-li .arrow,
+.available-cont .country-select .selected-conutry .arrow {
+  width: auto;
+  height: auto;
+  background-color: transparent;
+}
+.available-cont .country-select .country-li img,
+.available-cont .country-select .selected-conutry img {
+  width: 31px;
+  height: 31px;
+}
+.available-cont .country-select .country-li .country-name,
+.available-cont .country-select .selected-conutry .country-name {
+  margin: 0 15px;
+}
+.available-cont .country-select .other-countries {
+  left: 0;
+}
+.available-cont .country-select .other-countries .country-li {
+  margin-bottom: 7px;
+  cursor: pointer;
+}
+.available-cont .available-text {
+  color: #817682;
+  font-size: 12px;
+  width: 442px;
+  margin-top: 17px;
+}
+@media (max-width: 767px) {
+  .available-cont .available-text {
+    width: 100%;
+  }
+}
+
+.available-cards-content {
+  margin-top: 40px;
+}
+@media (max-width: 767px) {
+  .available-cards-content {
+    position: relative;
+    padding-top: 110px;
+    z-index: 9;
+    margin-top: 230px;
+    border-radius: 8px;
+    background-image: linear-gradient(to top, #f1f4f6 85%, rgba(241, 244, 246, 0) 100%);
+  }
+}
+
+.gift-card-content {
+  width: 470px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 17px 29px;
+  display: flex;
+  align-items: center;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 25px;
+}
+.gift-card-content:hover {
+  box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);
+}
+@media (max-width: 767px) {
+  .gift-card-content {
+    width: 100%;
+    padding: 21px 0 27px;
+    padding-right: 0;
+    padding-left: 23px;
+  }
+}
+
+.gift-card-img {
+  min-width: 171px;
+}
+.gift-card-img img {
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .gift-card-img {
+    min-width: 120px;
+    max-width: 120px;
+  }
+}
+
+.gift-card-desc {
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+}
+
+.gift-card-name {
+  color: #1b0e1c;
+  font-family: os-bold;
+  font-size: 16px;
+  margin-bottom: 7px;
+}
+
+.gift-card-info {
+  color: #817682;
+  font-size: 14px;
+  line-height: 21px;
+}
+@media (max-width: 767px) {
+  .gift-card-info {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  .available-cards-img {
+    position: absolute;
+    top: 503px;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-image: linear-gradient(0deg, #f1f4f6 0%, rgba(241, 244, 246, 0) 100%);
+  }
+}
+
+html[dir=rtl] {
+  text-align: right;
+}
+html[dir=rtl] .available-cont .available-page-head {
+  font-family: os-gulf;
+}
+html[dir=rtl] .available-cont .available-page-desc {
+  font-family: g-med;
+}
+@media (max-width: 767px) {
+  html[dir=rtl] .gift-card-content {
+    padding-right: 23px;
+    padding-left: 0;
+  }
+}
+html[dir=rtl] .gift-card-desc {
+  margin-right: 25px;
+  margin-left: 0;
+}
+html[dir=rtl] .gift-card-name {
+  font-family: g-bold;
 }
 
 footer {
