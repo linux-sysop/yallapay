@@ -5720,6 +5720,7 @@ html[dir=rtl] .goto svg {
   .available-cont .available-page-desc {
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 30px;
   }
 }
 .available-cont .country-select .countries-head {
@@ -5745,6 +5746,12 @@ html[dir=rtl] .goto svg {
 .available-cont .country-select .selected-conutry {
   padding: 0 5px;
 }
+@media (max-width: 767px) {
+  .available-cont .country-select .country-li,
+.available-cont .country-select .selected-conutry {
+    display: flex;
+  }
+}
 .available-cont .country-select .country-li .arrow,
 .available-cont .country-select .selected-conutry .arrow {
   width: auto;
@@ -5762,6 +5769,7 @@ html[dir=rtl] .goto svg {
 }
 .available-cont .country-select .other-countries {
   left: 0;
+  width: 100%;
 }
 .available-cont .country-select .other-countries .country-li {
   margin-bottom: 7px;
@@ -5868,11 +5876,16 @@ html[dir=rtl] .goto svg {
 html[dir=rtl] {
   text-align: right;
 }
+html[dir=rtl] .available-cont {
+  text-align: right;
+}
 html[dir=rtl] .available-cont .available-page-head {
-  font-family: os-gulf;
+  font-family: g-bold;
+  text-align: right;
 }
 html[dir=rtl] .available-cont .available-page-desc {
   font-family: g-med;
+  text-align: right;
 }
 @media (max-width: 767px) {
   html[dir=rtl] .gift-card-content {
@@ -5886,6 +5899,13 @@ html[dir=rtl] .gift-card-desc {
 }
 html[dir=rtl] .gift-card-name {
   font-family: g-bold;
+}
+html[dir=rtl] .country-select .countries-head {
+  font-family: g-bold;
+}
+html[dir=rtl] .country-select .other-countries {
+  left: auto;
+  right: 0;
 }
 
 footer {

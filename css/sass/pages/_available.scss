@@ -12,7 +12,6 @@
         color: #1b0e1c;
         font-size: 32px;
         font-family: os-bold;
-
     }
 
     .available-page-desc {
@@ -26,6 +25,7 @@
         @include xs {
             font-size: 16px;
             line-height: 24px;
+            margin-bottom: 30px;
         }
     }
 
@@ -57,6 +57,10 @@
         .selected-conutry {
             padding: 0 5px;
 
+            @include xs {
+                display: flex;
+            }
+
             .arrow {
                 width: auto;
                 height: auto;
@@ -75,6 +79,7 @@
 
         .other-countries {
             left: 0;
+            width: 100%;
 
             .country-li {
                 margin-bottom: 7px;
@@ -183,12 +188,16 @@ html[dir="rtl"] {
     text-align: right;
 
     .available-cont {
+        text-align: right;
+
         .available-page-head {
-            font-family: os-gulf;
+            font-family: g-bold;
+            text-align: right;
         }
 
         .available-page-desc {
             font-family: g-med;
+            text-align: right;
         }
 
     }
@@ -209,5 +218,18 @@ html[dir="rtl"] {
 
     .gift-card-name {
         font-family: g-bold;
+    }
+
+    .country-select {
+        .countries-head {
+            font-family: g-bold;
+        }
+
+
+
+        .other-countries {
+            left: auto;
+            right: 0;
+        }
     }
 }
