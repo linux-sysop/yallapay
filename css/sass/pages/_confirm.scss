@@ -342,3 +342,9 @@ html[dir="rtl"] .confirm-cont {
         }
     }
 }
+
+.confirm-name {
+    @include xs {
+        margin-top: 15px;
+    }
+}

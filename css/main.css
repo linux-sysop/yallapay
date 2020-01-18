@@ -688,7 +688,7 @@ html[dir=rtl] .nav_list .nav-item .nav-anchor {
     transform: scaleX(-1);
     margin-left: 5px;
   }
-  .mo-menu-open svg.avatar {
+  .mo-menu-open img.avatar {
     -webkit-transform: unset;
     transform: unset;
     margin-left: 0;
@@ -704,7 +704,7 @@ html[dir=rtl] .nav_list .nav-item .nav-anchor {
     margin-left: 0;
     margin-right: 5px;
   }
-  html[dir=rtl] .mo-menu-open svg.avatar {
+  html[dir=rtl] .mo-menu-open img.avatar {
     -webkit-transform: unset;
     transform: unset;
     margin-left: 0;
@@ -6517,6 +6517,12 @@ html[dir=rtl] .confirm-cont .adds-btn:last-of-type {
 @media (max-width: 767px) {
   html[dir=rtl] .confirm-cont .adds-btn:last-of-type {
     margin: 20px 0 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .confirm-name {
+    margin-top: 15px;
   }
 }
 

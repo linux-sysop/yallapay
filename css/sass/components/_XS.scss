@@ -17,14 +17,14 @@
             -webkit-transform: scaleX(-1);
             transform: scaleX(-1);
             margin-left: 5px;
+        }
 
-            &.avatar {
-                -webkit-transform: unset;
-                transform: unset;
-                margin-left: 0;
-                margin-right: 0;
-                max-width: 45px;
-            }
+        img.avatar {
+            -webkit-transform: unset;
+            transform: unset;
+            margin-left: 0;
+            margin-right: 0;
+            max-width: 45px;
         }
     }
 }
@@ -38,15 +38,16 @@ html[dir='rtl'] .mo-menu-open {
             margin-left: 0;
             margin-right: 5px;
 
-            &.avatar {
-                -webkit-transform: unset;
-                transform: unset;
-                margin-left: 0;
-                margin-right: 0;
-                max-width: 45px;
-            }
+
         }
 
+        img.avatar {
+            -webkit-transform: unset;
+            transform: unset;
+            margin-left: 0;
+            margin-right: 0;
+            max-width: 45px;
+        }
 
     }
 }
