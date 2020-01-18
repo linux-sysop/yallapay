@@ -138,6 +138,7 @@ html[dir='rtl'] .lang {
 header {
     &.black-page {
         background-color: $blue;
+        padding-top: 26px;
 
         .header-cont {
             display: flex;

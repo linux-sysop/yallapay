@@ -15,39 +15,42 @@ $(window).on("load", function () {
 
     new WOW().init()
 
+    if ($("div").hasClass("_2nd-div")) {
 
-    //map
-    var adresse = "";
-    var lat = $("#map-cont").attr("lat");
-    var long = $("#map-cont").attr("long");
+        //map
+        var adresse = "";
+        var lat = $("#map-cont").attr("lat");
+        var long = $("#map-cont").attr("long");
 
-    var location = [adresse[0], lat, long];
+        var location = [adresse[0], lat, long];
 
-    var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 13,
-        overviewMapControl: false,
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 13,
+            overviewMapControl: false,
 
-        center: new google.maps.LatLng(lat, long),
-        mapTypeId: google.maps.MapTypeId.ROADMAP,
-        zoomControl: false,
-        fullscreenControl: false
-    });
+            center: new google.maps.LatLng(lat, long),
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            zoomControl: false,
+            fullscreenControl: false
+        });
 
-    var infowindow = new google.maps.InfoWindow();
+        var infowindow = new google.maps.InfoWindow();
 
-    var marker;
-    marker = new google.maps.Marker({
-        position: new google.maps.LatLng(location[1], location[2]),
-        map: map,
-        icon: "images/pin.png"
-    });
+        var marker;
+        marker = new google.maps.Marker({
+            position: new google.maps.LatLng(location[1], location[2]),
+            map: map,
+            icon: "images/pin.png"
+        });
 
-    google.maps.event.addListener(marker, 'click', (function (marker, i) {
-        return function () {
-            infowindow.setContent(location[0]);
-            infowindow.open(map, marker);
-        }
-    })(marker));
+        google.maps.event.addListener(marker, 'click', (function (marker, i) {
+            return function () {
+                infowindow.setContent(location[0]);
+                infowindow.open(map, marker);
+            }
+        })(marker));
+    }
+
 });
 $(document).ready(function () {
     $('select').selectpicker({
