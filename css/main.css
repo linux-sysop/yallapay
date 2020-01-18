@@ -6565,6 +6565,7 @@ html[dir=rtl] .confirm-cont .adds-btn:last-of-type {
 
 html[dir=ltr] .body-header {
   font-family: os-bold;
+  padding: 0 50px;
 }
 
 .body-desc {
