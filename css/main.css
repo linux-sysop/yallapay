@@ -5514,9 +5514,9 @@ html[dir=rtl] .bank-acc-info ._desc-body img {
   position: relative;
   display: inline-block;
   width: 50px;
-  height: 21px;
+  height: 25px;
   margin-top: 30px;
-  margin-bottom: 5px;
+  margin-bottom: 18px;
 }
 @media (max-width: 767px) {
   ._2step-cont .switch {
@@ -5548,13 +5548,13 @@ html[dir=rtl] .bank-acc-info ._desc-body img {
   background-color: #ccc;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  border-radius: 10px;
+  border-radius: 25px;
 }
 ._2step-cont .switch .slider:before {
   position: absolute;
   content: "";
-  width: 21px;
-  height: 21px;
+  width: 25px;
+  height: 25px;
   right: 0;
   top: 0;
   bottom: 0;
