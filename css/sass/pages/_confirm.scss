@@ -121,6 +121,7 @@
         color: #665e71;
         font-family: os;
         font-size: 16px;
+        cursor: default;
         @include transition(all 0.3s ease-in-out);
 
 
@@ -218,6 +219,80 @@
             color: $blue;
         }
     }
+
+    .inner-mobile-pre {
+        margin-bottom: 20px;
+    }
+
+    .confirm-send-tool {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 34px;
+    }
+
+    .send-mobile-code {
+        width: 118px;
+        height: 33px;
+        border-radius: 4px;
+        border: 1px solid #665e71;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 10px;
+        color: #665e71;
+        font-size: 12px;
+
+        @include transition(all 0.3s ease-in-out);
+
+        &:hover {
+            background-color: $orange;
+            border-color: $orange;
+            color: #fff;
+        }
+    }
+
+    .adds-tools {
+        margin-top: 44px;
+        display: flex;
+
+        @include xs {
+            width: 100%;
+            flex-direction: column;
+        }
+    }
+
+    .adds-btn {
+        width: 50%;
+        height: 57px;
+        border-radius: 4px;
+        border: 1px solid #665e71;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #665e71;
+        font-size: 16px;
+
+        @include transition(all 0.3s ease-in-out);
+
+        @include xs {
+            width: 100%;
+        }
+
+        &:hover {
+            background-color: $orange;
+            border-color: $orange;
+            color: #fff;
+        }
+
+        &:last-of-type {
+            margin-left: 27px;
+
+            @include xs {
+                margin: 20px 0 0;
+            }
+        }
+    }
 }
 
 html[dir="rtl"] .confirm-cont {
@@ -253,6 +328,17 @@ html[dir="rtl"] .confirm-cont {
         .label-active {
             right: 0;
             left: auto;
+        }
+    }
+
+    .adds-btn {
+        &:last-of-type {
+            margin-right: 27px;
+            margin-left: 0;
+
+            @include xs {
+                margin: 20px 0 0;
+            }
         }
     }
 }

@@ -6324,6 +6324,7 @@ html[dir=rtl] .map-contact {
   color: #665e71;
   font-family: os;
   font-size: 16px;
+  cursor: default;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -6411,6 +6412,79 @@ html[dir=rtl] .map-contact {
   color: #fff;
   color: #331d34;
 }
+.confirm-cont .inner-mobile-pre {
+  margin-bottom: 20px;
+}
+.confirm-cont .confirm-send-tool {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 34px;
+}
+.confirm-cont .send-mobile-code {
+  width: 118px;
+  height: 33px;
+  border-radius: 4px;
+  border: 1px solid #665e71;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  color: #665e71;
+  font-size: 12px;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.confirm-cont .send-mobile-code:hover {
+  background-color: #f48d65;
+  border-color: #f48d65;
+  color: #fff;
+}
+.confirm-cont .adds-tools {
+  margin-top: 44px;
+  display: flex;
+}
+@media (max-width: 767px) {
+  .confirm-cont .adds-tools {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+.confirm-cont .adds-btn {
+  width: 50%;
+  height: 57px;
+  border-radius: 4px;
+  border: 1px solid #665e71;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #665e71;
+  font-size: 16px;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 767px) {
+  .confirm-cont .adds-btn {
+    width: 100%;
+  }
+}
+.confirm-cont .adds-btn:hover {
+  background-color: #f48d65;
+  border-color: #f48d65;
+  color: #fff;
+}
+.confirm-cont .adds-btn:last-of-type {
+  margin-left: 27px;
+}
+@media (max-width: 767px) {
+  .confirm-cont .adds-btn:last-of-type {
+    margin: 20px 0 0;
+  }
+}
 
 html[dir=rtl] .confirm-cont {
   text-align: right;
@@ -6435,6 +6509,15 @@ html[dir=rtl] .confirm-cont .code-input .floating-label {
 html[dir=rtl] .confirm-cont .code-input .label-active {
   right: 0;
   left: auto;
+}
+html[dir=rtl] .confirm-cont .adds-btn:last-of-type {
+  margin-right: 27px;
+  margin-left: 0;
+}
+@media (max-width: 767px) {
+  html[dir=rtl] .confirm-cont .adds-btn:last-of-type {
+    margin: 20px 0 0;
+  }
 }
 
 footer {
