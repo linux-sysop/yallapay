@@ -3,6 +3,10 @@
     padding-top: 46px;
     padding-bottom: 100px;
 
+    @include xs {
+        padding-top: 60px;
+    }
+
     .confirm-body {
         width: 529px;
         margin: auto;
