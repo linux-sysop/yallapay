@@ -683,12 +683,12 @@ html[dir=rtl] .nav_list .nav-item .nav-anchor {
     color: #1b0e1c;
     font-size: 14px;
   }
-  .mo-menu-open img {
+  .mo-menu-open svg {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
     margin-left: 5px;
   }
-  .mo-menu-open img.avatar {
+  .mo-menu-open svg.avatar {
     -webkit-transform: unset;
     transform: unset;
     margin-left: 0;
@@ -698,13 +698,13 @@ html[dir=rtl] .nav_list .nav-item .nav-anchor {
 }
 
 @media (max-width: 767px) {
-  html[dir=rtl] .mo-menu-open img {
+  html[dir=rtl] .mo-menu-open svg {
     -webkit-transform: unset;
     transform: unset;
     margin-left: 0;
     margin-right: 5px;
   }
-  html[dir=rtl] .mo-menu-open img.avatar {
+  html[dir=rtl] .mo-menu-open svg.avatar {
     -webkit-transform: unset;
     transform: unset;
     margin-left: 0;

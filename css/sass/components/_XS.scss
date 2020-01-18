@@ -13,7 +13,7 @@
         color: $text;
         font-size: 14px;
 
-        img {
+        svg {
             -webkit-transform: scaleX(-1);
             transform: scaleX(-1);
             margin-left: 5px;
@@ -32,7 +32,7 @@
 html[dir='rtl'] .mo-menu-open {
 
     @include xs {
-        img {
+        svg {
             -webkit-transform: unset;
             transform: unset;
             margin-left: 0;
