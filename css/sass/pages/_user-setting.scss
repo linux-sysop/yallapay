@@ -366,7 +366,7 @@
     justify-content: flex-start;
     margin-bottom: 15px;
 
-    .loader {
+    .loader-span {
         height: 7px;
         border-radius: 3px;
         margin-right: 11px;
@@ -394,28 +394,28 @@
     }
 
     &.ps {
-        .loader {
+        .loader-span {
             background-color: #1370b5;
             max-width: 62.5%;
         }
     }
 
     &.xbox {
-        .loader {
+        .loader-span {
             max-width: 52.5%;
             background-color: #107d0f;
         }
     }
 
     &.payers {
-        .loader {
+        .loader-span {
             background-color: #001247;
             max-width: 13%;
         }
     }
 
     &.amazon {
-        .loader {
+        .loader-span {
             background-color: #080607;
             max-width: 30%;
         }
@@ -510,7 +510,7 @@ html[dir="rtl"] {
     }
 
     .card-number-info {
-        .loader {
+        .loader-span {
             margin-right: 32px;
             margin-left: 11px;
 
@@ -522,6 +522,17 @@ html[dir="rtl"] {
         .cards-num {
             font-size: 12px;
             font-family: gulf;
+        }
+    }
+}
+
+.user-setting {
+    .goto {
+        display: flex;
+        align-items: center;
+
+        svg {
+            margin-bottom: 0;
         }
     }
 }

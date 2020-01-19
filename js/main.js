@@ -157,23 +157,23 @@ $(document).ready(function () {
 
     var a = 0;
     $(window).scroll(function () {
-        if ($("div").hasClass("cards-numbers")) {
-            if (a === 0 && $(this).scrollTop() >= ($(".cards-numbers").offset().top) - 700) {
-                $(".loader").css("width", "100%");
-                $('.count').each(function () {
-                    $(this).prop('Counter', 0).animate({
-                        Counter: $(this).text()
-                    }, {
-                        duration: 1000,
-                        easing: 'swing',
-                        step: function (now) {
-                            $(this).text(Math.ceil(now));
-                        }
-                    });
+
+        if (a === 0 && $(this).scrollTop() >= ($(".cards-numbers").offset().top) - 700) {
+            $(".loader-span").css("width", "100%");
+            $('.count').each(function () {
+                $(this).prop('Counter', 0).animate({
+                    Counter: $(this).text()
+                }, {
+                    duration: 1000,
+                    easing: 'swing',
+                    step: function (now) {
+                        $(this).text(Math.ceil(now));
+                    }
                 });
-                a = 1
-            }
+            });
+            a = 1
         }
+
     });
 
 

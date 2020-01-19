@@ -4212,7 +4212,7 @@ html[dir=rtl] .wire-method .secure-pay {
   justify-content: flex-start;
   margin-bottom: 15px;
 }
-.card-number-info .loader {
+.card-number-info .loader-span {
   height: 7px;
   border-radius: 3px;
   margin-right: 11px;
@@ -4224,7 +4224,7 @@ html[dir=rtl] .wire-method .secure-pay {
   transition: all 1.5s ease-in-out;
 }
 @media (max-width: 767px) {
-  .card-number-info .loader {
+  .card-number-info .loader-span {
     margin-left: 10px;
   }
 }
@@ -4241,19 +4241,19 @@ html[dir=rtl] .wire-method .secure-pay {
   font-size: 13px;
   font-family: os-light;
 }
-.card-number-info.ps .loader {
+.card-number-info.ps .loader-span {
   background-color: #1370b5;
   max-width: 62.5%;
 }
-.card-number-info.xbox .loader {
+.card-number-info.xbox .loader-span {
   max-width: 52.5%;
   background-color: #107d0f;
 }
-.card-number-info.payers .loader {
+.card-number-info.payers .loader-span {
   background-color: #001247;
   max-width: 13%;
 }
-.card-number-info.amazon .loader {
+.card-number-info.amazon .loader-span {
   background-color: #080607;
   max-width: 30%;
 }
@@ -4317,18 +4317,26 @@ html[dir=rtl] .main-view-body .update-cridet {
 html[dir=rtl] .palyer-badge .badge-name {
   font-family: g-bold;
 }
-html[dir=rtl] .card-number-info .loader {
+html[dir=rtl] .card-number-info .loader-span {
   margin-right: 32px;
   margin-left: 11px;
 }
 @media (max-width: 767px) {
-  html[dir=rtl] .card-number-info .loader {
+  html[dir=rtl] .card-number-info .loader-span {
     margin-right: 10px;
   }
 }
 html[dir=rtl] .card-number-info .cards-num {
   font-size: 12px;
   font-family: gulf;
+}
+
+.user-setting .goto {
+  display: flex;
+  align-items: center;
+}
+.user-setting .goto svg {
+  margin-bottom: 0;
 }
 
 .owned-main-cont {
