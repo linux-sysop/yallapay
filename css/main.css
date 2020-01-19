@@ -1812,7 +1812,7 @@ html[dir=rtl] .main-sec .img-sec {
   html[dir=rtl] .main-sec .img-sec {
     right: auto;
     left: -135px;
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 @media (max-width: 767px) {
@@ -2833,6 +2833,9 @@ html[dir=rtl] .guaranties-cont.about-page .guarantie .guarantie-desc {
 }
 
 .pay-card-preview {
+  width: 100%;
+}
+.pay-card-preview img.bg-shap {
   width: 100%;
 }
 @media (max-width: 767px) {
@@ -3861,6 +3864,12 @@ html[dir=rtl] .wire-method .secure-pay {
   text-align: right;
 }
 
+._left-sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .user-setting-cont {
   background-color: #f1f4f6;
   padding-top: 60px;
@@ -4351,7 +4360,7 @@ html[dir=rtl] .card-number-info .cards-num {
   width: 970px;
   margin: auto;
 }
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .owned-main-cont .navigatback {
     width: 100%;
   }
@@ -4360,7 +4369,7 @@ html[dir=rtl] .card-number-info .cards-num {
   width: 970px;
   margin: auto;
 }
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .owned-main-cont .loged-page-head {
     width: 100%;
   }
@@ -4392,7 +4401,7 @@ html[dir=rtl] .card-number-info .cards-num {
   top: 0;
   transform: translate(-50%, -50%);
 }
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .owned-main-cont .owned-cards {
     width: 100%;
   }

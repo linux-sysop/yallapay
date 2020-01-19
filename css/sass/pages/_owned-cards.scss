@@ -29,7 +29,7 @@
         width: 970px;
         margin: auto;
 
-        @include xs {
+        @include sm {
             width: 100%;
         }
     }
@@ -38,7 +38,7 @@
         width: 970px;
         margin: auto;
 
-        @include xs {
+        @include sm {
             width: 100%;
         }
     }
@@ -70,7 +70,7 @@
             transform: translate(-50%, -50%);
         }
 
-        @include xs {
+        @include sm {
             width: 100%;
 
             &::before {

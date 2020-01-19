@@ -583,6 +583,10 @@
 .pay-card-preview {
     width: 100%;
 
+    img.bg-shap {
+        width: 100%;
+    }
+
     @include xs {
         margin-bottom: 19px;
     }
@@ -1764,4 +1768,10 @@ html[dir='rtl'] {
 
 html[dir="rtl"] .wire-method .secure-pay {
     text-align: right;
+}
+
+._left-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
