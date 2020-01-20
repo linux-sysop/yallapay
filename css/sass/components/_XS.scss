@@ -75,6 +75,7 @@ html[dir='rtl'] .mo-menu-open {
         transform-origin: right;
         -moz-transform-origin: right;
         transform: scaleX(1);
+        overflow-y: auto;
     }
 
     .xs-head {

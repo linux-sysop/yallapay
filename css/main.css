@@ -755,6 +755,7 @@ html[dir=rtl] .nav_list .nav-item .nav-anchor {
   transform-origin: right;
   -moz-transform-origin: right;
   transform: scaleX(1);
+  overflow-y: auto;
 }
 .xs-nav .xs-head {
   display: flex;

@@ -76,11 +76,11 @@ $(document).ready(function () {
 
         $('.mo-menu-open').click(function () {
             $(".xs-nav").addClass("xs-open");
-
+            $("body").toggleClass("overflow");
         });
         $('.close-btn').click(function () {
             $(".xs-nav").removeClass("xs-open");
-
+            $("body").toggleClass("overflow");
         });
     }
     $('.addcart-modal').click(function () {
