@@ -330,6 +330,7 @@
         line-height: 24px;
         margin: auto;
         margin-top: 5px;
+        text-align: center;
 
         @include xs {
             width: 100%;
@@ -383,6 +384,7 @@
 
     .card-photo {
         width: 51px;
+        text-align: center;
 
         @include xs {
             width: 30px;

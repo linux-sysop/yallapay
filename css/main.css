@@ -1808,7 +1808,7 @@ html[dir=rtl] ._2stepsli::before {
 .main-sec .img-sec {
   position: absolute;
   right: -135px;
-  top: 0px;
+  top: -3px;
 }
 @media (max-width: 1199px) {
   .main-sec .img-sec {
@@ -4308,6 +4308,7 @@ html[dir=rtl] .wire-method .secure-pay {
   line-height: 24px;
   margin: auto;
   margin-top: 5px;
+  text-align: center;
 }
 @media (max-width: 767px) {
   .palyer-badge .badge-desc {
@@ -4363,6 +4364,7 @@ html[dir=rtl] .wire-method .secure-pay {
 }
 .card-number-info .card-photo {
   width: 51px;
+  text-align: center;
 }
 @media (max-width: 767px) {
   .card-number-info .card-photo {
