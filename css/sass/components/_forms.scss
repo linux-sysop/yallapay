@@ -549,3 +549,37 @@ html[dir="rtl"] {
         text-align: right;
     }
 }
+
+.form {
+    .selected-conutry {
+        justify-content: space-between !important;
+
+        img {
+            width: 32px;
+            height: 31px;
+        }
+    }
+
+    .countries-cont {
+        .other-countries {
+            background-color: $back;
+
+            img {
+                width: 25px;
+            }
+
+            .country-li {
+                margin: 7.5px 5px;
+            }
+        }
+
+        &:hover {
+            background-color: $back;
+            border-radius: 4px;
+
+            .arrow {
+                background-color: $back;
+            }
+        }
+    }
+}
