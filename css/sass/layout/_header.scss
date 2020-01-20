@@ -69,6 +69,8 @@ header {
         @include transition(all 0.3s ease-in-out);
         right: 0;
         z-index: 9;
+        -webkit-box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);
+        -moz-box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);
         box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);
 
         .country-flag {
@@ -405,6 +407,8 @@ html[dir='rtl'] .form-name {
     border-radius: 0 0 15px 15px;
     display: none;
     box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);
+    -webkit-box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);
+    -moz-box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);
 
     &:after {
         content: "";

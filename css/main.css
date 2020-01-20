@@ -319,6 +319,8 @@ html {
   justify-content: center;
   width: 100%;
   height: 58px;
+  -webkit-box-shadow: 0 1px 0 #000000, inset 0 1px 1px #ff996c;
+  -moz-box-shadow: 0 1px 0 #000000, inset 0 1px 1px #ff996c;
   box-shadow: 0 1px 0 #000000, inset 0 1px 1px #ff996c;
   border-radius: 5px;
   background-color: #f27036;
@@ -647,6 +649,8 @@ html[dir=rtl] .dropdown-item {
   align-items: center;
   justify-content: center;
   box-shadow: 0 1px 0 #000000;
+  -webkit-box-shadow: 0 1px 0 #000000;
+  -moz-box-shadow: 0 1px 0 #000000;
   background-color: #331d34;
   border-radius: 5px;
   background-color: #211026;
@@ -656,6 +660,8 @@ html[dir=rtl] .dropdown-item {
   color: #fff;
   background-color: #f48d65;
   box-shadow: 0 1px 0 #000000, inset 0 1px 1px #ff996c;
+  -webkit-box-shadow: 0 1px 0 #000000, inset 0 1px 1px #ff996c;
+  -moz-box-shadow: 0 1px 0 #000000, inset 0 1px 1px #ff996c;
 }
 @media (max-width: 1199px) {
   .nav_list .nav-item {
@@ -903,6 +909,8 @@ html[dir=rtl] .nav_list .nav-item .nav-anchor {
   width: 100%;
   height: 58px;
   box-shadow: 0 1px 0 #000000, inset 0 1px 1px #ff996c;
+  -webkit-box-shadow: 0 1px 0 #000000, inset 0 1px 1px #ff996c;
+  -moz-box-shadow: 0 1px 0 #000000, inset 0 1px 1px #ff996c;
   border-radius: 5px;
   background-color: #f27036;
   display: flex;
@@ -941,6 +949,8 @@ html[dir=rtl] .nav_list .nav-item .nav-anchor {
 .xs-nav .xslogin:focus {
   background-color: #f27036;
   border: 1px solid #f27036;
+  -webkit-box-shadow: 0 1px 0 #000000, inset 0 1px 1px #ff996c;
+  -moz-box-shadow: 0 1px 0 #000000, inset 0 1px 1px #ff996c;
   box-shadow: 0 1px 0 #000000, inset 0 1px 1px #ff996c;
 }
 
@@ -1252,6 +1262,8 @@ header .logo {
   transition: all 0.3s ease-in-out;
   right: 0;
   z-index: 9;
+  -webkit-box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);
+  -moz-box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);
   box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);
 }
 .countries-cont .other-countries .country-flag {
@@ -1535,6 +1547,8 @@ html[dir=rtl] .form-name {
   border-radius: 0 0 15px 15px;
   display: none;
   box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);
+  -webkit-box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);
+  -moz-box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);
 }
 .user-nav-cont:after {
   content: "";
@@ -2686,6 +2700,8 @@ html[dir=rtl] .guaranties-cont.about-page .guarantie .guarantie-desc {
 .next-step {
   width: 100%;
   height: 57px;
+  -webkit-box-shadow: 0 1px 0 #000000, inset 0 1px 1px #ff996c;
+  -moz-box-shadow: 0 1px 0 #000000, inset 0 1px 1px #ff996c;
   box-shadow: 0 1px 0 #000000, inset 0 1px 1px #ff996c;
   border-radius: 5px;
   background-color: #f27036;
@@ -3052,6 +3068,8 @@ html[dir=rtl] .guaranties-cont.about-page .guarantie .guarantie-desc {
 }
 .pay-method:hover {
   background-color: #fff;
+  -webkit-box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);
+  -moz-box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);
   box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);
   z-index: 99;
   color: #f48d65;
@@ -4179,6 +4197,8 @@ html[dir=rtl] .wire-method .secure-pay {
 }
 .main-view-body .own-card:hover {
   box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);
+  -webkit-box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);
+  -moz-box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);
   z-index: 9;
 }
 .main-view-body .own-card:last-of-type {
@@ -4560,6 +4580,8 @@ html[dir=rtl] .card-number-info .cards-num {
   cursor: default;
 }
 .owned-main-cont .own-card:hover {
+  -webkit-box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);
+  -moz-box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);
   box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);
   z-index: 9;
 }
@@ -4774,6 +4796,8 @@ html[dir=rtl] .owned-main-cont .own-card-date {
 .owned-credit-cont .addcart-modal {
   width: 192px;
   height: 58px;
+  -webkit-box-shadow: 0 1px 0 #000000;
+  -moz-box-shadow: 0 1px 0 #000000;
   box-shadow: 0 1px 0 #000000;
   border-radius: 5px;
   background-color: #211026;
@@ -4902,6 +4926,8 @@ html[dir=rtl] .owned-credit-cont .card-type.delete-card {
   cursor: default;
 }
 .hold-cards .hold-card:hover {
+  -webkit-box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);
+  -moz-box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);
   box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);
   z-index: 9;
 }
@@ -5168,6 +5194,8 @@ html[dir=rtl] .owned-credit-cont .card-type.delete-card {
   justify-content: center;
   width: 100%;
   height: 58px;
+  -webkit-box-shadow: 0 1px 0 #000000, inset 0 1px 1px #ff996c;
+  -moz-box-shadow: 0 1px 0 #000000, inset 0 1px 1px #ff996c;
   box-shadow: 0 1px 0 #000000, inset 0 1px 1px #ff996c;
   border-radius: 5px;
   background-color: #f27036;
@@ -5959,6 +5987,8 @@ html[dir=rtl] .goto svg {
   margin-bottom: 25px;
 }
 .gift-card-content:hover {
+  -webkit-box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);
+  -moz-box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);
   box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);
 }
 @media (max-width: 767px) {
@@ -6185,6 +6215,8 @@ html[dir=rtl] .contact-main-cont .contact-page-desc {
   justify-content: center;
   width: 100%;
   height: 58px;
+  -webkit-box-shadow: 0 1px 0 #000000, inset 0 1px 1px #ff996c;
+  -moz-box-shadow: 0 1px 0 #000000, inset 0 1px 1px #ff996c;
   box-shadow: 0 1px 0 #000000, inset 0 1px 1px #ff996c;
   border-radius: 5px;
   background-color: #f27036;
@@ -6487,6 +6519,8 @@ html[dir=rtl] .map-contact {
   width: 100%;
   height: 48px;
   box-shadow: 0 1px 0 #000000;
+  -webkit-box-shadow: 0 1px 0 #000000;
+  -moz-box-shadow: 0 1px 0 #000000;
   border-radius: 5px;
   background-color: #211026;
   -moz-transition: all 0.3s ease-in-out;
@@ -6498,6 +6532,8 @@ html[dir=rtl] .map-contact {
   margin-top: 22px;
 }
 .confirm-cont .send-again:focus, .confirm-cont .send-again:hover {
+  -webkit-box-shadow: 0 1px 0 #000000, inset 0 1px 1px #ff996c;
+  -moz-box-shadow: 0 1px 0 #000000, inset 0 1px 1px #ff996c;
   box-shadow: 0 1px 0 #000000, inset 0 1px 1px #ff996c;
   background-color: #f27036;
 }
@@ -6760,6 +6796,8 @@ html[dir=ltr] .body-sale {
   padding: 0 44px;
   width: auto;
   height: 51px;
+  -webkit-box-shadow: 0 1px 0 #000000, inset 0 1px 1px #ff996c;
+  -moz-box-shadow: 0 1px 0 #000000, inset 0 1px 1px #ff996c;
   box-shadow: 0 1px 0 #000000, inset 0 1px 1px #ff996c;
   border-radius: 5px;
   background-color: #f27036;

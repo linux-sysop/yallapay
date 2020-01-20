@@ -210,6 +210,8 @@
 
         &:hover {
             box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);
+            -webkit-box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);
+            -moz-box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);
             z-index: 9;
         }
 

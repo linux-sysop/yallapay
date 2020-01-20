@@ -32,6 +32,8 @@
             align-items: center;
             justify-content: center;
             box-shadow: 0 1px 0 #000000;
+            -webkit-box-shadow: 0 1px 0 #000000;
+            -moz-box-shadow: 0 1px 0 #000000;
             background-color: $blue;
             border-radius: 5px;
             background-color: #211026;
@@ -41,6 +43,8 @@
                 color: #fff;
                 background-color: $orange;
                 box-shadow: 0 1px 0 #000000, inset 0 1px 1px #ff996c;
+                -webkit-box-shadow: 0 1px 0 #000000, inset 0 1px 1px #ff996c;
+                -moz-box-shadow: 0 1px 0 #000000, inset 0 1px 1px #ff996c;
             }
         }
 
