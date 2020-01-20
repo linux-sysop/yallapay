@@ -412,12 +412,34 @@
             background-color: #001247;
             max-width: 13%;
         }
+
+        .card-photo {
+            &:after {
+                content: url("../images/payers-logo.svg");
+                display: block;
+
+                @include xs {
+                    content: url("../images/smallpyers.svg");
+                }
+            }
+        }
     }
 
     &.amazon {
         .loader-span {
             background-color: #080607;
             max-width: 30%;
+        }
+
+        .card-photo {
+            &:after {
+                content: url("../images/amazon-logo.svg");
+                display: block;
+
+                @include xs {
+                    content: url("../images/smallamazon.svg");
+                }
+            }
         }
     }
 }
