@@ -565,11 +565,15 @@ html[dir=rtl] .navigatback .formback svg {
   width: 120px !important;
   z-index: 9999;
   border-color: #eee;
+  box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);
+  -webkit-box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);
+  -moz-box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);
 }
 .bootstrap-select .dropdown-menu .dropdown-menu {
   max-width: 100%;
   z-index: 9999;
   border-color: transparent;
+  box-shadow: none;
 }
 .bootstrap-select .dropdown-menu .dropdown-menu li {
   outline: none !important;
@@ -583,6 +587,7 @@ html[dir=rtl] .navigatback .formback svg {
   outline: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: 0.4s;
 }
 .dropdown-item:hover {
   color: #f48d65 !important;
@@ -1224,9 +1229,10 @@ header .logo {
   transition: all 0.3s ease-in-out;
   position: relative;
   z-index: 99;
+  height: 39px;
 }
 .countries-cont .selected-conutry .arrow {
-  width: 31px;
+  width: 32px;
   height: 39px;
   background-color: #ffffff;
   align-items: center;

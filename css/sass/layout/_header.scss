@@ -32,9 +32,10 @@ header {
         @include transition(all 0.3s ease-in-out);
         position: relative;
         z-index: 99;
+        height: 39px;
 
         .arrow {
-            width: 31px;
+            width: 32px;
             height: 39px;
             background-color: #ffffff;
             align-items: center;

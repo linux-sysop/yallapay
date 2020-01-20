@@ -512,11 +512,15 @@ html[dir="rtl"] {
     width: 120px !important;
     z-index: 9999;
     border-color: #eee;
+    box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);
+    -webkit-box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);
+    -moz-box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);
 
     .dropdown-menu {
         max-width: 100%;
         z-index: 9999;
         border-color: transparent;
+        box-shadow: none;
 
         li {
             outline: none !important;
@@ -533,6 +537,7 @@ html[dir="rtl"] {
     outline: none !important;
     border: none !important;
     box-shadow: none !important;
+    transition: 0.4s;
 
     &:hover {
         color: $orange !important;
