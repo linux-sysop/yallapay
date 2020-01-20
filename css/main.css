@@ -1281,7 +1281,6 @@ header .countries-cont .other-countries .country-li,
 header .countries-cont .other-countries .country-li img,
 .info-card-cont .countries-cont .other-countries .country-li img {
   width: 100%;
-  height: 100%;
   border-radius: 4px;
 }
 header .countries-cont .other-countries .country-li:last-of-type,
@@ -1293,7 +1292,6 @@ header .countries-cont .other-countries .country-anchor,
   display: flex;
   margin: 7.5px 0;
   width: 100%;
-  height: 100%;
 }
 
 html[dir=rtl] header .countries-cont .other-countries .country-li,
