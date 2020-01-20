@@ -73,6 +73,11 @@ $(document).ready(function () {
         $(".available-cards-img").unwrap()
         $(".other-amount").removeAttr("placeholder")
 
+        $(".lang-country .countries-cont").removeClass('fadeIn')
+        $(".lang-country .lang").removeClass('fadeIn')
+        $(".lang-country .countries-cont").removeClass('wow')
+        $(".lang-country .lang").removeClass('wow')
+
 
         $('.mo-menu-open').click(function () {
             $(".xs-nav").addClass("xs-open");
