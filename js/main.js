@@ -14,8 +14,6 @@ $(window).on("load", function () {
     });
 
     new WOW().init()
-    $(".lang-country .countries-cont").addClass('dflex')
-    $(".lang-country .lang").addClass('fadeIn')
 
 
     if ($("div").hasClass("_2nd-div")) {
