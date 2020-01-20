@@ -1775,3 +1775,33 @@ html[dir="rtl"] .wire-method .secure-pay {
     flex-direction: column;
     justify-content: space-between;
 }
+
+.selected-conutry {
+
+    .flag,
+    .slected-country-pre {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 65px;
+        max-height: 39px;
+
+        img {
+            max-width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.slected-country-pre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 65px;
+    max-height: 39px;
+
+    img {
+        max-width: 100%;
+        object-fit: cover;
+    }
+}

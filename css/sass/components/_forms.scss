@@ -126,7 +126,7 @@
 
     .countries-cont {
         position: relative;
-        width: 300px;
+        width: 270px;
         margin-right: auto;
 
         .selected-conutry {
@@ -154,7 +154,7 @@
 
         .country-name {
             color: #1b0e1c;
-            font-size: 18px;
+            font-size: 14px;
             margin-left: 14px;
             @include transition(all 0.3s ease-in-out);
 
@@ -551,8 +551,11 @@ html[dir="rtl"] {
 }
 
 .form {
+
+
     .selected-conutry {
         justify-content: space-between !important;
+        background-color: #fff;
 
         img {
             width: 32px;
@@ -562,7 +565,6 @@ html[dir="rtl"] {
 
     .countries-cont {
         .other-countries {
-            background-color: $back;
 
             img {
                 width: 25px;
@@ -570,15 +572,6 @@ html[dir="rtl"] {
 
             .country-li {
                 margin: 7.5px 5px;
-            }
-        }
-
-        &:hover {
-            background-color: $back;
-            border-radius: 4px;
-
-            .arrow {
-                background-color: $back;
             }
         }
     }

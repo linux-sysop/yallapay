@@ -230,7 +230,7 @@ html {
 }
 .form .countries-cont {
   position: relative;
-  width: 300px;
+  width: 270px;
   margin-right: auto;
 }
 .form .countries-cont .selected-conutry {
@@ -261,7 +261,7 @@ html {
 }
 .form .countries-cont .country-name {
   color: #1b0e1c;
-  font-size: 18px;
+  font-size: 14px;
   margin-left: 14px;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -598,26 +598,17 @@ html[dir=rtl] .dropdown-item {
 
 .form .selected-conutry {
   justify-content: space-between !important;
+  background-color: #fff;
 }
 .form .selected-conutry img {
   width: 32px;
   height: 31px;
-}
-.form .countries-cont .other-countries {
-  background-color: #f1f4f6;
 }
 .form .countries-cont .other-countries img {
   width: 25px;
 }
 .form .countries-cont .other-countries .country-li {
   margin: 7.5px 5px;
-}
-.form .countries-cont:hover {
-  background-color: #f1f4f6;
-  border-radius: 4px;
-}
-.form .countries-cont:hover .arrow {
-  background-color: #f1f4f6;
 }
 
 .nav_list {
@@ -856,7 +847,27 @@ html[dir=rtl] .nav_list .nav-item .nav-anchor {
   margin: 5px 0 0 auto;
 }
 .xs-nav .lang-country .countries-cont .other-countries .country-li {
-  margin-left: 31px;
+  margin: 5px auto;
+  width: 50px;
+  height: 30px;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.xs-nav .lang-country .countries-cont .other-countries .country-li img {
+  width: 100%;
+  border-radius: 4px;
+}
+.xs-nav .lang-country .countries-cont .other-countries .country-li:last-of-type {
+  border: none;
+}
+.xs-nav .lang-country .countries-cont .other-countries .country-anchor {
+  display: flex;
+  margin: 7.5px 0;
+  width: 100%;
 }
 .xs-nav .lang-country .countries-cont:hover .selected-conutry {
   border-radius: 0;
@@ -1271,12 +1282,12 @@ header .countries-cont .other-countries .country-li,
   margin: 5px auto;
   width: 50px;
   height: 30px;
-  border-bottom: 1px solid #f1f4f6;
   border-radius: 4px;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 header .countries-cont .other-countries .country-li img,
 .info-card-cont .countries-cont .other-countries .country-li img {
@@ -2130,6 +2141,7 @@ html[dir=rtl] .loged-page-head {
 
 .conutry {
   display: flex;
+  align-items: center;
 }
 
 .about-main {
@@ -3940,6 +3952,32 @@ html[dir=rtl] .wire-method .secure-pay {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.selected-conutry .flag,
+.selected-conutry .slected-country-pre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 65px;
+  max-height: 39px;
+}
+.selected-conutry .flag img,
+.selected-conutry .slected-country-pre img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.slected-country-pre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 65px;
+  max-height: 39px;
+}
+.slected-country-pre img {
+  max-width: 100%;
+  object-fit: cover;
 }
 
 .user-setting-cont {
@@ -6154,7 +6192,7 @@ html[dir=rtl] .form .form-input {
   text-align: right;
 }
 html[dir=rtl] .form .countries-cont {
-  width: 265px;
+  width: 235px;
 }
 @media (max-width: 767px) {
   html[dir=rtl] .form .countries-cont .country-name {
