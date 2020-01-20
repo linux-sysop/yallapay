@@ -544,7 +544,7 @@ html[dir=rtl] .navigatback .formback svg {
 }
 
 .dropdown.bootstrap-select {
-  width: 120px !important;
+  width: 130px !important;
   color: #1b0e1c !important;
 }
 
@@ -562,7 +562,7 @@ html[dir=rtl] .navigatback .formback svg {
 }
 
 .bootstrap-select .dropdown-menu {
-  width: 120px !important;
+  width: 130px !important;
   z-index: 9999;
   border-color: #eee;
   box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);

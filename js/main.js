@@ -202,6 +202,35 @@ $(document).ready(function () {
         }
     });
 
+
+    $(".inputfile").change(function () {
+        var file = $('.inputfile')[0].files[0]
+        if (file) {
+            $(".upload-btn").html(file.name)
+        }
+    });
+
+    $("select").change(function () {
+        console.log(this.value);
+        filterElement(this.value)
+    });
+
+    filterElement = (cardName) => {
+        if (cardName == "allCards") {
+            $(".own-card").css("display", "flex");
+            $(".hold-card").css("display", "flex");
+        } else {
+            $(".own-card").hide();
+            $(".hold-card").hide();
+            $(".own-card." + cardName).css("display", "flex");
+            $(".hold-card." + cardName).css("display", "flex");
+        }
+    }
+
+
+
+
+
 });
 
 
