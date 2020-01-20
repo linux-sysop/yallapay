@@ -6949,4 +6949,8 @@ footer.black-page .mobilefooter {
   }
 }
 
+.dflex {
+  display: flex !important;
+}
+
 /*# sourceMappingURL=main.css.map */
