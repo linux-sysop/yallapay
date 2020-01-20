@@ -856,24 +856,14 @@ html[dir=rtl] .nav_list .nav-item .nav-anchor {
   margin: 5px 0 0 auto;
 }
 .xs-nav .lang-country .countries-cont .other-countries .country-li {
-  margin: 5px auto;
+  margin: 7.5px auto;
   width: 50px;
   height: 30px;
   border-radius: 4px;
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
 }
 .xs-nav .lang-country .countries-cont .other-countries .country-li img {
   width: 100%;
@@ -884,8 +874,9 @@ html[dir=rtl] .nav_list .nav-item .nav-anchor {
 }
 .xs-nav .lang-country .countries-cont .other-countries .country-anchor {
   display: flex;
-  margin: 7.5px 0;
-  width: 100%;
+  width: 50px;
+  height: 50px;
+  margin: 0 !important;
 }
 .xs-nav .lang-country .countries-cont:hover .selected-conutry {
   border-radius: 0;
@@ -1303,24 +1294,14 @@ header .countries-cont .other-countries,
 }
 header .countries-cont .other-countries .country-li,
 .info-card-cont .countries-cont .other-countries .country-li {
-  margin: 5px auto;
+  margin: 7.5px auto;
   width: 50px;
   height: 30px;
   border-radius: 4px;
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
 }
 header .countries-cont .other-countries .country-li img,
 .info-card-cont .countries-cont .other-countries .country-li img {
@@ -1334,8 +1315,9 @@ header .countries-cont .other-countries .country-li:last-of-type,
 header .countries-cont .other-countries .country-anchor,
 .info-card-cont .countries-cont .other-countries .country-anchor {
   display: flex;
-  margin: 7.5px 0;
-  width: 100%;
+  width: 50px;
+  height: 50px;
+  margin: 0 !important;
 }
 
 html[dir=rtl] header .countries-cont .other-countries .country-li,
