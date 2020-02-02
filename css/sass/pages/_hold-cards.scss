@@ -2,6 +2,15 @@
     background-color: $back;
     padding-top: 77px;
 
+    .hold-cards-content {
+        width: 970px;
+        margin: auto;
+
+        @include xs {
+            width: 100%;
+        }
+    }
+
     .navigatback {
         width: 100%;
     }
@@ -35,7 +44,7 @@
 }
 
 .hold-cards {
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px;
     background-color: #ffffff;
     width: 100%;
     padding-top: 30px;
@@ -51,13 +60,21 @@
         content: "";
         height: 6px;
         border-radius: 3px;
-        background-color: #9ec6cd;
+        background-color: #f48d65;
         width: 248px;
         display: block;
         position: absolute;
         left: 50%;
         top: 0;
         transform: translate(-50%, -50%);
+    }
+
+    &.approve {
+        margin-bottom: 70px;
+
+        &:after {
+            background-color: #fcdf9f;
+        }
     }
 
     @include xs {
@@ -180,19 +197,43 @@
         }
     }
 
+    .third-row {
+        display: flex;
+        align-items: center;
+        margin: 28px 0 0;
+
+        @include xs {
+            margin: 15px 0;
+            flex-wrap: wrap;
+        }
+    }
+
+    .info-card {
+        display: flex;
+        align-items: center;
+    }
+
     .hold-card-price {
         color: #1b0e1c;
         font-size: 15px;
         font-family: os-bold;
+        margin-right: 40px;
 
         @include xs {
             width: 40%;
         }
     }
 
+    .hold-card-username {
+        color: #817682;
+        font-size: 15px;
+
+    }
+
     .hold-card-mail {
         color: #817682;
         font-size: 15px;
+        margin-right: 55px;
 
         @include xs {
             font-size: 12px;
@@ -214,6 +255,10 @@
     .tools {
         display: flex;
         align-items: center;
+
+        @include xs {
+            margin: 15px 0;
+        }
 
         .delete-card {
             color: #f37170;
@@ -435,8 +480,13 @@
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    margin-top: 100px;
     width: 100%;
+    padding: 30px 60px;
+    border-radius: 0 0 10px 10px;
+
+    @include xs {
+        padding: 20px 10px;
+    }
 
     .bank-acc-head {
         color: #1b0e1c;
@@ -453,13 +503,26 @@
 
     ._desc {
         margin-bottom: 24px;
+
+        &:first-of-type {
+            border: 1px solid #f1f4f6;
+            height: 68px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 4px;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 0 16px;
+
+            @include xs {
+                padding: 0 10px;
+            }
+        }
     }
 
     .bank-acc-info-desc {
         border-radius: 10px;
-        border: 1px solid #f0f2f6;
-        background-color: #ffffff;
-        padding: 28px 34px;
         width: 100%;
     }
 
@@ -559,6 +622,16 @@ html[dir='rtl'] {
             }
         }
 
+        .hold-card-price {
+            margin-left: 40px;
+            margin-right: 0;
+        }
+
+        .hold-card-mail {
+            margin-left: 55px;
+            margin-right: 0;
+        }
+
         .card-hint {
 
             @include xs {
@@ -614,4 +687,143 @@ html[dir='rtl'] {
     }
 
 
+}
+
+.wait-head {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 35px;
+
+    .wait-title {
+        color: #1b0e1c;
+        font-family: os-semibold;
+        font-size: 18px;
+        margin-bottom: 3px;
+    }
+
+    .wait-desc {
+        color: #817682;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include xs {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    &.wait-approv-head {
+        margin-top: 30px;
+    }
+
+    &.wait-pay-head {
+        margin-top: 70px;
+    }
+
+    .banks-link-pop {
+        color: #1b0e1c;
+        font-family: os-semibold;
+        font-size: 16px;
+        @include transition(all 0.3s ease-in-out);
+        display: flex;
+        align-items: center;
+
+        @include xs {
+            margin-top: 15px;
+        }
+
+        img {
+            width: 25px;
+            height: 26px;
+            margin-right: 5px;
+        }
+
+        &:hover {
+            color: $orange;
+        }
+
+    }
+}
+
+.fawry-method {
+    color: #1b0e1c;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 30px 60px;
+
+    @include xs {
+        padding: 15px 10px;
+    }
+}
+
+.post-method {
+    ._desc {
+        margin-top: 24px;
+        margin-bottom: 0;
+
+        &:first-of-type {
+            padding: 0;
+            height: auto;
+            border: none;
+        }
+    }
+}
+
+
+.show-more-cards {
+    width: 116px;
+    height: 41px;
+    border-radius: 5px;
+    border: 1px solid #817682;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #817682;
+    font-size: 12px;
+    margin: 35px auto 150px;
+    @include transition(all 0.3s ease-in-out);
+
+    &:hover {
+        border: 1px solid $orange;
+        background-color: $orange;
+        color: #fff;
+    }
+}
+
+html[dir="rtl"] {
+    .fawry-method {
+        text-align: right;
+    }
+
+    .post-method {
+        ._desc-body._desc-code {
+            font-family: g-med;
+        }
+    }
+
+
+
+    .wait-head {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 35px;
+        text-align: right;
+
+        .banks-link-pop {
+            font-family: g-med;
+
+            img {
+                margin-left: 5px;
+                margin-right: 0;
+            }
+        }
+
+        .wait-title {
+            font-family: g-med;
+        }
+
+
+    }
 }

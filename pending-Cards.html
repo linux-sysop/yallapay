@@ -171,96 +171,140 @@
     <div class="hold-cards-content-cont">
         <div class="container">
             <div class="hold-cards-content">
-                <div class="row">
-                    <div class="col-lg-8 col-12">
-                        <div class="navigatback">
-                            <a href="User-Settings.html" class="formback goto">
-                                <img src="images/Path.svg" class="svg">
-                            </a>
+                <div class="navigatback">
+                    <a href="User-Settings.html" class="formback goto">
+                        <img src="images/Path.svg" class="svg">
+                    </a>
+                </div>
+                <div class="loged-page-head">Pending Orders - Pending Payment
+
+                </div>
+                <div class="wait-head wait-approv-head">
+                    <h3 class="wait-title fixall">Awaiting Review</h3>
+                    <div class="wait-desc fixall">We review the payment information you submitted, we
+                        will update you here and by mail, these orders cannot be deleted ...</div>
+                </div>
+                <div class="hold-cards approve wow zoomIn " data-wow-duration="1s">
+                    <div class="hold-card xboxCard">
+                        <div class="hold-card-img">
+                            <img src="images/xbox-small-card.svg" class="img-fluid">
                         </div>
-                        <div class="loged-page-head">Cards Pending Payment
-                            <select class="selectpicker fixall">
-                                <option class="cardsfilter " value="allCards">All Cards</option>
-                                <option class="cardsfilter " value="payersCard">Payers</option>
-                                <option class="cardsfilter " value="psCard">Playstation</option>
-                                <option class="cardsfilter " value="xboxCard">XBox</option>
-                                <option class="cardsfilter " value="amazonCard">Amazon</option>
-                            </select></div>
-                        <div class="hold-cards wow zoomIn" data-wow-duration="1s">
-                            <div class="hold-card psCard">
-                                <div class="hold-card-img">
-                                    <img src="images/ps-small-card.svg" class="img-fluid">
+                        <div class="hold-card-info">
+                            <div class="card-top-head">
+                                <h3 class="hold-card-name fixall">
+                                    MNS6-W1T9-INTER
+                                    <img src="images/hide-rectangle.svg">
+                                </h3>
+                            </div>
+                            <div class="sec-row">
+                                <div class="info-card">
+                                    <span class="hold-card-price">15$</span>
+                                    <span class="hold-card-username">Yalla600511</span>
                                 </div>
-                                <div class="hold-card-info">
-                                    <div class="card-top-head">
-                                        <h3 class="hold-card-name fixall">
-                                            MNS6-W1T9-INTER
-                                            <img src="images/hide-rectangle.svg">
-                                        </h3>
-                                    </div>
-                                    <div class="sec-row">
-                                        <span class="hold-card-price">15$</span>
-                                        <span class="hold-card-mail">alaaalmahmadi@payers.net</span>
-                                        <span class="hold-card-date">20 March 2019</span>
-                                        <div class="tools">
-                                            <a href="#!" class="delete-card fixall">Delete</a>
-                                            <a href="#!" class="confirm-card fixall">Confirm Pay</a>
-                                        </div>
-                                    </div>
-
+                                <div class="tools">
+                                    <a href="#!" class="confirm-card update-card fixall">Update Payment
+                                        Infos.</a>
                                 </div>
                             </div>
-                            <div class="hold-card xboxCard">
-                                <div class="hold-card-img">
-                                    <img src="images/xbox-small-card.svg" class="img-fluid">
-                                </div>
-                                <div class="hold-card-info">
-                                    <div class="card-top-head">
-                                        <h3 class="hold-card-name fixall">
-                                            MNS6-W1T9-INTER
-                                            <img src="images/hide-rectangle.svg">
-                                        </h3>
-                                        <div class="card-hint">
-                                            We received your payment information it's in review Now
-                                        </div>
-                                    </div>
-                                    <div class="sec-row">
-                                        <span class="hold-card-price">15$</span>
-                                        <span class="hold-card-mail">alaaalmahmadi@payers.net</span>
-                                        <span class="hold-card-date">20 March 2019</span>
-                                        <div class="tools">
-                                            <a href="#!" class="confirm-card update-card fixall">Update Payment
-                                                Infos.</a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="hold-card amazonCard">
-                                <div class="hold-card-img">
-                                    <img src="images/amazon-small-card.svg" class="img-fluid">
-                                </div>
-                                <div class="hold-card-info">
-                                    <div class="card-top-head">
-                                        <h3 class="hold-card-name fixall">
-                                            MNS6-W1T9-INTER
-                                            <img src="images/hide-rectangle.svg">
-                                        </h3>
-                                    </div>
-                                    <div class="sec-row">
-                                        <span class="hold-card-price">15$</span>
-                                        <span class="hold-card-mail">alaaalmahmadi@payers.net</span>
-                                        <span class="hold-card-date">20 March 2019</span>
-                                        <div class="tools">
-                                            <a href="#!" class="delete-card fixall">Delete</a>
-                                            <a href="#!" class="confirm-card dark-confirm fixall">Confirm</a>
-                                        </div>
-                                    </div>
-
-                                </div>
+                            <div class="third-row">
+                                <span class="hold-card-mail">alaaalmahmadi@payers.net</span>
+                                <span class="hold-card-date">20 March 2019</span>
                             </div>
                         </div>
-                        <form class="confrim-depo">
+                    </div>
+
+                </div>
+                <div class="wait-head wait-pay-head">
+                    <h3 class="wait-title fixall">Awaiting payment</h3>
+                    <div class="wait-desc fixall">This is a list not yet paid that await payment...
+                        <a href="#!" class="banks-link-pop fixall"><img src="images/bank-transfer.svg">Yallapay
+                            Accounts</a>
+                    </div>
+                </div>
+                <div class="hold-cards pay wow zoomIn " data-wow-duration="1s">
+                    <div class="hold-card psCard">
+                        <div class="hold-card-img">
+                            <img src="images/ps-small-card.svg" class="img-fluid">
+                        </div>
+                        <div class="hold-card-info">
+                            <div class="card-top-head">
+                                <h3 class="hold-card-name fixall">
+                                    MNS6-W1T9-INTER
+                                    <img src="images/hide-rectangle.svg">
+                                </h3>
+                            </div>
+                            <div class="sec-row">
+                                <div class="info-card">
+                                    <span class="hold-card-price">15$</span>
+                                    <span class="hold-card-username">Yalla600511</span>
+                                </div>
+                                <div class="tools">
+                                    <a href="#!" class="delete-card fixall">Delete</a>
+                                    <a href="#!" class="confirm-card fixall">Confirm Pay</a>
+                                </div>
+                            </div>
+                            <div class="third-row">
+                                <span class="hold-card-mail">alaaalmahmadi@payers.net</span>
+                                <span class="hold-card-date">20 March 2019</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hold-card xboxCard">
+                        <div class="hold-card-img">
+                            <img src="images/xbox-small-card.svg" class="img-fluid">
+                        </div>
+                        <div class="hold-card-info">
+                            <div class="card-top-head">
+                                <h3 class="hold-card-name fixall">
+                                    MNS6-W1T9-INTER
+                                    <img src="images/hide-rectangle.svg">
+                                </h3>
+                            </div>
+                            <div class="sec-row">
+                                <div class="info-card">
+                                    <span class="hold-card-price">15$</span>
+                                    <span class="hold-card-username">Yalla600511</span>
+                                </div>
+                                <div class="tools">
+                                    <a href="#!" class="delete-card fixall">Delete</a>
+                                    <a href="#!" class="confirm-card fixall">Confirm Pay</a>
+                                </div>
+                            </div>
+                            <div class="third-row">
+                                <span class="hold-card-mail">alaaalmahmadi@payers.net</span>
+                                <span class="hold-card-date">20 March 2019</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hold-card amazonCard">
+                        <div class="hold-card-img">
+                            <img src="images/amazon-small-card.svg" class="img-fluid">
+                        </div>
+                        <div class="hold-card-info">
+                            <div class="card-top-head">
+                                <h3 class="hold-card-name fixall">
+                                    MNS6-W1T9-INTER
+                                    <img src="images/hide-rectangle.svg">
+                                </h3>
+                            </div>
+                            <div class="sec-row">
+                                <div class="info-card">
+                                    <span class="hold-card-price">15$</span>
+                                    <span class="hold-card-username">Yalla600511</span>
+                                </div>
+                                <div class="tools">
+                                    <a href="#!" class="delete-card fixall">Delete</a>
+                                    <a href="#!" class="confirm-card fixall">Confirm Pay</a>
+                                </div>
+                            </div>
+                            <div class="third-row">
+                                <span class="hold-card-mail">alaaalmahmadi@payers.net</span>
+                                <span class="hold-card-date">20 March 2019</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <form class="confrim-depo">
                             <h3 class="form-title fixall">Confirm Bank Deposite to buy this card</h3>
                             <div class="depo-input-label wow fadeInDown" data-wow-duration="1s">
                                 <input class="depo-input fixall" type="text">
@@ -284,9 +328,9 @@
                             </div>
                             <button type="submit" class="fixall submit-form wow fadeInDown" data-wow-duration="1s"
                                 data-wow-delay="0.6s">Send Payment Informations</button>
-                        </form>
-                    </div>
-                    <div class="col-lg-4 col-12 d-none d-sm-block">
+                        </form> -->
+
+                <!-- <div class="col-lg-4 col-12 d-none d-sm-block">
                         <div class="bank-acc-info">
                             <h3 class="bank-acc-head fixall">Bank Account Informations</h3>
                             <p class="bank-acc-desc fixall">Deposit your local currency to our Saudi National Bank
@@ -313,13 +357,99 @@
                                 </div>
                             </div>
                         </div>
+                    </div> -->
+
+            </div>
+            <a href="#!" class="show-more-cards fixall">Load More …</a>
+        </div>
+    </div>
+    <!-- End Main Content -->
+    <div class="modal-cont">
+        <img src="images/cancel-operation.svg" class="close-add-modal svg">
+        <div class="container">
+            <div class="add-modal-cont bayes">
+                <div class="add-modal">
+                    <div class="add-modal-head with-img">
+                        <img src="images/bank-transfer.svg">Yallapay
+                        Accounts
+                    </div>
+                    <div class="bank-acc-info wire-method">
+                        <div class="bank-acc-info-desc">
+                            <div class="_desc">
+                                <span class="_desc-head">Bank Name</span>
+                                <div class="banks-cont">
+                                    <div class="selected-bank">
+                                        <div class="selected-info">
+                                            <img src="images/4-layers.svg" alt="">
+                                            <span class="bank-select-name">National Bank of Saudi Arabia</span>
+                                        </div>
+                                        <div class="arrow">
+                                            <img src="images/drop.svg" class="svg">
+                                        </div>
+                                    </div>
+                                    <ul class="other-banks list-unstyled fixall">
+                                        <li class="bank-li">
+                                            <img src="images/saudi-arabia.png" alt="">
+                                            <span class="bank-select-name">National Bank of Saudi Arabia</span>
+                                        </li>
+                                        <li class="bank-li">
+                                            <img src="images/4-layers.svg" alt="">
+                                            <span class="bank-select-name">National Bank of Saudi Arabia</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="_desc">
+                                <span class="_desc-head">Account Number</span>
+                                <div class="_desc-body  _desc-code">
+                                    2214795386
+                                </div>
+                            </div>
+                            <div class="_desc">
+                                <span class="_desc-head">Swift Code</span>
+                                <div class="_desc-body _desc-code">
+                                    BJHISARI
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="add-modal">
+                    <div class="add-modal-head with-img">
+                        <img src="images/bank-transfer.svg">Deposits in our account in Fawry
+                    </div>
+                    <div class="bank-acc-info fawry-method">
+                        Find the nearest point of sale offering Fawry service and then try to find YallaPay under the
+                        category (Online Services), choose YallaPay and then provide the merchant with your order
+                        number. Complete your payment and the amount will be added instantly to your order and show the
+                        card number associated with the medicine.
+                    </div>
+                </div>
+
+                <div class="add-modal">
+                    <div class="add-modal-head with-img">
+                        <img src="images/bank-transfer.svg">Depositing in our account in the Egyptian Post
+                    </div>
+                    <div class="bank-acc-info post-method">
+                        Deposit via the following savings account:
+                        <div class="_desc">
+                            <span class="_desc-head">Name of the owner of the deposit</span>
+                            <div class="_desc-body  _desc-code">
+                                YallaPay Financial Transactions LLC
+                            </div>
+                        </div>
+                        <div class="_desc">
+                            <span class="_desc-head">Account Number</span>
+                            <div class="_desc-body  _desc-code">
+                                2214795386
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- End Main Content -->
-
 
     <!-- Start Footer -->
     <footer>

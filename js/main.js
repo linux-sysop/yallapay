@@ -94,6 +94,11 @@ $(document).ready(function () {
         $(".add-modal").addClass("show-modal");
         $("body").addClass("overflow");
     });
+    $('.banks-link-pop').click(function () {
+        $(".modal-cont").fadeIn(400)
+        $(".add-modal").addClass("show-modal");
+        $("body").addClass("overflow");
+    });
     $('.close-add-modal, .modal-cont').click(function () {
         $(".modal-cont").fadeOut(500)
         $(".add-modal").removeClass("show-modal");

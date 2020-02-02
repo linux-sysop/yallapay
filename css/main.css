@@ -1026,6 +1026,7 @@ html[dir=rtl] .xs-nav .lang-country .lang {
   left: 0;
   z-index: 9999;
   display: none;
+  overflow-y: auto;
 }
 .modal-cont .container {
   height: 100%;
@@ -1034,8 +1035,11 @@ html[dir=rtl] .xs-nav .lang-country .lang {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   width: 100%;
-  height: 100%;
+}
+.modal-cont .add-modal-cont.bayes {
+  padding-top: 99px;
 }
 .modal-cont .close-add-modal {
   position: absolute;
@@ -1069,6 +1073,7 @@ html[dir=rtl] .xs-nav .lang-country .lang {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   z-index: 99;
+  margin-bottom: 25px;
 }
 .modal-cont .add-modal.show-modal {
   transform: translateY(0);
@@ -1095,10 +1100,34 @@ html[dir=rtl] .xs-nav .lang-country .lang {
   font-size: 16px;
   justify-content: center;
   text-align: center;
+  align-items: center;
+}
+.modal-cont .add-modal .add-modal-head.with-img {
+  justify-content: flex-start;
+}
+@media (max-width: 767px) {
+  .modal-cont .add-modal .add-modal-head.with-img {
+    padding: 0 5px;
+  }
+}
+.modal-cont .add-modal .add-modal-head.with-img img {
+  margin-right: 10px;
 }
 
 html[dir=rtl] .modal-cont .add-modal .add-modal-head {
   font-family: g-bold;
+}
+html[dir=rtl] .modal-cont .add-modal .add-modal-head.with-img {
+  justify-content: flex-start;
+}
+@media (max-width: 767px) {
+  html[dir=rtl] .modal-cont .add-modal .add-modal-head.with-img {
+    padding: 0 5px;
+  }
+}
+html[dir=rtl] .modal-cont .add-modal .add-modal-head.with-img img {
+  margin-left: 10px;
+  margin-right: 0;
 }
 
 .pagination {
@@ -4906,6 +4935,15 @@ html[dir=rtl] .owned-credit-cont .card-type.delete-card {
   background-color: #f1f4f6;
   padding-top: 77px;
 }
+.hold-cards-content-cont .hold-cards-content {
+  width: 970px;
+  margin: auto;
+}
+@media (max-width: 767px) {
+  .hold-cards-content-cont .hold-cards-content {
+    width: 100%;
+  }
+}
 .hold-cards-content-cont .navigatback {
   width: 100%;
 }
@@ -4934,7 +4972,7 @@ html[dir=rtl] .owned-credit-cont .card-type.delete-card {
 }
 
 .hold-cards {
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px;
   background-color: #ffffff;
   width: 100%;
   padding-top: 30px;
@@ -4951,13 +4989,19 @@ html[dir=rtl] .owned-credit-cont .card-type.delete-card {
   content: "";
   height: 6px;
   border-radius: 3px;
-  background-color: #9ec6cd;
+  background-color: #f48d65;
   width: 248px;
   display: block;
   position: absolute;
   left: 50%;
   top: 0;
   transform: translate(-50%, -50%);
+}
+.hold-cards.approve {
+  margin-bottom: 70px;
+}
+.hold-cards.approve:after {
+  background-color: #fcdf9f;
 }
 @media (max-width: 767px) {
   .hold-cards {
@@ -5079,19 +5123,40 @@ html[dir=rtl] .owned-credit-cont .card-type.delete-card {
     flex-wrap: wrap;
   }
 }
+.hold-cards .third-row {
+  display: flex;
+  align-items: center;
+  margin: 28px 0 0;
+}
+@media (max-width: 767px) {
+  .hold-cards .third-row {
+    margin: 15px 0;
+    flex-wrap: wrap;
+  }
+}
+.hold-cards .info-card {
+  display: flex;
+  align-items: center;
+}
 .hold-cards .hold-card-price {
   color: #1b0e1c;
   font-size: 15px;
   font-family: os-bold;
+  margin-right: 40px;
 }
 @media (max-width: 767px) {
   .hold-cards .hold-card-price {
     width: 40%;
   }
 }
+.hold-cards .hold-card-username {
+  color: #817682;
+  font-size: 15px;
+}
 .hold-cards .hold-card-mail {
   color: #817682;
   font-size: 15px;
+  margin-right: 55px;
 }
 @media (max-width: 767px) {
   .hold-cards .hold-card-mail {
@@ -5112,6 +5177,11 @@ html[dir=rtl] .owned-credit-cont .card-type.delete-card {
 .hold-cards .tools {
   display: flex;
   align-items: center;
+}
+@media (max-width: 767px) {
+  .hold-cards .tools {
+    margin: 15px 0;
+  }
 }
 .hold-cards .tools .delete-card {
   color: #f37170;
@@ -5313,8 +5383,14 @@ html[dir=rtl] .owned-credit-cont .card-type.delete-card {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  margin-top: 100px;
   width: 100%;
+  padding: 30px 60px;
+  border-radius: 0 0 10px 10px;
+}
+@media (max-width: 767px) {
+  .bank-acc-info {
+    padding: 20px 10px;
+  }
 }
 .bank-acc-info .bank-acc-head {
   color: #1b0e1c;
@@ -5330,11 +5406,24 @@ html[dir=rtl] .owned-credit-cont .card-type.delete-card {
 .bank-acc-info ._desc {
   margin-bottom: 24px;
 }
+.bank-acc-info ._desc:first-of-type {
+  border: 1px solid #f1f4f6;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 16px;
+}
+@media (max-width: 767px) {
+  .bank-acc-info ._desc:first-of-type {
+    padding: 0 10px;
+  }
+}
 .bank-acc-info .bank-acc-info-desc {
   border-radius: 10px;
-  border: 1px solid #f0f2f6;
-  background-color: #ffffff;
-  padding: 28px 34px;
   width: 100%;
 }
 .bank-acc-info ._desc-head {
@@ -5411,6 +5500,14 @@ html[dir=rtl] .hold-cards .hold-card-info {
     margin: 10px;
   }
 }
+html[dir=rtl] .hold-cards .hold-card-price {
+  margin-left: 40px;
+  margin-right: 0;
+}
+html[dir=rtl] .hold-cards .hold-card-mail {
+  margin-left: 55px;
+  margin-right: 0;
+}
 @media (max-width: 767px) {
   html[dir=rtl] .hold-cards .card-hint {
     margin-left: 0;
@@ -5442,6 +5539,128 @@ html[dir=rtl] .bank-acc-info .bank-acc-desc {
 html[dir=rtl] .bank-acc-info ._desc-body img {
   margin-left: 12px;
   margin-right: 0;
+}
+
+.wait-head {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 35px;
+}
+.wait-head .wait-title {
+  color: #1b0e1c;
+  font-family: os-semibold;
+  font-size: 18px;
+  margin-bottom: 3px;
+}
+.wait-head .wait-desc {
+  color: #817682;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .wait-head .wait-desc {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.wait-head.wait-approv-head {
+  margin-top: 30px;
+}
+.wait-head.wait-pay-head {
+  margin-top: 70px;
+}
+.wait-head .banks-link-pop {
+  color: #1b0e1c;
+  font-family: os-semibold;
+  font-size: 16px;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .wait-head .banks-link-pop {
+    margin-top: 15px;
+  }
+}
+.wait-head .banks-link-pop img {
+  width: 25px;
+  height: 26px;
+  margin-right: 5px;
+}
+.wait-head .banks-link-pop:hover {
+  color: #f48d65;
+}
+
+.fawry-method {
+  color: #1b0e1c;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 30px 60px;
+}
+@media (max-width: 767px) {
+  .fawry-method {
+    padding: 15px 10px;
+  }
+}
+
+.post-method ._desc {
+  margin-top: 24px;
+  margin-bottom: 0;
+}
+.post-method ._desc:first-of-type {
+  padding: 0;
+  height: auto;
+  border: none;
+}
+
+.show-more-cards {
+  width: 116px;
+  height: 41px;
+  border-radius: 5px;
+  border: 1px solid #817682;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #817682;
+  font-size: 12px;
+  margin: 35px auto 150px;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.show-more-cards:hover {
+  border: 1px solid #f48d65;
+  background-color: #f48d65;
+  color: #fff;
+}
+
+html[dir=rtl] .fawry-method {
+  text-align: right;
+}
+html[dir=rtl] .post-method ._desc-body._desc-code {
+  font-family: g-med;
+}
+html[dir=rtl] .wait-head {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 35px;
+  text-align: right;
+}
+html[dir=rtl] .wait-head .banks-link-pop {
+  font-family: g-med;
+}
+html[dir=rtl] .wait-head .banks-link-pop img {
+  margin-left: 5px;
+  margin-right: 0;
+}
+html[dir=rtl] .wait-head .wait-title {
+  font-family: g-med;
 }
 
 ._2step-cont {
