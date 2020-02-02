@@ -620,6 +620,180 @@ html[dir=rtl] .dropdown-item {
   margin: 7.5px 5px;
 }
 
+.confrim-depo {
+  width: 100%;
+  position: relative;
+}
+.confrim-depo .form-title {
+  color: #1b0e1c;
+  font-size: 16px;
+}
+@media (max-width: 767px) {
+  .confrim-depo .form-title {
+    text-align: center;
+  }
+}
+.confrim-depo .depo-input-label {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  margin-top: 70px;
+}
+.confrim-depo .depo-input-label:nth-of-type(2) {
+  margin-top: 40px;
+}
+@media (max-width: 767px) {
+  .confrim-depo .depo-input-label {
+    margin-top: 110px;
+  }
+}
+.confrim-depo .depo-input {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border-bottom: 1px solid #1b0e1c;
+  color: #1b0e1c;
+  font-size: 16px;
+  padding: 0 15px;
+  -moz-appearance: textfield;
+  transition: 0.2s ease all;
+  text-align: left;
+}
+.confrim-depo .depo-input:focus {
+  border-bottom: 1px solid #f48d65;
+}
+.confrim-depo .depo-input::-webkit-inner-spin-button, .confrim-depo .depo-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+.confrim-depo .floating-label {
+  position: absolute;
+  pointer-events: none;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #1b0e1c;
+  font-family: os-bold;
+  font-size: 16px;
+  transition: 0.2s ease all;
+}
+.confrim-depo .label-active {
+  top: 0;
+  left: 0;
+  font-size: 13px;
+  color: #f27036;
+}
+.confrim-depo .note {
+  color: #817682;
+  font-family: os-light;
+  font-size: 13px;
+  display: block;
+  margin-top: 10px;
+}
+.confrim-depo .submit-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 58px;
+  -webkit-box-shadow: 0 1px 0 #000000, inset 0 1px 1px #ff996c;
+  -moz-box-shadow: 0 1px 0 #000000, inset 0 1px 1px #ff996c;
+  box-shadow: 0 1px 0 #000000, inset 0 1px 1px #ff996c;
+  border-radius: 5px;
+  background-color: #f27036;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  font-size: 16px;
+  color: #fff;
+  margin-top: 38px;
+  margin-bottom: 46px;
+}
+.confrim-depo .submit-form:focus, .confrim-depo .submit-form:hover {
+  background-color: transparent;
+  border: 1px solid #665e71;
+  box-shadow: none;
+  color: #1b0e1c;
+}
+.confrim-depo .upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  width: 100%;
+  margin-top: 70px;
+}
+.confrim-depo .upload-btn-wrapper:hover .upload-btn {
+  border-color: #f48d65;
+}
+.confrim-depo .upload-btn-wrapper .upload-btn {
+  width: 100%;
+  height: 57px;
+  border-radius: 4px;
+  border: 1px dashed #817682;
+  background-color: transparent;
+  color: #331d34;
+  font-size: 16px;
+  font-family: os-bold;
+  cursor: pointer;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.confrim-depo .upload-btn-wrapper .upload-btn svg {
+  margin-right: 12px;
+}
+.confrim-depo .upload-btn-wrapper .upload-btn svg path {
+  fill: #331d34;
+}
+.confrim-depo .upload-btn-wrapper input[type=file] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  cursor: pointer;
+  width: 100%;
+}
+
+.confrim-depo h3 {
+  margin-bottom: 40px;
+}
+
+html[dir=rtl] .confrim-depo .form-title {
+  font-size: 16px;
+  text-align: right;
+}
+@media (max-width: 767px) {
+  html[dir=rtl] .confrim-depo .form-title {
+    text-align: center;
+  }
+}
+html[dir=rtl] .confrim-depo .depo-form-input {
+  text-align: right;
+}
+html[dir=rtl] .confrim-depo .floating-label {
+  right: 0;
+  left: auto;
+  font-family: g-bold;
+}
+html[dir=rtl] .confrim-depo .label-active {
+  right: 0;
+  left: auto;
+}
+html[dir=rtl] .confrim-depo .note {
+  font-family: gulf;
+  text-align: right;
+}
+html[dir=rtl] .confrim-depo .upload-btn-wrapper .upload-btn {
+  font-family: g-bold;
+}
+html[dir=rtl] .confrim-depo .upload-btn-wrapper .upload-btn img {
+  margin-left: 12px;
+  margin-right: 0;
+}
+
 .nav_list {
   display: flex;
   align-items: center;
@@ -3711,6 +3885,12 @@ html[dir=rtl] .guaranties-cont.about-page .guarantie .guarantie-desc {
   margin-bottom: 22px;
 }
 
+html[dir=rtl] .e-methods {
+  font-family: os;
+}
+html[dir=rtl] .e-methods .back-method {
+  font-family: gulf;
+}
 html[dir=rtl] .info-card-cont .form-input {
   text-align: right;
 }
@@ -5226,159 +5406,6 @@ html[dir=rtl] .owned-credit-cont .card-type.delete-card {
   color: #665e71;
 }
 
-.confrim-depo {
-  width: 100%;
-  border-radius: 0 0 10px 10px;
-  padding: 45px 110px;
-  background-color: #331d34;
-  position: relative;
-}
-@media (max-width: 767px) {
-  .confrim-depo {
-    padding: 50px 30px;
-  }
-}
-.confrim-depo:before {
-  top: 0;
-  left: 110px;
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  border-top-color: #fff;
-  border-width: 8px;
-}
-.confrim-depo .form-title {
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: os-bold;
-}
-@media (max-width: 767px) {
-  .confrim-depo .form-title {
-    text-align: center;
-  }
-}
-.confrim-depo .depo-input-label {
-  width: 100%;
-  height: 50px;
-  position: relative;
-  margin-top: 70px;
-}
-.confrim-depo .depo-input-label:first-of-type {
-  margin-top: 40px;
-}
-@media (max-width: 767px) {
-  .confrim-depo .depo-input-label {
-    margin-top: 110px;
-  }
-}
-.confrim-depo .depo-input {
-  width: 100%;
-  height: 100%;
-  background-color: transparent;
-  border-bottom: 1px solid #fff;
-  color: #fff;
-  font-size: 16px;
-  padding: 0 15px;
-  -moz-appearance: textfield;
-  transition: 0.2s ease all;
-  text-align: left;
-}
-.confrim-depo .depo-input:focus {
-  border-bottom: 1px solid #f48d65;
-}
-.confrim-depo .depo-input::-webkit-inner-spin-button, .confrim-depo .depo-input::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-}
-.confrim-depo .floating-label {
-  position: absolute;
-  pointer-events: none;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #fff;
-  font-family: os-bold;
-  font-size: 16px;
-  transition: 0.2s ease all;
-}
-.confrim-depo .label-active {
-  top: 0;
-  left: 0;
-  font-size: 13px;
-  color: #fff;
-}
-.confrim-depo .note {
-  color: #fff;
-  font-family: os-light;
-  font-size: 13px;
-  display: block;
-  margin-top: 10px;
-}
-.confrim-depo .submit-form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 58px;
-  -webkit-box-shadow: 0 1px 0 #000000, inset 0 1px 1px #ff996c;
-  -moz-box-shadow: 0 1px 0 #000000, inset 0 1px 1px #ff996c;
-  box-shadow: 0 1px 0 #000000, inset 0 1px 1px #ff996c;
-  border-radius: 5px;
-  background-color: #f27036;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  font-size: 16px;
-  color: #fff;
-  margin-top: 38px;
-  margin-bottom: 46px;
-}
-.confrim-depo .submit-form:focus, .confrim-depo .submit-form:hover {
-  background-color: transparent;
-  border: 1px solid #665e71;
-  box-shadow: none;
-}
-.confrim-depo .upload-btn-wrapper {
-  position: relative;
-  overflow: hidden;
-  display: inline-block;
-  width: 100%;
-  margin-top: 70px;
-}
-.confrim-depo .upload-btn-wrapper:hover .upload-btn {
-  border-color: #f48d65;
-}
-.confrim-depo .upload-btn-wrapper .upload-btn {
-  width: 100%;
-  height: 57px;
-  border-radius: 4px;
-  border: 1px dashed #ffffff;
-  background-color: transparent;
-  color: #ffffff;
-  font-size: 16px;
-  font-family: os-bold;
-  cursor: pointer;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-.confrim-depo .upload-btn-wrapper .upload-btn img {
-  margin-right: 12px;
-}
-.confrim-depo .upload-btn-wrapper input[type=file] {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0;
-  cursor: pointer;
-  width: 100%;
-}
-
 .bank-acc-info {
   display: flex;
   align-items: flex-start;
@@ -5453,40 +5480,6 @@ html[dir=rtl] .hold-cards-content-cont .loged-page-head #inputGroupSelect01 {
   padding-left: 22px;
   padding-right: 0;
   background-position: 2% center;
-}
-html[dir=rtl] .confrim-depo .form-title {
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: g-bold;
-  text-align: right;
-}
-@media (max-width: 767px) {
-  html[dir=rtl] .confrim-depo .form-title {
-    text-align: center;
-  }
-}
-html[dir=rtl] .confrim-depo .depo-form-input {
-  text-align: right;
-}
-html[dir=rtl] .confrim-depo .floating-label {
-  right: 0;
-  left: auto;
-  font-family: g-bold;
-}
-html[dir=rtl] .confrim-depo .label-active {
-  right: 0;
-  left: auto;
-}
-html[dir=rtl] .confrim-depo .note {
-  font-family: gulf;
-  text-align: right;
-}
-html[dir=rtl] .confrim-depo .upload-btn-wrapper .upload-btn {
-  font-family: g-bold;
-}
-html[dir=rtl] .confrim-depo .upload-btn-wrapper .upload-btn img {
-  margin-left: 12px;
-  margin-right: 0;
 }
 html[dir=rtl] .hold-cards {
   text-align: right;

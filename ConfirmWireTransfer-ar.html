@@ -37,7 +37,7 @@
     <div class="xs-nav">
         <div class="container">
             <div class="xs-head">
-                <a href="index-ar.html" class="logo"><img src="images/logo(light).svg" class="img-fluid"></a>
+                <a href="pending-Cards-ar.html" class="logo"><img src="images/logo(light).svg" class="img-fluid"></a>
                 <img src="images/cancel-operation.svg" class="close-btn">
             </div>
             <div class="nav-cont">
@@ -79,7 +79,7 @@
                             </li>
                         </ul>
                     </div>
-                    <a href="Buy Card [Payment Method].html" class="lang fixall wow fadeIn"
+                    <a href="ConfirmWireTransfer.html" class="lang fixall wow fadeIn"
                         data-wow-duration="1.5s">English</a>
                 </div>
             </div>
@@ -88,7 +88,7 @@
         </div>
     </div>
     <!-- End Xs-Nav -->
-
+    <h2 class="form-name fixall">تأكيد الدفع للطلب رقم Yalla600511</h2>
     <!-- Start Payment Card -->
     <div class="pay-card-cont">
         <div class="container">
@@ -118,32 +118,65 @@
                         </div>
                     </div>
                     <div class="col-lg-6 col-12">
-                        <div class="pay-methods-cont wow fadeInLeft" data-wow-duration="1s">
-                            <div class="card-head pay-card-head">
-                                <h3 class="pay-methods-head fixall">إختر طريقة الدفع التي تناسبك</h3>
+                        <div class="method-methods-cont wire-methods-cont pay-methods-cont wow fadeInLeft"
+                            data-wow-duration="1s">
+                            <div class="card-head method-card-head wire-head">
+                                <img src="images/bank-transfer.svg">
+                                <h3 class="pay-methods-head fixall">الدفع بواسطة التحويل البنكي </h3>
+                                <a href="Buy Card [Payment Method].html" class="fixall change-method">تغيير</a>
                             </div>
-                            <div class="pay-methods">
+                            <div class="wire-method">
+                                <form class="confrim-depo">
+                                    <h3 class="form-title fixall">أكد عملية الإيداع لشراء هذه البطاقة بأن تضع بيانات
+                                        الإيداع التالية …</h3>
+                                    <div class="bank-name-sec">
+                                        <h4 class="bank-name fixall">اسم البنك</h4>
 
-                                <a href="Buy Card [CreditCard] Median Step-ar.html" class="pay-method fixall">
-                                    <img src="images/paymethod-cridet.svg">
-                                    البطاقات الإئتمانية
+                                        <div class="banks-cont">
+                                            <div class="selected-bank">
+                                                <div class="selected-info">
+                                                    <img src="images/4-layers.svg" alt="">
+                                                    <span class="bank-select-name">البنك الأهلي السعودي</span>
+                                                </div>
+                                                <div class="arrow">
+                                                    <img src="images/drop.svg" class="svg">
+                                                </div>
+                                            </div>
+                                            <ul class="other-banks list-unstyled fixall">
+                                                <li class="bank-li">
+                                                    <img src="images/saudi-arabia.png" alt="">
+                                                    <span class="bank-select-name">البنك الأهلي السعودي</span>
+                                                </li>
+                                                <li class="bank-li">
+                                                    <img src="images/4-layers.svg" alt="">
+                                                    <span class="bank-select-name">البنك الأهلي السعودي</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="depo-input-label wow fadeInDown" data-wow-duration="1s">
+                                        <input class="depo-input fixall" type="text">
+                                        <span class="floating-label">إسم المودع</span>
+                                        <span class="note">إسم المكتوب على ايصال الإيداع، بالعربية أو الانجليزية</span>
+                                    </div>
+                                    <div class="depo-input-label log-in-pass wow fadeInDown" data-wow-duration="1s"
+                                        data-wow-delay="0.2s">
+                                        <input class="depo-input fixall" type="numer">
+                                        <span class="floating-label">رقم إيصال الإيداع</span>
+                                        <div class="note">رقم الايصال Deposite Number سواء كان بالأرقام او الحروف</div>
+                                    </div>
+                                    <div class="upload-btn-wrapper wow fadeInDown" data-wow-duration="0.6s"
+                                        data-wow-delay="0.4s">
+                                        <button class="upload-btn">
+                                            <input type="file" name="myfile" class="inputfile" />
+                                            <img src="images/upload.svg" class="svg">
+                                            إرفع صورة واضحة لإيصال الإيداع
+                                        </button>
 
-                                </a>
-
-                                <a href="Buy Card [PayPal]-ar.html" class="pay-method fixall">
-                                    <img src="images/paypal.svg">
-                                    بايبال PayPal
-                                </a>
-
-                                <a href="Buy Card [WireTransfer]-ar.html" class="pay-method fixall">
-                                    <img src="images/bank-transfer.svg">
-                                    التحويلات البنكية
-                                </a>
-
-                                <a href="Buy Card [eCurrencies] Select.html" class="pay-method fixall">
-                                    <img src="images/e-coins.svg">
-                                    العملات الرقمية
-                                </a>
+                                    </div>
+                                    <button type="submit" class="fixall submit-form wow fadeInDown"
+                                        data-wow-duration="1s" data-wow-delay="0.6s">إرسال بيانات التحويل</button>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -171,7 +204,7 @@
                         <a href="Contact-us-ar.html" class="foot-nav-anchor fixall">إتصل بنا</a>
                     </li>
                     <li class="foot-nav-li wow flipInX" data-wow-duration="1s" data-wow-delay="0.8s">
-                        <a href="Buy Card [Payment Method].html" class="foot-nav-anchor fixall lang">English</a>
+                        <a href="ConfirmWireTransfer.html" class="foot-nav-anchor fixall lang">English</a>
                     </li>
                 </ul>
                 <p class="mobilefooter fixall">© 2020 YallaPay, Inc.</p>

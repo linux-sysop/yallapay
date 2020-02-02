@@ -1333,6 +1333,14 @@
 }
 
 html[dir='rtl'] {
+    .e-methods {
+        font-family: os;
+
+        .back-method {
+            font-family: gulf;
+        }
+    }
+
     .info-card-cont {
 
         .form-input {
