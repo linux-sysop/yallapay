@@ -1,0 +1,341 @@
+.contact-main-cont {
+    background-color: $back;
+    padding-top: 38px;
+    padding-bottom: 160px;
+
+    @include xs {
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+
+    .contact-page-head {
+        color: #1b0e1c;
+        font-size: 32px;
+        font-family: os-bold;
+    }
+
+    .contact-page-desc {
+        color: #1b0e1c;
+        font-family: os-semibold;
+        font-size: 24px;
+        line-height: 36px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        display: flex;
+
+        @include xs {
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+html[dir="rtl"] {
+    text-align: right;
+
+    .contact-main-cont {
+        text-align: right;
+
+        .contact-page-head {
+            font-family: g-bold;
+            text-align: right;
+        }
+
+        .contact-page-desc {
+            font-family: g-med;
+            text-align: right;
+        }
+    }
+}
+
+.contact-form {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .input-label {
+        width: 100%;
+        height: 50px;
+        position: relative;
+        margin-top: 50px;
+
+        &:first-of-type {
+            margin-top: 0;
+        }
+
+        &.text-label {
+            height: 170px;
+
+            .floating-label {
+                top: 20px;
+            }
+
+            .label-active {
+                top: 0;
+            }
+
+            .form-input {
+                padding: 15px;
+            }
+        }
+    }
+
+    .form-input {
+        resize: none;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        border-bottom: 1px solid #1b0e1c;
+        color: $text;
+        font-size: 16px;
+        padding: 0 15px;
+        -moz-appearance: textfield;
+        transition: 0.2s ease all;
+        text-align: left;
+    }
+
+    .form-input:focus {
+        border-bottom: 1px solid $orange;
+    }
+
+    .form-input::-webkit-inner-spin-button,
+    .form-input::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+    }
+
+    .floating-label {
+        position: absolute;
+        pointer-events: none;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        color: $text;
+        font-family: os-bold;
+        font-size: 16px;
+        transition: 0.2s ease all;
+    }
+
+    .label-active {
+        top: 0;
+        left: 0;
+        font-size: 13px;
+        color: #fff;
+        color: $blue;
+    }
+
+    .note {
+        color: #817682;
+        font-family: os-light;
+        font-size: 13px;
+        display: block;
+        margin-top: 10px;
+    }
+
+    p.note {
+        margin-top: 30px;
+        line-height: 20px;
+    }
+
+    .submit-form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 58px;
+        -webkit-box-shadow: 0 1px 0 #000000, inset 0 1px 1px #ff996c;
+        -moz-box-shadow: 0 1px 0 #000000, inset 0 1px 1px #ff996c;
+        box-shadow: 0 1px 0 #000000, inset 0 1px 1px #ff996c;
+        border-radius: 5px;
+        background-color: #f27036;
+        @include transition(all 0.3s ease-in-out);
+        font-size: 16px;
+        color: #fff;
+        margin-top: 30px;
+
+        &:focus,
+        &:hover {
+            background-color: $text;
+            border: 1px solid #665e71;
+            box-shadow: none;
+        }
+
+        @include xs {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+html[dir='rtl'] .form {
+
+    .form-input {
+        text-align: right;
+    }
+
+    .countries-cont {
+        width: 235px;
+
+        .country-name {
+
+
+            @include xs {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .countries-head {
+        font-family: g-bold;
+        text-align: right;
+    }
+
+    .floating-label {
+        right: 0;
+        left: auto;
+        font-family: g-bold;
+    }
+
+    .label-active {
+        right: 0;
+        left: auto;
+    }
+
+    .note {
+        font-family: gulf;
+        text-align: right;
+
+    }
+
+    .show_hide {
+        font-family: gulf;
+        right: auto;
+        left: 2px;
+    }
+
+
+    .countries-cont {
+        margin-right: 0;
+        margin-left: auto;
+
+        .country-name {
+            margin-right: 14px;
+            margin-left: 0;
+        }
+
+    }
+
+    .note-forget {
+        text-align: right;
+    }
+}
+
+.conntact-info-sec {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+._1st-div {
+    padding: 38px 38px 35px;
+
+    @include xs {
+        padding: 20px 10px;
+    }
+}
+
+.contact-info-head {
+    color: #331d34;
+    font-family: os-bold;
+    font-size: 24px;
+    margin-bottom: 14px;
+}
+
+.contact-info-text {
+    color: #817682;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.contact-info {
+    margin-top: 30px;
+}
+
+.contact-way {
+    color: #331d34;
+    font-size: 16px;
+    font-family: os;
+    @include transition(all 0.3s ease-in-out);
+    display: flex;
+    align-items: center;
+    margin-bottom: 27px;
+    line-height: 24px;
+
+    svg {
+        min-width: 25px;
+        width: 25px;
+        margin: 0 12px;
+
+        path {
+            @include transition(all 0.3s ease-in-out);
+        }
+
+        @include xs {
+            margin: 0 10px;
+        }
+    }
+
+
+
+    &:hover {
+        color: $orange;
+
+        svg {
+            path {
+                fill: #331d34;
+            }
+        }
+    }
+}
+
+._2nd-div {
+    height: 275px;
+    width: 100%;
+}
+
+html[dir='rtl'] {
+    .contact-form {
+
+        .form-input {
+            text-align: right;
+        }
+
+        .floating-label {
+            right: 0;
+            left: auto;
+            font-family: g-bold;
+        }
+
+        .label-active {
+            right: 0;
+            left: auto;
+        }
+
+        .note {
+            font-family: gulf;
+            text-align: right;
+        }
+    }
+
+    .contact-info-head {
+        font-family: g-bold;
+    }
+
+    .map-contact {
+        font-family: gulf;
+    }
+
+}

@@ -1,0 +1,228 @@
+.mail-form-cont {
+    .mail-form {
+        text-align: center;
+    }
+
+    .mail-header {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    .email-badge {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+
+    .mail-body-cont {
+        display: flex;
+        justify-content: center;
+    }
+
+    .email-body {
+        width: 600px;
+        border-radius: 270px 270px 10px 10px;
+        background-color: #ffffff;
+        text-align: center;
+        padding-top: 75px;
+        padding-bottom: 60px;
+
+        @include xs {
+            width: 100%;
+        }
+    }
+
+    .body-header {
+        color: #331d34;
+        font-family: g-bold;
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    html[dir="ltr"] .body-header {
+        font-family: os-bold;
+        padding: 0 50px;
+    }
+
+    .body-desc {
+        width: 415px;
+        margin: auto;
+        color: #331d34;
+        font-size: 16px;
+        text-align: right;
+        margin-top: 20px;
+
+        @include xs {
+            text-align: center;
+            width: 100%;
+            padding: 0 15px;
+        }
+    }
+
+    html[dir="ltr"] .body-desc {
+        text-align: left;
+
+        @include xs {
+            text-align: center;
+        }
+    }
+
+    .body-sale {
+        display: flex;
+        margin-top: 20px;
+    }
+
+    html[dir="ltr"] .body-sale {
+        justify-content: flex-end;
+    }
+
+    .subscribe {
+        max-width: 100%;
+        padding: 0 44px;
+        width: auto;
+        height: 51px;
+        -webkit-box-shadow: 0 1px 0 #000000, inset 0 1px 1px #ff996c;
+        -moz-box-shadow: 0 1px 0 #000000, inset 0 1px 1px #ff996c;
+        box-shadow: 0 1px 0 #000000, inset 0 1px 1px #ff996c;
+        border-radius: 5px;
+        background-color: #f27036;
+        color: #fdfcfc;
+        font-family: Arial;
+        font-size: 17px;
+        font-weight: 700;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin-top: 17px;
+        @include transition(all 0.3s ease-in-out);
+
+        &:focus,
+        &:hover {
+            background-color: $blue;
+            border: 1px solid #665e71;
+            box-shadow: none;
+            color: #fdfcfc;
+        }
+    }
+
+    .email-footer {
+        margin: 44px auto;
+        text-align: center;
+
+        .buy {
+            color: #ffffff;
+            font-family: Arial;
+            font-size: 14px;
+        }
+
+        .yallapay {
+            margin: 10px 0;
+
+            a {
+                color: #fcdf9f;
+                font-family: Arial;
+                font-size: 16px;
+            }
+        }
+
+        .copyrights {
+            color: #ffffff;
+            font-family: Arial;
+            font-size: 13px;
+            display: block;
+        }
+    }
+}
+
+.mail-form1-cont {
+    background-color: $blue;
+
+    .mail-form {
+        background-color: $text;
+        width: 600px;
+        border-radius: 10px;
+        margin: 55px auto;
+        padding: 38px 0 0;
+
+        @include xs {
+            width: 100%;
+        }
+    }
+
+    .mail-header {
+        padding: 0 100px 280px;
+
+        @include xs {
+            padding: 0 25px 100px;
+        }
+    }
+
+    .offer-desc {
+        color: #ffffff;
+        font-size: 18px;
+        line-height: 27px;
+        margin-top: 20px;
+    }
+
+    .email-footer {
+        background-color: #fff;
+        border-radius: 0 0 10px 10px;
+        padding: 40px 40px;
+
+        @include xs {
+            padding: 25px 20px;
+        }
+    }
+
+    .offer-head {
+        font-size: 18px;
+        line-height: 27px;
+        color: $blue;
+    }
+
+    .mail-desc {
+        margin-top: 25px;
+        font-size: 16px;
+        line-height: 24px;
+        color: $blue;
+    }
+
+    .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 288px;
+        height: 57px;
+        -webkit-box-shadow: 0 1px 0 #000000, inset 0 1px 1px #ff996c;
+        -moz-box-shadow: 0 1px 0 #000000, inset 0 1px 1px #ff996c;
+        box-shadow: 0 1px 0 #000000, inset 0 1px 1px #ff996c;
+        border-radius: 5px;
+        background-color: #f27036;
+        @include transition(all 0.3s ease-in-out);
+        font-size: 16px;
+        color: #fff;
+        margin: auto;
+        margin-top: 130px;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+
+        @include xs {
+            width: 100%;
+        }
+
+        &:focus,
+        &:hover {
+            background-color: $text;
+            -webkit-box-shadow: 0 1px 0 $text, inset 0 1px 1px $text;
+            -moz-box-shadow: 0 1px 0 $text, inset 0 1px 1px $text;
+            box-shadow: 0 1px 0 $text, inset 0 1px 1px $text;
+        }
+    }
+}
+
+html[dir="rtl"] .mail-form1-cont {
+    text-align: right;
+}

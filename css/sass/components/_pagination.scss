@@ -1,0 +1,111 @@
+.pagination {
+    justify-content: center;
+    margin-top: 50px;
+
+    @include xs {
+        margin-top: 20px;
+    }
+
+    .page-link {
+        box-shadow: none;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        border: 1px solid #f1f4f6;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        color: #817682;
+        @include transition(all 0.3s ease-in-out);
+
+        &:focus {
+            box-shadow: none;
+        }
+
+        &:hover {
+            color: #fff;
+            background-color: #331d34;
+            border-color: #331d34;
+        }
+    }
+
+    .page-item {
+        width: 41px;
+        height: 41px;
+        border-radius: 5px;
+        margin: 0 6px;
+
+        @include xs {
+            &:nth-of-type(n+4) {
+                display: none;
+            }
+
+            &:last-of-type {
+                display: flex;
+            }
+        }
+
+        &.active {
+            .page-link {
+                z-index: 1;
+                color: #fff;
+                background-color: #331d34;
+                border-color: #331d34;
+            }
+        }
+    }
+
+    .last-page {
+        width: 115px;
+    }
+}
+
+////////////////////////////////////////////////
+.nav-tabs {
+    justify-content: center;
+    margin-top: 50px;
+    border-bottom: none;
+
+    @include xs {
+        margin-top: 20px;
+    }
+
+    .nav-link {
+        box-shadow: none;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        border: 1px solid #f1f4f6;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        color: #817682;
+        @include transition(all 0.3s ease-in-out);
+
+        &:focus {
+            box-shadow: none;
+        }
+
+        &:hover {
+            color: #fff;
+            background-color: #331d34;
+            border-color: #331d34;
+        }
+
+        &.active {
+            z-index: 1;
+            color: #fff;
+            background-color: #331d34;
+            border-color: #331d34;
+        }
+    }
+
+    .nav-item {
+        width: 41px;
+        height: 41px;
+        border-radius: 5px;
+        margin: 0 6px;
+    }
+}

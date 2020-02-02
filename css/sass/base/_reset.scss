@@ -1,0 +1,40 @@
+body {
+    font-family: os;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow: hidden;
+    background-color: $back;
+
+    &.dark-page {
+        background-color: $blue;
+    }
+
+    &::-webkit-scrollbar {
+        background-color: rgba(#331d34, 0.5);
+        width: 7px;
+        height: 0px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #f48d65;
+    }
+
+    overflow-x: hidden;
+}
+
+html[dir='rtl'] body {
+    font-family: gulf;
+}
+
+html {
+    scrollbar-width: thin;
+    scrollbar-color: #f48d65 rgba(#331d34, 0.5);
+}
+
+.overflow {
+    overflow: hidden !important;
+}
+
+.container {
+    max-width: 1170px;
+}

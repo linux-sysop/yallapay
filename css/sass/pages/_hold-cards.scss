@@ -1,0 +1,617 @@
+.hold-cards-content-cont {
+    background-color: $back;
+    padding-top: 77px;
+
+    .navigatback {
+        width: 100%;
+    }
+
+    .loged-page-head {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        #inputGroupSelect01 {
+            font-size: 18px;
+            color: #1b0e1c;
+            background-color: transparent;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            -o-appearance: none;
+            appearance: none;
+
+            background-image: url('../images/drop.svg');
+            background-position: 98% center;
+            background-repeat: no-repeat;
+            padding-right: 22px;
+
+            &:after {
+                content: url('../images/drop.svg');
+                display: block;
+            }
+        }
+    }
+}
+
+.hold-cards {
+    border-radius: 10px 10px 0 0;
+    background-color: #ffffff;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    position: relative;
+
+    @include xs {
+        padding-top: 20px;
+        position: relative;
+    }
+
+    &:before {
+        content: "";
+        height: 6px;
+        border-radius: 3px;
+        background-color: #9ec6cd;
+        width: 248px;
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%, -50%);
+    }
+
+    @include xs {
+        width: 100%;
+
+        &::before {
+            left: 31px;
+            transform: translateY(-50%);
+        }
+    }
+
+    .hold-card {
+        display: flex;
+        padding: 38px 35px 27px;
+        border-bottom: 1px solid #eaebf0;
+        align-items: center;
+        position: relative;
+        background-color: #fff;
+        overflow-x: hidden;
+        @include transition(all 0.3s ease-in-out);
+        cursor: default;
+
+        &:hover {
+            -webkit-box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);
+            -moz-box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);
+            box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);
+            z-index: 9;
+        }
+
+        &:last-of-type {
+            border: none;
+        }
+
+        @include xs {
+            padding: 20px;
+            align-items: flex-start;
+        }
+
+        .hold-card-img {
+            min-width: 68px;
+            width: 68px;
+
+            @include xs {
+                min-width: 50px;
+                width: 50px;
+            }
+        }
+    }
+
+    .hold-card-info {
+        margin-left: 27px;
+        width: calc(100% - 95px);
+
+        @include xs {
+            margin: 10px;
+            width: calc(100% - 90px);
+        }
+    }
+
+    .card-top-head {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include xs {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    .card-hint {
+        background-color: #ffde96;
+        color: #1b0e1c;
+        width: 284px;
+        height: 30px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 10px;
+
+        @include xs {
+            margin-top: 20px;
+            margin-left: -60px;
+        }
+    }
+
+    .hold-card-name {
+        color: #1b0e1c;
+        font-size: 20px;
+        font-family: os-bold;
+        text-transform: uppercase;
+        position: relative;
+        display: inline-flex;
+
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 95%;
+        }
+
+        @include xs {
+            font-size: 16px;
+        }
+    }
+
+    .sec-row {
+        display: flex;
+        align-items: center;
+        margin: 28px 0 0;
+        justify-content: space-between;
+
+        @include xs {
+            margin: 15px 0;
+            flex-wrap: wrap;
+        }
+    }
+
+    .hold-card-price {
+        color: #1b0e1c;
+        font-size: 15px;
+        font-family: os-bold;
+
+        @include xs {
+            width: 40%;
+        }
+    }
+
+    .hold-card-mail {
+        color: #817682;
+        font-size: 15px;
+
+        @include xs {
+            font-size: 12px;
+            width: 60%;
+        }
+
+    }
+
+    .hold-card-date {
+        color: #817682;
+        font-size: 12px;
+
+        @include xs {
+            margin: 20px 0;
+            width: 100%;
+        }
+    }
+
+    .tools {
+        display: flex;
+        align-items: center;
+
+        .delete-card {
+            color: #f37170;
+            font-size: 12px;
+            @include transition(all 0.3s ease-in-out);
+            margin-right: 19px;
+
+            &:hover {
+                color: #fb100e;
+            }
+        }
+
+        .confirm-card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 17px;
+            height: 34px;
+            border-radius: 4px;
+            border: 1px solid #665e71;
+            color: #665e71;
+            font-size: 12px;
+            @include transition(all 0.3s ease-in-out);
+
+            &:hover {
+                background-color: #331d34;
+                border-color: #331d34;
+                color: #fff;
+            }
+        }
+
+        .dark-confirm {
+            background-color: #331d34;
+            border-color: #331d34;
+            color: #fff;
+
+            &:hover {
+                background-color: transparent;
+                border-color: #665e71;
+                color: #665e71;
+            }
+        }
+    }
+}
+
+.confrim-depo {
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    padding: 45px 110px;
+    background-color: #331d34;
+    position: relative;
+
+    @include xs {
+        padding: 50px 30px;
+    }
+
+    &:before {
+        top: 0;
+        left: 110px;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        border-top-color: #fff;
+        border-width: 8px;
+    }
+
+    .form-title {
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: os-bold;
+
+        @include xs {
+            text-align: center;
+        }
+    }
+
+    .depo-input-label {
+        width: 100%;
+        height: 50px;
+        position: relative;
+        margin-top: 70px;
+
+        &:first-of-type {
+            margin-top: 40px;
+        }
+
+        @include xs {
+            margin-top: 110px;
+        }
+    }
+
+    .depo-input {
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        border-bottom: 1px solid #fff;
+        color: #fff;
+        font-size: 16px;
+        padding: 0 15px;
+        -moz-appearance: textfield;
+        transition: 0.2s ease all;
+        text-align: left;
+
+        &:focus {
+            border-bottom: 1px solid $orange;
+        }
+
+        &::-webkit-inner-spin-button,
+        &::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+        }
+
+
+    }
+
+
+
+    .floating-label {
+        position: absolute;
+        pointer-events: none;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #fff;
+        font-family: os-bold;
+        font-size: 16px;
+        transition: 0.2s ease all;
+    }
+
+    .label-active {
+        top: 0;
+        left: 0;
+        font-size: 13px;
+        color: #fff;
+    }
+
+    .note {
+        color: #fff;
+        font-family: os-light;
+        font-size: 13px;
+        display: block;
+        margin-top: 10px;
+    }
+
+    .submit-form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 58px;
+        -webkit-box-shadow: 0 1px 0 #000000, inset 0 1px 1px #ff996c;
+        -moz-box-shadow: 0 1px 0 #000000, inset 0 1px 1px #ff996c;
+        box-shadow: 0 1px 0 #000000, inset 0 1px 1px #ff996c;
+        border-radius: 5px;
+        background-color: #f27036;
+        @include transition(all 0.3s ease-in-out);
+        font-size: 16px;
+        color: #fff;
+        margin-top: 38px;
+        margin-bottom: 46px;
+
+        &:focus,
+        &:hover {
+            background-color: transparent;
+            border: 1px solid #665e71;
+            box-shadow: none;
+        }
+    }
+
+    .upload-btn-wrapper {
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+        width: 100%;
+        margin-top: 70px;
+
+        &:hover {
+            .upload-btn {
+                border-color: $orange;
+            }
+        }
+
+        .upload-btn {
+            width: 100%;
+            height: 57px;
+            border-radius: 4px;
+            border: 1px dashed #ffffff;
+            background-color: transparent;
+            color: #ffffff;
+            font-size: 16px;
+            font-family: os-bold;
+            cursor: pointer;
+            @include transition(all 0.3s ease-in-out);
+
+
+            img {
+                margin-right: 12px;
+            }
+        }
+
+        input[type=file] {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0;
+            cursor: pointer;
+            width: 100%;
+        }
+    }
+
+
+}
+
+.bank-acc-info {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 100px;
+    width: 100%;
+
+    .bank-acc-head {
+        color: #1b0e1c;
+        font-family: os-semibold;
+        font-size: 24px;
+    }
+
+    .bank-acc-desc {
+        color: #817682;
+        font-size: 15px;
+        margin-top: 35px;
+        margin-bottom: 27px;
+    }
+
+    ._desc {
+        margin-bottom: 24px;
+    }
+
+    .bank-acc-info-desc {
+        border-radius: 10px;
+        border: 1px solid #f0f2f6;
+        background-color: #ffffff;
+        padding: 28px 34px;
+        width: 100%;
+    }
+
+    ._desc-head {
+        color: #817682;
+        font-size: 13px;
+        font-family: os-light;
+        margin-bottom: 10px;
+    }
+
+    ._desc-body {
+        color: #1b0e1c;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+
+        &._desc-code {
+            font-family: os-semibold;
+        }
+
+        img {
+            margin-right: 12px;
+        }
+    }
+}
+
+html[dir='rtl'] {
+    .hold-cards-content-cont {
+        .loged-page-head {
+            text-align: right;
+
+            #inputGroupSelect01 {
+                padding-left: 22px;
+                padding-right: 0;
+                background-position: 2% center;
+            }
+        }
+    }
+
+    .confrim-depo {
+        .form-title {
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: g-bold;
+            text-align: right;
+
+            @include xs {
+                text-align: center;
+            }
+        }
+
+        .depo-form-input {
+            text-align: right;
+        }
+
+
+        .floating-label {
+            right: 0;
+            left: auto;
+            font-family: g-bold;
+        }
+
+        .label-active {
+            right: 0;
+            left: auto;
+        }
+
+        .note {
+            font-family: gulf;
+            text-align: right;
+
+        }
+
+        .upload-btn-wrapper {
+            .upload-btn {
+                font-family: g-bold;
+
+                img {
+                    margin-left: 12px;
+                    margin-right: 0;
+                }
+            }
+
+        }
+    }
+
+    .hold-cards {
+        text-align: right;
+
+        .hold-card-info {
+            margin-left: 0;
+            margin-right: 27px;
+
+            @include xs {
+                margin: 10px;
+            }
+        }
+
+        .card-hint {
+
+            @include xs {
+                margin-left: 0;
+                margin-right: -60px;
+            }
+        }
+
+        .hold-card-name {
+            font-family: os-bold;
+        }
+
+
+
+
+        .tools {
+            .delete-card {
+                margin-right: 0;
+                margin-left: 19px;
+            }
+
+        }
+    }
+
+    .bank-acc-info {
+        ._desc {
+            text-align: right;
+        }
+
+        ._desc-head {
+            color: #817682;
+            font-size: 12px;
+            font-family: gulf;
+
+        }
+
+        .bank-acc-head {
+            text-align: right;
+            font-family: g-bold;
+        }
+
+        .bank-acc-desc {
+            text-align: right;
+        }
+
+        ._desc-body {
+
+            img {
+                margin-left: 12px;
+                margin-right: 0;
+            }
+        }
+    }
+
+
+}

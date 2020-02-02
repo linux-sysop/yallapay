@@ -1,0 +1,114 @@
+footer {
+    background-color: $back;
+
+    .footer-cont {
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include xs {
+            justify-content: center;
+            height: 98px;
+        }
+    }
+
+    .foot-nav {
+        height: 120px;
+        display: flex;
+        align-items: center;
+
+        @include xs {
+            display: none;
+        }
+    }
+
+    .foot-nav-li {
+        margin-right: 75px;
+    }
+
+    .foot-nav-anchor {
+        color: $blue;
+        font-size: 16px;
+        font-weight: 400;
+        @include transition(all 0.3s ease-in-out);
+
+        &:hover {
+            color: $orange;
+        }
+    }
+
+    .mobilefooter {
+        color: #1b0e1c;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: os;
+        direction: ltr;
+
+        @include xs {
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+
+html[dir='rtl'] footer {
+
+    .foot-nav-li {
+        margin-left: 75px;
+        margin-right: 0;
+    }
+
+    .foot-nav-anchor {
+        font-weight: unset;
+    }
+
+    .mobilefooter {
+        color: #1b0e1c;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: os;
+        direction: ltr;
+
+        @include xs {
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &.black-page {
+        background-color: $blue;
+
+        .foot-nav-anchor {
+            color: #fff;
+        }
+
+        .mobilefooter {
+            color: #fff;
+        }
+    }
+}
+
+
+footer {
+    &.black-page {
+        background-color: $blue;
+
+        .foot-nav-anchor {
+            color: #fff;
+        }
+
+        .mobilefooter {
+            color: #fff;
+        }
+
+        @include xs {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,564 @@
+.user-setting-cont {
+    background-color: $back;
+    padding-top: 60px;
+    padding-bottom: 32px;
+
+    @include xs {
+        padding-top: 40px;
+    }
+}
+
+.user-big-info {
+    width: 475px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+    @include xs {
+        width: 100%;
+    }
+
+    .user-big-name {
+        color: #1b0e1c;
+        font-size: 24px;
+        font-family: os-bold;
+        margin-top: 16px;
+        margin-bottom: 7px;
+    }
+
+    .user-big-since {
+        color: #1b0e1c;
+        font-family: os-light;
+        font-size: 13px;
+    }
+
+    .user-big-desc {
+        color: #1b0e1c;
+        font-size: 16px;
+        margin-top: 14px;
+    }
+}
+
+.user-setting {
+    margin-top: 45px;
+}
+
+.setting-main-view {
+    margin-top: 46px;
+
+    &.personal-info {
+        padding-top: 30px;
+        margin-top: 0;
+
+        @include xs {
+            margin-bottom: 40px;
+        }
+
+        .main-view-head {
+            &:after {
+                background-color: #f48d65;
+            }
+        }
+
+        .main-view-body {
+            padding: 31px 40px 31px 47px;
+
+            @include xs {
+                padding: 30px;
+            }
+        }
+    }
+
+    &.Owned-Cards {
+        .main-view-head {
+            &:after {
+                background-color: #9ec6cd;
+            }
+        }
+    }
+
+    &.Credit-Cards {
+        .main-view-head {
+            &:after {
+                background-color: #fcdf9f;
+            }
+        }
+
+        .main-view-body {
+            padding: 32px;
+        }
+    }
+}
+
+
+.main-view-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 30px;
+    height: 83px;
+    border-radius: 10px 10px 0 0;
+    background-color: #331d34;
+    position: relative;
+
+    @include xs {
+        padding: 0 23px;
+        height: 73px;
+    }
+
+    &:after {
+        content: "";
+        height: 7px;
+        border-radius: 3px;
+
+        width: 248px;
+        display: block;
+        position: absolute;
+        right: 45px;
+        bottom: 0;
+        transform: translate(0, 50%);
+    }
+
+    .main-view-title {
+        color: #ffffff;
+        font-size: 20px;
+        font-family: os-bold;
+
+        @include xs {
+            font-size: 17px;
+        }
+    }
+
+    .goto {
+        color: #ffffff;
+        font-size: 16px;
+        @include transition(all 0.3s ease-in-out);
+
+        @include xs {
+            font-size: 14px;
+        }
+
+        svg {
+            @include transition(all 0.3s ease-in-out);
+            margin-left: 10px;
+
+            path {
+                fill: #fff;
+                @include transition(all 0.3s ease-in-out);
+            }
+        }
+
+        &:hover {
+            color: #f48d65;
+
+            svg {
+                transform: translateX(5px);
+
+                path {
+                    fill: #f48d65;
+                }
+            }
+        }
+    }
+}
+
+.main-view-body {
+    border-radius: 0 0 10px 10px;
+    background-color: #ffffff;
+
+    .view-body-title {
+        color: #817682;
+        font-size: 18px;
+        line-height: 27px;
+
+        @include xs {
+            font-size: 14px;
+        }
+    }
+
+    .personal-info {
+        display: flex;
+        align-items: center;
+        margin-top: 32px;
+    }
+
+    .info-img {
+        width: 31px;
+        height: 33px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .info-desc {
+        margin: 0 16px;
+        color: #1b0e1c;
+        font-size: 16px;
+    }
+
+
+    .own-card {
+        display: flex;
+        padding: 30px 42px 34px;
+        border-bottom: 1px solid #eaebf0;
+        @include transition(all 0.3s ease-in-out);
+        cursor: default;
+
+        &:hover {
+            box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);
+            -webkit-box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);
+            -moz-box-shadow: 1px 7px 21px rgba(151, 154, 169, 0.37);
+            z-index: 9;
+        }
+
+        &:last-of-type {
+            border: none;
+        }
+
+        @include xs {
+            padding: 20px;
+        }
+
+        .own-card-img {
+            @include xs {
+                min-width: 50px;
+            }
+        }
+    }
+
+
+
+    .own-card-info {
+        margin: 8px 32px 0;
+
+        @include xs {
+            margin: 10px;
+        }
+    }
+
+    .own-card-name {
+        color: #1b0e1c;
+        font-size: 20px;
+        font-family: os-bold;
+        text-transform: uppercase;
+
+        @include xs {
+            font-size: 16px;
+        }
+    }
+
+    .sec-row {
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+
+        @include xs {
+            margin: 10px 0;
+        }
+    }
+
+    .own-card-price {
+        margin-right: 52px;
+        color: #1b0e1c;
+        font-size: 15px;
+        font-family: os-bold;
+
+        @include xs {
+            margin-right: 20px;
+        }
+    }
+
+    .own-card-mail {
+        color: #817682;
+        font-size: 15px;
+
+        @include xs {
+            font-size: 12px;
+        }
+
+    }
+
+    .own-card-method {
+        color: #817682;
+        font-size: 15px;
+        margin-bottom: 20px;
+        display: flex;
+
+        @include xs {
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .own-card-date {
+        color: #817682;
+        font-size: 15px;
+        display: flex;
+
+    }
+
+    .update-cridet {
+        color: #817682;
+        font-size: 18px;
+        font-family: os-light;
+    }
+}
+
+.palyer-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 38px;
+    flex-direction: column;
+
+    .badge-name {
+        color: #331d34;
+        font-size: 20px;
+        font-family: os-bold;
+
+        transform: translateY(-15px);
+    }
+
+    .badge-desc {
+        color: #817682;
+        width: 470px;
+        font-size: 16px;
+        line-height: 24px;
+        margin: auto;
+        margin-top: 5px;
+        text-align: center;
+
+        @include xs {
+            width: 100%;
+        }
+    }
+}
+
+.cards-numbers {
+    margin: auto;
+    margin-top: 40px;
+    width: 470px;
+
+    .total-num {
+        color: #817682;
+        font-size: 12px;
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 27px;
+
+    }
+
+    @include xs {
+        width: 100%;
+    }
+}
+
+.card-number-info {
+    margin: auto;
+    width: 100%;
+    height: 53px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 0 23px;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+
+    .loader-span {
+        height: 7px;
+        border-radius: 3px;
+        margin-right: 11px;
+        margin-left: 32px;
+        width: 0%;
+        @include transition(all 1.5s ease-in-out);
+
+        @include xs {
+            margin-left: 10px;
+        }
+    }
+
+    .card-photo {
+        width: 51px;
+        text-align: center;
+
+        @include xs {
+            width: 30px;
+        }
+    }
+
+    .cards-num {
+        color: #817682;
+        font-size: 13px;
+        font-family: os-light;
+    }
+
+    &.ps {
+        .loader-span {
+            background-color: #1370b5;
+            max-width: 62.5%;
+        }
+    }
+
+    &.xbox {
+        .loader-span {
+            max-width: 52.5%;
+            background-color: #107d0f;
+        }
+    }
+
+    &.payers {
+        .loader-span {
+            background-color: #001247;
+            max-width: 13%;
+        }
+
+        .card-photo {
+            &:after {
+                content: url("../images/payers-logo.svg");
+                display: block;
+
+                @include xs {
+                    content: url("../images/smallpyers.svg");
+                }
+            }
+        }
+    }
+
+    &.amazon {
+        .loader-span {
+            background-color: #080607;
+            max-width: 30%;
+        }
+
+        .card-photo {
+            &:after {
+                content: url("../images/amazon-logo.svg");
+                display: block;
+
+                @include xs {
+                    content: url("../images/smallamazon.svg");
+                }
+            }
+        }
+    }
+}
+
+html[dir="rtl"] {
+    .user-big-info {
+        .user-big-name {
+            font-family: g-bold;
+        }
+
+        .user-big-since {
+            font-family: gulf;
+            font-size: 12px;
+        }
+    }
+
+    .setting-main-view {
+
+        &.personal-info {
+            .main-view-body {
+                padding: 31px 44px 31px 44px;
+
+                @include xs {
+                    padding: 30px;
+                }
+            }
+        }
+
+    }
+
+    .main-view-head {
+        .main-view-title {
+            font-family: g-bold;
+        }
+
+        .goto {
+
+            svg {
+                @include transition(all 0.3s ease-in-out);
+                transform: rotate(180deg);
+                margin-left: 0;
+                margin-right: 10px;
+
+            }
+
+            &:hover {
+                svg {
+                    transform: translateX(-5px) rotate(180deg);
+                }
+            }
+        }
+    }
+
+    .main-view-body {
+        text-align: right;
+
+        .info-desc {
+            font-family: os;
+
+            &:last-of-type {
+                font-family: gulf;
+            }
+        }
+
+        .own-card-price {
+            margin-right: 0;
+            margin-left: 52px;
+            font-family: os-bold;
+
+            @include xs {
+                margin-right: 0;
+                margin-left: 20px;
+            }
+        }
+
+        .own-card-mail {
+            font-family: os;
+
+        }
+
+        .update-cridet {
+            font-family: gulf;
+        }
+    }
+
+    .palyer-badge {
+        .badge-name {
+            font-family: g-bold;
+        }
+    }
+
+    .card-number-info {
+        .loader-span {
+            margin-right: 32px;
+            margin-left: 11px;
+
+            @include xs {
+                margin-right: 10px;
+            }
+        }
+
+        .cards-num {
+            font-size: 12px;
+            font-family: gulf;
+        }
+    }
+}
+
+.user-setting {
+    .goto {
+        display: flex;
+        align-items: center;
+
+        svg {
+            margin-bottom: 0;
+        }
+    }
+}
