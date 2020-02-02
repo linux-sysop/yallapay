@@ -1830,6 +1830,20 @@ html[dir="rtl"] .wire-method .secure-pay {
     border: 2px solid #f1f4f6;
     border-radius: 50%;
     margin-right: 5px;
+    position: relative;
+
+    &:after {
+
+        position: absolute;
+        left: -2px;
+        top: -2px;
+        bottom: -2px;
+        right: -2px;
+        border-right: 2px solid #817682;
+        content: "";
+        display: block;
+        border-radius: 50%;
+    }
 }
 
 html[dir=rtl] .circle {
