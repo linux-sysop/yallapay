@@ -1817,3 +1817,33 @@ html[dir="rtl"] .wire-method .secure-pay {
         object-fit: cover;
     }
 }
+
+.time-progress {
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.circle {
+    width: 20px;
+    height: 21px;
+    border: 2px solid #f1f4f6;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+html[dir=rtl] .circle {
+    margin-left: 5px;
+    margin-right: 0;
+}
+
+.qr-cont {
+    width: 260px;
+    height: 261px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 84px auto;
+}

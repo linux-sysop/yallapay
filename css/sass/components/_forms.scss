@@ -753,6 +753,127 @@ html[dir="rtl"] {
 }
 
 
+
+.ecurreny-depo {
+    width: 100%;
+    position: relative;
+
+    .form-title {
+        color: #1b0e1c;
+        font-size: 16px;
+
+        @include xs {
+            text-align: center;
+        }
+    }
+
+    .depo-input-label {
+        width: 100%;
+        height: 50px;
+        position: relative;
+        margin-top: 40px;
+
+        @include xs {
+            margin-top: 70px;
+        }
+
+        svg {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+
+            &:hover {
+                path {
+                    fill: $orange;
+                }
+            }
+        }
+    }
+
+    .depo-input {
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        border-bottom: 1px solid #1b0e1c;
+        color: #1b0e1c;
+        font-size: 16px;
+        padding: 0 15px;
+        -moz-appearance: textfield;
+        transition: 0.2s ease all;
+        text-align: left;
+
+        &:focus {
+            border-bottom: 1px solid $orange;
+        }
+
+        &::-webkit-inner-spin-button,
+        &::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+        }
+
+
+    }
+
+
+
+    .floating-label {
+        position: absolute;
+        pointer-events: none;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #1b0e1c;
+        font-family: os-bold;
+        font-size: 16px;
+        transition: 0.2s ease all;
+    }
+
+    .label-active {
+        top: 0;
+        left: 0;
+        font-size: 13px;
+        color: #1b0e1c;
+    }
+
+    .note {
+        color: #817682;
+        font-family: os-light;
+        font-size: 13px;
+        display: block;
+        margin-top: 10px;
+    }
+
+    .show-form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 58px;
+        background-color: transparent;
+        border: 1px solid #665e71;
+        border-radius: 5px;
+
+        @include transition(all 0.3s ease-in-out);
+        font-size: 16px;
+        color: $text;
+        margin-top: 38px;
+        margin-bottom: 46px;
+
+        &:focus,
+        &:hover {
+            background-color: #f27036;
+            border: 1px solid #f27036;
+            box-shadow: none;
+            color: #fff;
+        }
+    }
+
+
+
+}
+
 html[dir=rtl] {
     .confrim-depo {
         .form-title {
@@ -764,7 +885,62 @@ html[dir=rtl] {
             }
         }
 
-        .depo-form-input {
+
+
+        .depo-input {
+            text-align: right;
+        }
+
+
+        .floating-label {
+            right: 0;
+            left: auto;
+            font-family: g-bold;
+        }
+
+        .label-active {
+            right: 0;
+            left: auto;
+        }
+
+        .note {
+            font-family: gulf;
+            text-align: right;
+
+        }
+
+        .upload-btn-wrapper {
+            .upload-btn {
+                font-family: g-bold;
+
+                img {
+                    margin-left: 12px;
+                    margin-right: 0;
+                }
+            }
+
+        }
+    }
+
+    .ecurreny-depo {
+        .form-title {
+            font-size: 16px;
+            text-align: right;
+
+            @include xs {
+                text-align: center;
+            }
+        }
+
+        .depo-input-label {
+
+            svg {
+                left: 0;
+                right: auto;
+            }
+        }
+
+        .depo-input {
             text-align: right;
         }
 

@@ -761,6 +761,107 @@ html[dir=rtl] .dropdown-item {
   margin-bottom: 40px;
 }
 
+.ecurreny-depo {
+  width: 100%;
+  position: relative;
+}
+.ecurreny-depo .form-title {
+  color: #1b0e1c;
+  font-size: 16px;
+}
+@media (max-width: 767px) {
+  .ecurreny-depo .form-title {
+    text-align: center;
+  }
+}
+.ecurreny-depo .depo-input-label {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  margin-top: 40px;
+}
+@media (max-width: 767px) {
+  .ecurreny-depo .depo-input-label {
+    margin-top: 70px;
+  }
+}
+.ecurreny-depo .depo-input-label svg {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.ecurreny-depo .depo-input-label svg:hover path {
+  fill: #f48d65;
+}
+.ecurreny-depo .depo-input {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border-bottom: 1px solid #1b0e1c;
+  color: #1b0e1c;
+  font-size: 16px;
+  padding: 0 15px;
+  -moz-appearance: textfield;
+  transition: 0.2s ease all;
+  text-align: left;
+}
+.ecurreny-depo .depo-input:focus {
+  border-bottom: 1px solid #f48d65;
+}
+.ecurreny-depo .depo-input::-webkit-inner-spin-button, .ecurreny-depo .depo-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+.ecurreny-depo .floating-label {
+  position: absolute;
+  pointer-events: none;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #1b0e1c;
+  font-family: os-bold;
+  font-size: 16px;
+  transition: 0.2s ease all;
+}
+.ecurreny-depo .label-active {
+  top: 0;
+  left: 0;
+  font-size: 13px;
+  color: #1b0e1c;
+}
+.ecurreny-depo .note {
+  color: #817682;
+  font-family: os-light;
+  font-size: 13px;
+  display: block;
+  margin-top: 10px;
+}
+.ecurreny-depo .show-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 58px;
+  background-color: transparent;
+  border: 1px solid #665e71;
+  border-radius: 5px;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  font-size: 16px;
+  color: #1b0e1c;
+  margin-top: 38px;
+  margin-bottom: 46px;
+}
+.ecurreny-depo .show-form:focus, .ecurreny-depo .show-form:hover {
+  background-color: #f27036;
+  border: 1px solid #f27036;
+  box-shadow: none;
+  color: #fff;
+}
+
 html[dir=rtl] .confrim-depo .form-title {
   font-size: 16px;
   text-align: right;
@@ -770,7 +871,7 @@ html[dir=rtl] .confrim-depo .form-title {
     text-align: center;
   }
 }
-html[dir=rtl] .confrim-depo .depo-form-input {
+html[dir=rtl] .confrim-depo .depo-input {
   text-align: right;
 }
 html[dir=rtl] .confrim-depo .floating-label {
@@ -790,6 +891,42 @@ html[dir=rtl] .confrim-depo .upload-btn-wrapper .upload-btn {
   font-family: g-bold;
 }
 html[dir=rtl] .confrim-depo .upload-btn-wrapper .upload-btn img {
+  margin-left: 12px;
+  margin-right: 0;
+}
+html[dir=rtl] .ecurreny-depo .form-title {
+  font-size: 16px;
+  text-align: right;
+}
+@media (max-width: 767px) {
+  html[dir=rtl] .ecurreny-depo .form-title {
+    text-align: center;
+  }
+}
+html[dir=rtl] .ecurreny-depo .depo-input-label svg {
+  left: 0;
+  right: auto;
+}
+html[dir=rtl] .ecurreny-depo .depo-input {
+  text-align: right;
+}
+html[dir=rtl] .ecurreny-depo .floating-label {
+  right: 0;
+  left: auto;
+  font-family: g-bold;
+}
+html[dir=rtl] .ecurreny-depo .label-active {
+  right: 0;
+  left: auto;
+}
+html[dir=rtl] .ecurreny-depo .note {
+  font-family: gulf;
+  text-align: right;
+}
+html[dir=rtl] .ecurreny-depo .upload-btn-wrapper .upload-btn {
+  font-family: g-bold;
+}
+html[dir=rtl] .ecurreny-depo .upload-btn-wrapper .upload-btn img {
   margin-left: 12px;
   margin-right: 0;
 }
@@ -4261,6 +4398,36 @@ html[dir=rtl] .wire-method .secure-pay {
 .slected-country-pre img {
   max-width: 100%;
   object-fit: cover;
+}
+
+.time-progress {
+  display: flex;
+  align-items: center;
+  margin-top: 35px;
+}
+
+.circle {
+  width: 20px;
+  height: 21px;
+  border: 2px solid #f1f4f6;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+html[dir=rtl] .circle {
+  margin-left: 5px;
+  margin-right: 0;
+}
+
+.qr-cont {
+  width: 260px;
+  height: 261px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 84px auto;
 }
 
 .user-setting-cont {
