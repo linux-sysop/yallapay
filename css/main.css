@@ -1339,6 +1339,14 @@ html[dir=rtl] .xs-nav .lang-country .lang {
   display: none;
   overflow-y: auto;
 }
+.modal-cont::-webkit-scrollbar {
+  background-color: rgba(51, 29, 52, 0.5);
+  width: 7px;
+  height: 0px;
+}
+.modal-cont::-webkit-scrollbar-thumb {
+  background-color: #f48d65;
+}
 .modal-cont .container {
   height: 100%;
 }
@@ -1391,7 +1399,19 @@ html[dir=rtl] .xs-nav .lang-country .lang {
 }
 @media (max-width: 1199px) {
   .modal-cont .add-modal {
+    width: 529px;
+    margin-top: 50px;
+  }
+  .modal-cont .add-modal:first-of-type {
+    margin-top: 150px;
+  }
+}
+@media (max-width: 767px) {
+  .modal-cont .add-modal {
     width: 100%;
+    margin-top: 50px;
+  }
+  .modal-cont .add-modal:first-of-type {
     margin-top: 150px;
   }
 }
