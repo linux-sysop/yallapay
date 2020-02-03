@@ -5334,8 +5334,7 @@ html[dir=rtl] .owned-credit-cont .card-type.delete-card {
   border-radius: 10px;
   background-color: #ffffff;
   width: 100%;
-  padding-top: 30px;
-  padding-bottom: 5px;
+  padding-top: 0;
   position: relative;
 }
 @media (max-width: 767px) {
@@ -5355,12 +5354,18 @@ html[dir=rtl] .owned-credit-cont .card-type.delete-card {
   left: 50%;
   top: 0;
   transform: translate(-50%, -50%);
+  z-index: 99;
 }
 .hold-cards.approve {
+  padding-top: 0;
+  padding-bottom: 0;
   margin-bottom: 70px;
 }
 .hold-cards.approve:after {
   background-color: #fcdf9f;
+}
+.hold-cards.approve .hold-card {
+  border-radius: 10px !important;
 }
 @media (max-width: 767px) {
   .hold-cards {
@@ -5373,7 +5378,8 @@ html[dir=rtl] .owned-credit-cont .card-type.delete-card {
 }
 .hold-cards .hold-card {
   display: flex;
-  padding: 38px 35px 27px;
+  padding: 28px 35px 28px;
+  border-radius: 0;
   border-bottom: 1px solid #eaebf0;
   align-items: center;
   position: relative;
@@ -5393,10 +5399,15 @@ html[dir=rtl] .owned-credit-cont .card-type.delete-card {
 }
 .hold-cards .hold-card:last-of-type {
   border: none;
+  border-radius: 0 0 10px 10px;
+}
+.hold-cards .hold-card:first-of-type {
+  border-radius: 10px 10px 0 0;
 }
 @media (max-width: 767px) {
   .hold-cards .hold-card {
-    padding: 20px;
+    padding: 15px;
+    padding-bottom: 0;
     align-items: flex-start;
   }
 }
@@ -5473,23 +5484,23 @@ html[dir=rtl] .owned-credit-cont .card-type.delete-card {
 .hold-cards .sec-row {
   display: flex;
   align-items: center;
-  margin: 28px 0 0;
+  margin: 18px 0 0;
   justify-content: space-between;
 }
 @media (max-width: 767px) {
   .hold-cards .sec-row {
-    margin: 15px 0;
+    margin: 0;
     flex-wrap: wrap;
   }
 }
 .hold-cards .third-row {
   display: flex;
   align-items: center;
-  margin: 28px 0 0;
+  margin: 12px 0 0;
 }
 @media (max-width: 767px) {
   .hold-cards .third-row {
-    margin: 15px 0;
+    margin: 0;
     flex-wrap: wrap;
   }
 }
