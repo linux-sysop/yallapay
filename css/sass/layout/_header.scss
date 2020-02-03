@@ -5,12 +5,12 @@ header {
     .logo {
         width: 160px;
 
-        @include xs {
+        @include md {
             width: 135px;
         }
     }
 
-    @include xs {
+    @include md {
         padding-top: 30px;
     }
 }
@@ -47,7 +47,7 @@ header {
             }
         }
 
-        @include xs {
+        @include md {
             display: none;
         }
     }
@@ -187,7 +187,7 @@ html[dir='rtl'] .countries-cont {
         color: $orange;
     }
 
-    @include xs {
+    @include md {
         display: none;
     }
 }
@@ -214,7 +214,7 @@ header {
             display: flex;
             align-items: center;
 
-            @include xs {
+            @include md {
                 display: none;
             }
         }
@@ -252,7 +252,7 @@ header {
         .mo-menu-open {
             display: none;
 
-            @include xs {
+            @include md {
                 color: #fff;
                 font-size: 14px;
                 display: flex;
@@ -283,7 +283,7 @@ html[dir='rtl'] header {
 
         .mo-menu-open {
 
-            @include xs {
+            @include md {
                 svg {
                     -webkit-transform: none;
                     transform: none;
@@ -305,7 +305,7 @@ html[dir='rtl'] header {
     transform: translateX(-50%);
     text-align: center;
 
-    @include xs {
+    @include md {
         top: 109px;
         width: 100%;
     }
@@ -326,7 +326,7 @@ html[dir='rtl'] .form-name {
 
 
     img {
-        @include xs {
+        @include md {
             max-width: 33.33%;
         }
     }
@@ -340,7 +340,7 @@ html[dir='rtl'] .form-name {
     border-radius: 15px;
     position: relative;
 
-    @include xs {
+    @include md {
         display: none;
     }
 

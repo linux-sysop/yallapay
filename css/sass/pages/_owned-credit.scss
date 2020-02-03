@@ -6,7 +6,7 @@
     }
 
     .own-credit {
-        @include xs {
+        @include md {
             align-items: flex-start;
             padding-right: 5px;
 
@@ -26,7 +26,7 @@
         margin: 0 35px;
         width: calc(100% - 95px);
 
-        @include xs {
+        @include md {
             margin: 10px;
             margin-right: 0;
             width: auto;
@@ -37,7 +37,7 @@
         margin: 20px 0 0;
         justify-content: space-between;
 
-        @include xs {
+        @include md {
             flex-direction: column;
             align-items: flex-start;
         }
@@ -46,7 +46,7 @@
     ._info {
         display: flex;
 
-        @include xs {
+        @include md {
             flex-direction: column;
         }
     }
@@ -61,7 +61,7 @@
         color: #817682;
         font-size: 12px;
 
-        @include xs {
+        @include md {
             margin: 10px 0;
         }
     }
@@ -116,7 +116,7 @@
             background-color: $orange;
         }
 
-        @include xs {
+        @include md {
             width: 130px;
             font-size: 14px;
             height: 40px;
@@ -130,7 +130,7 @@ html[dir="rtl"] {
 
 
         .own-credit {
-            @include xs {
+            @include md {
                 padding: 20px;
                 padding-left: 5px;
             }
@@ -142,7 +142,7 @@ html[dir="rtl"] {
 
         .own-card-info {
 
-            @include xs {
+            @include md {
                 margin: 10px;
                 margin-left: 0;
             }

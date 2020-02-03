@@ -2,7 +2,7 @@
     justify-content: center;
     margin-top: 50px;
 
-    @include xs {
+    @include md {
         margin-top: 20px;
     }
 
@@ -36,7 +36,7 @@
         border-radius: 5px;
         margin: 0 6px;
 
-        @include xs {
+        @include md {
             &:nth-of-type(n+4) {
                 display: none;
             }
@@ -67,7 +67,7 @@
     margin-top: 50px;
     border-bottom: none;
 
-    @include xs {
+    @include md {
         margin-top: 20px;
     }
 

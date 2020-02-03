@@ -2,7 +2,7 @@
     background-color: $back;
     padding-top: 77px;
 
-    @include xs {
+    @include md {
         padding-top: 62px;
     }
 }
@@ -11,7 +11,7 @@
     width: 565px;
     color: $text;
 
-    @include xs {
+    @include md {
         width: 100%;
     }
 
@@ -21,7 +21,7 @@
         font-weight: 700;
         margin-bottom: 20px;
 
-        @include xs {
+        @include md {
             margin-bottom: 15px;
         }
     }
@@ -37,7 +37,7 @@
 html[dir='rtl'] .yalla-desc {
     width: 569px;
 
-    @include xs {
+    @include md {
         width: 100%;
     }
 
@@ -61,7 +61,7 @@ html[dir='rtl'] .yalla-desc {
     justify-content: space-between;
     margin-top: 21px;
 
-    @include xs {
+    @include md {
         flex-direction: column;
         margin-top: 78px;
     }
@@ -72,7 +72,7 @@ html[dir='rtl'] .yalla-desc {
         padding-right: 30px;
         position: relative;
 
-        @include xs {
+        @include md {
             width: 100%;
             padding-right: 0;
         }
@@ -84,7 +84,7 @@ html[dir='rtl'] .yalla-desc {
         border-radius: 10px;
         padding: 47px 50px 27px;
 
-        @include xs {
+        @include md {
             width: 100%;
             margin-top: 16px;
             position: relative;
@@ -124,7 +124,7 @@ html[dir='rtl'] .about-page-content {
         padding-right: 0;
         padding-left: 30px;
 
-        @include xs {
+        @include md {
             width: 100%;
             padding: 0;
         }
@@ -144,7 +144,7 @@ html[dir='rtl'] .about-page-content {
         padding-top: 0;
         background-color: $back;
 
-        @include xs {
+        @include md {
             padding-top: 40px;
         }
 
@@ -153,7 +153,7 @@ html[dir='rtl'] .about-page-content {
             position: relative;
             z-index: 9;
 
-            @include xs {
+            @include md {
                 text-align: left;
                 margin-bottom: 35px;
             }
@@ -164,7 +164,7 @@ html[dir='rtl'] .about-page-content {
             align-items: center;
             justify-content: space-between;
 
-            @include xs {
+            @include md {
                 flex-direction: column;
             }
         }
@@ -181,7 +181,7 @@ html[dir='rtl'] .about-page-content {
                 color: $blue;
             }
 
-            @include xs {
+            @include md {
                 margin-bottom: 40px;
                 flex-direction: column;
 
@@ -200,7 +200,7 @@ html[dir='rtl'] .about-page-content {
         margin: 74px 0 116px;
         overflow: hidden;
 
-        @include xs {
+        @include md {
             margin: 30px 30px 70px;
         }
     }
@@ -211,7 +211,7 @@ html[dir='rtl'] .guaranties-cont {
     &.about-page {
         .guaranties-header {
 
-            @include xs {
+            @include md {
                 text-align: right;
             }
         }
@@ -227,7 +227,7 @@ html[dir='rtl'] .guaranties-cont {
                 color: $blue;
             }
 
-            @include xs {
+            @include md {
                 margin-bottom: 40px;
                 flex-direction: column;
 

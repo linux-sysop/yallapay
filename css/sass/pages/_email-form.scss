@@ -29,7 +29,7 @@
         padding-top: 75px;
         padding-bottom: 60px;
 
-        @include xs {
+        @include md {
             width: 100%;
         }
     }
@@ -54,7 +54,7 @@
         text-align: right;
         margin-top: 20px;
 
-        @include xs {
+        @include md {
             text-align: center;
             width: 100%;
             padding: 0 15px;
@@ -64,7 +64,7 @@
     html[dir="ltr"] .body-desc {
         text-align: left;
 
-        @include xs {
+        @include md {
             text-align: center;
         }
     }
@@ -147,7 +147,7 @@
         margin: 55px auto;
         padding: 38px 0 0;
 
-        @include xs {
+        @include md {
             width: 100%;
         }
     }
@@ -155,7 +155,7 @@
     .mail-header {
         padding: 0 100px 280px;
 
-        @include xs {
+        @include md {
             padding: 0 25px 100px;
         }
     }
@@ -172,7 +172,7 @@
         border-radius: 0 0 10px 10px;
         padding: 40px 40px;
 
-        @include xs {
+        @include md {
             padding: 25px 20px;
         }
     }
@@ -209,7 +209,7 @@
         -moz-appearance: none;
         -webkit-appearance: none;
 
-        @include xs {
+        @include md {
             width: 100%;
         }
 

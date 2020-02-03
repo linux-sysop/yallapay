@@ -33,7 +33,7 @@
         cursor: pointer;
         z-index: 99;
 
-        @include xs {
+        @include md {
             top: 25px
         }
 
@@ -62,7 +62,7 @@
             transform: translateY(0);
         }
 
-        @include xs {
+        @include md {
             width: 100%;
             margin-top: 150px;
         }
@@ -89,7 +89,7 @@
             &.with-img {
                 justify-content: flex-start;
 
-                @include xs {
+                @include md {
                     padding: 0 5px;
                 }
 
@@ -113,7 +113,7 @@ html[dir="rtl"] .modal-cont {
             &.with-img {
                 justify-content: flex-start;
 
-                @include xs {
+                @include md {
                     padding: 0 5px;
                 }
 

@@ -3,7 +3,7 @@
     padding-top: 60px;
     padding-bottom: 200px;
 
-    @include xs {
+    @include md {
         padding-top: 135px;
     }
 
@@ -22,7 +22,7 @@
     justify-content: center;
     flex-direction: column;
 
-    @include xs {
+    @include md {
         width: 100%;
     }
 
@@ -158,7 +158,7 @@
             margin-left: 14px;
             @include transition(all 0.3s ease-in-out);
 
-            @include xs {
+            @include md {
                 font-size: 16px;
             }
         }
@@ -262,7 +262,7 @@
             }
         }
 
-        @include xs {
+        @include md {
             font-size: 15px;
             text-align: center;
         }
@@ -295,7 +295,7 @@
     color: #331d34;
     font-size: 16px;
 
-    @include xs {
+    @include md {
         width: 100%;
         text-align: center;
         padding: 7px 0;
@@ -315,7 +315,7 @@ html[dir='rtl'] .form {
         .country-name {
 
 
-            @include xs {
+            @include md {
                 font-size: 18px;
             }
         }
@@ -369,12 +369,12 @@ html[dir='rtl'] .form {
 .edit-form-cont {
     background-color: $back;
 
-    @include xs {
+    @include md {
         padding-bottom: 100px;
     }
 
     .edit-form {
-        @include xs {
+        @include md {
             padding: 1px 33px 0;
 
             &:before {
@@ -430,7 +430,7 @@ html[dir='rtl'] .form {
     justify-content: flex-start;
     margin: auto;
 
-    @include xs {
+    @include md {
         width: 100%;
         display: none;
     }
@@ -597,7 +597,7 @@ html[dir="rtl"] {
         color: #1b0e1c;
         font-size: 16px;
 
-        @include xs {
+        @include md {
             text-align: center;
         }
     }
@@ -612,7 +612,7 @@ html[dir="rtl"] {
             margin-top: 40px;
         }
 
-        @include xs {
+        @include md {
             margin-top: 110px;
         }
     }
@@ -762,7 +762,7 @@ html[dir="rtl"] {
         color: #1b0e1c;
         font-size: 16px;
 
-        @include xs {
+        @include md {
             text-align: center;
         }
     }
@@ -773,7 +773,7 @@ html[dir="rtl"] {
         position: relative;
         margin-top: 40px;
 
-        @include xs {
+        @include md {
             margin-top: 70px;
         }
 
@@ -880,7 +880,7 @@ html[dir=rtl] {
             font-size: 16px;
             text-align: right;
 
-            @include xs {
+            @include md {
                 text-align: center;
             }
         }
@@ -927,7 +927,7 @@ html[dir=rtl] {
             font-size: 16px;
             text-align: right;
 
-            @include xs {
+            @include md {
                 text-align: center;
             }
         }

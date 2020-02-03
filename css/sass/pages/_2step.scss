@@ -3,7 +3,7 @@
     padding-top: 55px;
     padding-bottom: 100px;
 
-    @include xs {
+    @include md {
         padding-bottom: 75px;
     }
 
@@ -16,7 +16,7 @@
     .navigatback {
         width: 570px;
 
-        @include xs {
+        @include md {
             width: 100%;
         }
     }
@@ -24,7 +24,7 @@
     .loged-page-head {
         width: 570px;
 
-        @include xs {
+        @include md {
             width: 100%;
             text-align: center;
             justify-content: center;
@@ -37,7 +37,7 @@
         margin: auto;
         border-radius: 10px;
 
-        @include xs {
+        @include md {
             width: 100%;
         }
 
@@ -63,7 +63,7 @@
         align-items: center;
         justify-content: space-between;
 
-        @include xs {
+        @include md {
             flex-direction: column;
             text-align: center;
             padding: 20px;
@@ -76,7 +76,7 @@
         font-family: os-light;
         max-width: 340px;
 
-        @include xs {
+        @include md {
             margin-top: 15px;
         }
     }
@@ -86,7 +86,7 @@
         background-color: #fff;
         padding: 25px 50px 60px;
 
-        @include xs {
+        @include md {
             padding: 20px 10px 30px;
         }
     }
@@ -110,7 +110,7 @@
         font-size: 16px;
         margin-right: 17px;
 
-        @include xs {
+        @include md {
             width: 31px;
             height: 30px;
             margin-right: 15px;
@@ -124,7 +124,7 @@
         position: relative;
         width: 380px;
 
-        @include xs {
+        @include md {
             width: 100%;
         }
 
@@ -147,7 +147,7 @@
                 background-color: $blue;
             }
 
-            @include xs {
+            @include md {
                 display: none;
             }
         }
@@ -158,7 +158,7 @@
     }
 
     .qr {
-        @include xs {
+        @include md {
             text-align: center;
         }
     }
@@ -167,7 +167,7 @@
         display: flex;
         align-items: center;
 
-        @include xs {
+        @include md {
             flex-direction: column;
         }
     }
@@ -224,7 +224,7 @@
         &.google {
             margin: 0 15px;
 
-            @include xs {
+            @include md {
                 margin-top: 15px;
             }
         }
@@ -307,7 +307,7 @@
             box-shadow: none;
         }
 
-        @include xs {
+        @include md {
             margin: 0;
             width: 100%;
         }
@@ -321,7 +321,7 @@
         margin-top: 30px;
         margin-bottom: 18px;
 
-        @include xs {
+        @include md {
             text-align: right;
             margin-top: 20px;
             margin-bottom: 10px;
@@ -378,7 +378,7 @@
         font-family: os-light;
         font-size: 12px;
 
-        @include xs {
+        @include md {
             text-align: center;
         }
     }
@@ -388,7 +388,7 @@ html[dir="rtl"] ._2step-cont {
     ._2step-haed {
         text-align: right;
 
-        @include xs {
+        @include md {
             text-align: center;
         }
     }
@@ -402,7 +402,7 @@ html[dir="rtl"] ._2step-cont {
         margin-right: 0;
         margin-left: 17px;
 
-        @include xs {
+        @include md {
             margin-right: 0;
             margin-left: 15px;
         }
@@ -416,7 +416,7 @@ html[dir="rtl"] ._2step-cont {
             left: -30px;
             right: auto;
 
-            @include xs {
+            @include md {
                 display: none;
             }
         }
@@ -425,7 +425,7 @@ html[dir="rtl"] ._2step-cont {
     .qr {
         text-align: right;
 
-        @include xs {
+        @include md {
             text-align: center;
         }
     }
@@ -492,7 +492,7 @@ html[dir="rtl"] ._2step-cont {
             }
         }
 
-        @include xs {
+        @include md {
             text-align: right;
         }
     }
@@ -501,7 +501,7 @@ html[dir="rtl"] ._2step-cont {
         text-align: right;
         font-family: g-light;
 
-        @include xs {
+        @include md {
             text-align: center;
         }
     }

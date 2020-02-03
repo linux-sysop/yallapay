@@ -7,7 +7,7 @@ footer {
         align-items: center;
         justify-content: space-between;
 
-        @include xs {
+        @include md {
             justify-content: center;
             height: 98px;
         }
@@ -18,7 +18,7 @@ footer {
         display: flex;
         align-items: center;
 
-        @include xs {
+        @include md {
             display: none;
         }
     }
@@ -45,7 +45,7 @@ footer {
         font-family: os;
         direction: ltr;
 
-        @include xs {
+        @include md {
             display: flex;
 
             align-items: center;
@@ -73,7 +73,7 @@ html[dir='rtl'] footer {
         font-family: os;
         direction: ltr;
 
-        @include xs {
+        @include md {
             display: flex;
 
             align-items: center;
@@ -107,7 +107,7 @@ footer {
             color: #fff;
         }
 
-        @include xs {
+        @include md {
             display: none;
         }
     }

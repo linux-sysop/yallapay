@@ -3,7 +3,7 @@
     padding-top: 46px;
     padding-bottom: 100px;
 
-    @include xs {
+    @include md {
         padding-top: 60px;
     }
 
@@ -11,7 +11,7 @@
         width: 529px;
         margin: auto;
 
-        @include xs {
+        @include md {
             width: 100%;
         }
     }
@@ -22,7 +22,7 @@
         font-size: 16px;
         line-height: 24px;
 
-        @include xs {
+        @include md {
             margin-top: 25px;
         }
     }
@@ -40,7 +40,7 @@
         min-height: 120px;
         color: #1b0e1c;
 
-        @include xs {
+        @include md {
             flex-direction: column;
             text-align: center;
             padding: 10px 0;
@@ -75,7 +75,7 @@
     }
 
     .confirm-img {
-        @include xs {
+        @include md {
             margin-bottom: 10px;
         }
     }
@@ -90,7 +90,7 @@
         font-size: 16px;
         margin: 0 19px;
 
-        @include xs {
+        @include md {
             margin-top: 10px;
         }
     }
@@ -99,7 +99,7 @@
     .desc-text {
         font-family: os-semibold;
 
-        @include xs {
+        @include md {
             margin-top: 10px;
         }
     }
@@ -109,7 +109,7 @@
         background-color: $back;
         border-radius: 0 0 10px 10px;
 
-        @include xs {
+        @include md {
             padding: 15px;
         }
     }
@@ -164,7 +164,7 @@
         margin: auto;
         margin-top: 25px;
 
-        @include xs {
+        @include md {
             width: 100%;
         }
     }
@@ -264,7 +264,7 @@
         margin-top: 44px;
         display: flex;
 
-        @include xs {
+        @include md {
             width: 100%;
             flex-direction: column;
         }
@@ -283,7 +283,7 @@
 
         @include transition(all 0.3s ease-in-out);
 
-        @include xs {
+        @include md {
             width: 100%;
         }
 
@@ -296,7 +296,7 @@
         &:last-of-type {
             margin-left: 27px;
 
-            @include xs {
+            @include md {
                 margin: 20px 0 0;
             }
         }
@@ -344,7 +344,7 @@ html[dir="rtl"] .confirm-cont {
             margin-right: 27px;
             margin-left: 0;
 
-            @include xs {
+            @include md {
                 margin: 20px 0 0;
             }
         }
@@ -352,7 +352,7 @@ html[dir="rtl"] .confirm-cont {
 }
 
 .confirm-name {
-    @include xs {
+    @include md {
         margin-top: 15px;
     }
 }

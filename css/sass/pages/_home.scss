@@ -3,7 +3,7 @@
     padding-top: 90px;
     padding-bottom: 80px;
 
-    @include xs {
+    @include md {
         padding-top: 27px;
         padding-bottom: 0;
     }
@@ -15,7 +15,7 @@
     .headres {
         margin-bottom: 40px;
 
-        @include xs {
+        @include md {
             margin-bottom: 27px;
         }
     }
@@ -34,7 +34,7 @@
         letter-spacing: -1px;
         padding: 1px 0;
 
-        @include xs {
+        @include md {
             font-size: 24px;
             width: 100%;
             overflow: unset;
@@ -55,7 +55,7 @@
         transition: all 1s linear;
         padding: 1px 0;
 
-        @include xs {
+        @include md {
             font-size: 16px;
             width: 100%;
             overflow: unset;
@@ -72,7 +72,7 @@
     .desc-sec {
         width: 675px;
 
-        @include xs {
+        @include md {
             width: 100%;
         }
     }
@@ -82,7 +82,7 @@
         display: flex;
         flex-wrap: wrap;
 
-        @include xs {
+        @include md {
             width: 100%;
         }
 
@@ -103,7 +103,7 @@
             }
 
 
-            @include xs {
+            @include md {
                 margin-right: 8px;
                 width: calc(50% - 4px);
                 margin-bottom: 19px;
@@ -115,7 +115,7 @@
             }
         }
 
-        @include xs {
+        @include md {
             padding: 0 30px;
         }
     }
@@ -131,7 +131,7 @@
             top: 0;
         }
 
-        @include xs {
+        @include md {
             position: relative;
             transform: unset;
             right: auto;
@@ -156,12 +156,12 @@
             font-weight: 400;
             margin-bottom: 15px;
 
-            @include xs {
+            @include md {
                 text-align: center;
             }
         }
 
-        @include xs {
+        @include md {
             margin-top: 0;
 
             .Payment-methods {
@@ -181,7 +181,7 @@ html[dir='rtl'] .main-sec {
         font-family: g-bold;
         text-align: right;
 
-        @include xs {
+        @include md {
             font-size: 24px;
             width: 100%;
             overflow: unset;
@@ -194,7 +194,7 @@ html[dir='rtl'] .main-sec {
         text-align: right;
         font-family: gulf;
 
-        @include xs {
+        @include md {
             font-size: 16px;
             width: 100%;
             overflow: unset;
@@ -214,13 +214,13 @@ html[dir='rtl'] .main-sec {
                 margin-right: 0;
             }
 
-            @include xs {
+            @include md {
                 margin-left: 08px;
                 margin-right: 0;
             }
         }
 
-        @include xs {
+        @include md {
             padding: 0 30px;
         }
     }
@@ -235,7 +235,7 @@ html[dir='rtl'] .main-sec {
             transform: translateX(-50%);
         }
 
-        @include xs {
+        @include md {
             position: relative;
             transform: unset;
             right: auto;
@@ -244,6 +244,14 @@ html[dir='rtl'] .main-sec {
             display: flex;
             align-items: center;
             justify-content: center;
+            transform: translateY(45px);
+
+            img {
+                max-width: calc(100%);
+            }
+        }
+
+        @include xs {
             transform: translateY(17px);
 
             img {
@@ -270,7 +278,7 @@ html[dir='rtl'] .main-sec {
     padding-bottom: 55px;
     overflow: hidden;
 
-    @include xs {
+    @include md {
         padding-top: 56px;
         padding-bottom: 0;
     }
@@ -280,7 +288,7 @@ html[dir='rtl'] .main-sec {
         font-size: 24px;
         font-weight: 700;
 
-        @include xs {
+        @include md {
             text-align: center;
             margin-bottom: 58px;
         }
@@ -291,7 +299,7 @@ html[dir='rtl'] .main-sec {
         align-items: center;
         justify-content: space-between;
 
-        @include xs {
+        @include md {
             flex-direction: column;
         }
     }
@@ -310,7 +318,7 @@ html[dir='rtl'] .main-sec {
             width: 30%;
         }
 
-        @include xs {
+        @include md {
             width: 100%;
             flex-direction: row;
             margin-top: 0;
@@ -329,7 +337,7 @@ html[dir='rtl'] .main-sec {
             margin-top: 18px;
             margin-bottom: 22px;
 
-            @include xs {
+            @include md {
                 margin: 5px 0;
             }
         }
@@ -339,7 +347,7 @@ html[dir='rtl'] .main-sec {
             font-size: 16px;
             font-family: os-light;
 
-            @include xs {
+            @include md {
                 margin-top: 30px;
             }
         }
@@ -352,7 +360,7 @@ html[dir='rtl'] .main-sec {
     .about-desc-cont {
         margin-top: 82px;
 
-        @include xs {
+        @include md {
             margin-top: 0;
         }
 
@@ -362,7 +370,7 @@ html[dir='rtl'] .main-sec {
             font-size: 25px;
             font-family: os-semibold;
 
-            @include xs {
+            @include md {
                 text-align: center;
             }
         }
@@ -373,7 +381,7 @@ html[dir='rtl'] .main-sec {
             width: 470px;
             margin-top: 32px;
 
-            @include xs {
+            @include md {
                 width: 100%;
                 text-align: center;
             }
@@ -385,13 +393,22 @@ html[dir='rtl'] .main-sec {
         right: -55px;
         top: -40px;
 
-        @include xs {
+        @include md {
             position: relative;
             right: auto;
             top: auto;
             align-items: center;
             justify-content: center;
             display: flex;
+            transform: translateY(142px);
+
+            img {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+
+        @include xs {
             transform: translateY(50px);
 
             img {
@@ -415,14 +432,14 @@ html[dir='rtl'] .guaranties-cont {
         flex-direction: row-reverse;
         align-items: flex-start;
 
-        @include xs {
+        @include md {
             flex-direction: column-reverse;
         }
     }
 
     .guarantie {
 
-        @include xs {
+        @include md {
             div {
                 margin-right: 17px;
                 margin-left: 0;
@@ -448,7 +465,7 @@ html[dir='rtl'] .guaranties-cont {
             font-weight: 700;
         }
 
-        @include xs {
+        @include md {
             margin-top: 0;
         }
     }
@@ -457,7 +474,7 @@ html[dir='rtl'] .guaranties-cont {
         right: auto;
         left: -55px;
 
-        @include xs {
+        @include md {
             left: auto;
             right: auto;
         }
@@ -465,7 +482,7 @@ html[dir='rtl'] .guaranties-cont {
 }
 
 div.guarantie-img {
-    @include xs {
+    @include md {
         margin: 0 !important;
         width: 33px;
         min-width: 33px;
@@ -484,7 +501,7 @@ div.guarantie-img {
     margin-bottom: 34px;
     font-family: 'os-semibold';
 
-    @include xs {
+    @include md {
         width: 100%;
     }
 }

@@ -3,7 +3,7 @@
     padding-top: 38px;
     padding-bottom: 160px;
 
-    @include xs {
+    @include md {
         padding-top: 50px;
         padding-bottom: 100px;
     }
@@ -23,7 +23,7 @@
         margin-bottom: 50px;
         display: flex;
 
-        @include xs {
+        @include md {
             font-size: 16px;
             line-height: 24px;
             margin-bottom: 30px;
@@ -164,7 +164,7 @@ html[dir="rtl"] {
             box-shadow: none;
         }
 
-        @include xs {
+        @include md {
             margin-bottom: 30px;
         }
     }
@@ -182,7 +182,7 @@ html[dir='rtl'] .form {
         .country-name {
 
 
-            @include xs {
+            @include md {
                 font-size: 18px;
             }
         }
@@ -242,7 +242,7 @@ html[dir='rtl'] .form {
 ._1st-div {
     padding: 38px 38px 35px;
 
-    @include xs {
+    @include md {
         padding: 20px 10px;
     }
 }
@@ -283,7 +283,7 @@ html[dir='rtl'] .form {
             @include transition(all 0.3s ease-in-out);
         }
 
-        @include xs {
+        @include md {
             margin: 0 10px;
         }
     }
