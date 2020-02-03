@@ -2295,6 +2295,15 @@ html[dir=rtl] .main-sec .cards .card:nth-of-type(2n) {
 @media (max-width: 1199px) {
   html[dir=rtl] .main-sec .cards {
     padding: 0 30px;
+    width: 320px;
+    margin: auto;
+  }
+}
+@media (max-width: 767px) {
+  html[dir=rtl] .main-sec .cards {
+    padding: 0 30px;
+    width: 100%;
+    margin: auto;
   }
 }
 html[dir=rtl] .main-sec .img-sec {

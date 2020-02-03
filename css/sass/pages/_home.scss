@@ -222,6 +222,14 @@ html[dir='rtl'] .main-sec {
 
         @include md {
             padding: 0 30px;
+            width: 320px;
+            margin: auto;
+        }
+
+        @include xs {
+            padding: 0 30px;
+            width: 100%;
+            margin: auto;
         }
     }
 

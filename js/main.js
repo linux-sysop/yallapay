@@ -5,7 +5,7 @@ $(window).on("load", function () {
         $('body').animate({
             scrollTop: 0
         }, 1);
-        if ($(window).width() > 768) {
+        if ($(window).width() > 1200) {
             $('.main-head').addClass('openStyle');
             setTimeout(() => {
                 $('.sec-head').addClass('openStyle');
@@ -57,14 +57,14 @@ $(document).ready(function () {
     $('select').selectpicker({
         dropupAuto: false
     });
-    if ($(window).width() > 768) {
+    if ($(window).width() > 1200) {
         $('.main-head').addClass('openStyle');
         setTimeout(() => {
             $('.sec-head').addClass('openStyle');
         }, 1500);
 
     }
-    if ($(window).width() < 768) {
+    if ($(window).width() < 1200) {
 
         $(".pay-method img").wrap("<div class='card-img-wrap'></div>");
 
