@@ -3164,6 +3164,11 @@ html[dir=rtl] .guaranties-cont.about-page .guarantie .guarantie-desc {
     display: none;
   }
 }
+@media (max-width: 1199px) {
+  .info-card-preview {
+    display: none;
+  }
+}
 
 .preview-data {
   position: relative;

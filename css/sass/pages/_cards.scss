@@ -409,6 +409,10 @@
     @include xs {
         display: none;
     }
+
+    @include md {
+        display: none;
+    }
 }
 
 .preview-data {
